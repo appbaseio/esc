@@ -1,6 +1,6 @@
 # Use-case
 
-## How to make normal search bar?
+### How to make normal search bar?
 
 This chapter therefore provides a simple introduction and guide to develop normal search bar of either your products, cities, names or anything that can be two-three words query. 
 
@@ -32,7 +32,7 @@ For the suggestions we will use string type field with n-grams analyzer and whit
 
 We will predefine the type and  analyzer of fields by mappings.
 
-##Mapping
+## Mapping
 
 ```json
 PUT /searchbar
