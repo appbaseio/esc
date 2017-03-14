@@ -1,6 +1,6 @@
-#Use-case
+# Use-case
 
-##How to make normal search bar?
+## How to make normal search bar?
 
 This chapter therefore provides a simple introduction and guide to develop normal search bar of either your products, cities, names or anything that can be two-three words query. 
 
@@ -13,19 +13,19 @@ The main functionality we need for the normal text searching are
 Elasticsearch can support to index the same field in different ways for different purposes. We will use the multi-fields provided by elasticsearch to store the data into three different fields. We need to make three sub fields related to three different functionalities. 
 
 ```
-**Note:** Read more about concepts of [multi-field](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html).
+Note: Read more about concepts of [multi-field](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html).
 ```
 
 We need to disable the analyzer for the perfect field matching. Because default analyzer of elasticsearch will split the words by white spacings and punctuations which can be problematic for our search bar.
 Note: Elasticsearch will convert the not analyzed field into the case sensitive field. If you want to make it case insensitive then you need to use custom analyzer which can make it case insensitive.  
 
 ```
-**Note:** A short note on [analyzer](https://www.elastic.co/blog/found-text-analysis-part-1).
+Note: A short note on [analyzer](https://www.elastic.co/blog/found-text-analysis-part-1).
 ```
 The field type for the autocomplete functionality must be completion. It can also be possible through n-grams and prefix suggester algorithms. We will use simple analyzer instead of standard. Because standard analyzer will split the words by spaces.
  
 ```
-**Note:** Read more about [n-grams](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html). 
+Note: Read more about [n-grams](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html). 
 
 ``` 
 For the suggestions we will use string type field with n-grams analyzer and white space analyzer.
@@ -56,8 +56,8 @@ PUT /searchbar
                "type": "string",
                "fields": {
             		"city_exact": { "type":  "string", "index":    "not_analyzed" },
-		"city_completion": {"type": "completion", "index_analyzer": "simple" , "search_analyzer": "simple", "payloads": false},
-		"city_suggest": {"type": "string","index_analyzer": "nGram_analyzer", "search_analyzer": "whitespace_analyzer"}
+			"city_completion": {"type": "completion", "index_analyzer": "simple" , "search_analyzer": "simple", "payloads": false},
+			"city_suggest": {"type": "string","index_analyzer": "nGram_analyzer", "search_analyzer": "whitespace_analyzer"}
             	}
           }
       }
