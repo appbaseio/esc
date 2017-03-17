@@ -15,8 +15,10 @@ Elasticsearch can support to index the same field in different ways for differen
 
 **Note:** Read more about concepts of [multi-field](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html).
 
-We need to disable the analyzer for the perfect field matching. Because default analyzer of elasticsearch will split the words by white spacings and punctuations which can be problematic for our search bar.
-Note: Elasticsearch will convert the not analyzed field into the case sensitive field. If you want to make it case insensitive then you need to use custom analyzer which can make it case insensitive.  
+We need to disable the analyzer for the perfect field matching. Because default analyzer of elasticsearch will split the words by white spacings and punctuations which can be problematic for our search bar. If you want to make case insensitive perfect match then you need to make separate analyzer and set the analyzer field according to it. In our scenario we will use own defined case_insensitive analyzer. 
+
+**Note:** Learn more about [disabling analyzer](https://www.elastic.co/guide/en/elasticsearch/guide/current/_finding_exact_values.html). 
+
 
 **Note:** A short note on [analyzer](https://www.elastic.co/blog/found-text-analysis-part-1).
 
@@ -29,6 +31,8 @@ For the suggestions we will use string type field with n-grams analyzer and whit
 We will predefine the type and  analyzer of fields by mappings.
 
 ## Mapping
+
+** TODO: SID ** Explain about how to do mappings and how to define analyzers? 
 
 ```json
 PUT /searchbar
@@ -51,7 +55,7 @@ PUT /searchbar
             "city": {
                "type": "string",
                "fields": {
-            		"city_exact": { "type":  "string", "index":    "not_analyzed" },
+            		"city_exact": { "type": "string", "analyzer": "case_insensitive" },
 			"city_completion": {"type": "completion", "index_analyzer": "simple" , "search_analyzer": "simple", "payloads": false},
 			"city_suggest": {"type": "string","index_analyzer": "nGram_analyzer", "search_analyzer": "whitespace_analyzer"}
             	}
@@ -59,4 +63,14 @@ PUT /searchbar
       }
    }
 }
+```
+
+## Data Indexing
+```json
+
+PUT /searchengine/searchbar/1
+{
+  "city": "New York"
+}
+
 ```
