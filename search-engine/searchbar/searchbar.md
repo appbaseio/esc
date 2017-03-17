@@ -100,7 +100,7 @@ curl -XGET 'https://URL/searchengine/_search?pretty' -H 'Content-Type: applicati
 		"query": "New",
 		"fields": [ 
 			"city.city_suggest"
-		],
+		]
 	}
    }
 }
