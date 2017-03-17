@@ -1,2 +1,3 @@
-# Elastic search by examples
-Learn elasticsearch by examples and use cases.
+# ESC aka ElasticSearch Cookbook
+
+Practical cookbook recipes for doing stuff with Elaticsearch
