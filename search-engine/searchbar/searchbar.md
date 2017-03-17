@@ -57,8 +57,8 @@ PUT /searchbar
                "type": "string",
                "fields": {
             		"city_exact": { "type": "string", "analyzer": "case_insensitive" },
-			"city_completion": {"type": "completion", "index_analyzer": "simple" , "search_analyzer": "simple", "payloads": false},
-			"city_suggest": {"type": "string","index_analyzer": "nGram_analyzer", "search_analyzer": "whitespace_analyzer"}
+			"city_completion": {"type": "completion", "analyzer": "simple" , "search_analyzer": "simple", "payloads": false},
+			"city_suggest": {"type": "string","analyzer": "nGram_analyzer", "search_analyzer": "whitespace_analyzer"}
             	}
           }
       }
