@@ -32,7 +32,8 @@ We will predefine the type and  analyzer of fields by mappings.
 
 ## Mapping
 
-** TODO: SID ** Explain about how to do mappings and how to define analyzers? 
+
+**TODO: SID** Explain about how to do mappings and how to define analyzers? 
 
 ```json
 PUT /searchbar
