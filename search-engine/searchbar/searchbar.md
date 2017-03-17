@@ -75,3 +75,37 @@ PUT /searchengine/searchbar/1
 }
 
 ```
+
+## Data Browser View
+
+## Queries
+```json
+curl -XGET 'https://URL/searchengine/_search?pretty' -H 'Content-Type: application/json' -d'
+{
+    "suggest": {
+        "city-suggest" : {
+            "text" : "new",
+            "completion" : {
+                "field" : "city.city_completion"
+            }
+        }
+    }
+}
+```
+```json
+curl -XGET 'https://URL/searchengine/_search?pretty' -H 'Content-Type: application/json' -d'
+{
+  "query": {
+  	"multi_match": {
+		"query": "New",
+		"fields": [ 
+			"city.city_suggest"
+		],
+	}
+   }
+}
+```
+## Query use-case: 1
+
+## Query use-case: 2
+
