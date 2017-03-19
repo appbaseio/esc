@@ -137,6 +137,19 @@ curl -XGET 'https://URL/searchengine/_search?pretty' -H 'Content-Type: applicati
    }
 }
 ```
+```json
+curl -XGET 'https://URL/searchengine/_search?pretty' -H 'Content-Type: application/json' -d'
+{
+  "query": {
+  	"multi_match": {
+		"query": "New",
+		"fields": [ 
+			"city.city_exact"
+		]
+	}
+   }
+}
+```
 ## Query use-case: 1
 
 ## Query use-case: 2
