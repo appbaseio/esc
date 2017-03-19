@@ -37,64 +37,64 @@ We will predefine the type and  analyzer of fields by mappings.
 ```json
 curl -XPUT 'https://URL/index/_settings?pretty' -H 'Content-Type: application/json' -d'
 {
-  "settings": {
-  "analysis": {
-    "filter": {
-      "nGram_filter": {
-        "type": "edge_ngram",
-        "min_gram": 1,
-        "max_gram": 20,
-        "token_chars": [
-          "letter",
-          "digit",
-          "punctuation",
-          "symbol"
-        ]
-      }
-    },
-    "analyzer": {
-      "nGram_analyzer": {
-        "type": "custom",
-        "tokenizer": "whitespace",
-        "filter": [
-          "lowercase",
-          "asciifolding",
-          "nGram_filter"
-        ]
-      },
-      "standard_analyzer": {
-        "type": "custom",
-        "tokenizer": "standard",
-        "filter": [
-          "lowercase",
-          "asciifolding"
-        ]
-      },
-       "case_insensitive": {
-            "tokenizer": "keyword",
-            "filter": [
-                "lowercase"
-             ]             
-        }   
-    }
-  }
-}
+	"settings": {
+  		"analysis": {
+    			"filter": {
+      				"nGram_filter": {
+        				"type": "edge_ngram",
+					"min_gram": 1,
+					"max_gram": 20,
+					"token_chars": [
+					  	"letter",
+					  	"digit",
+         				 	"punctuation",
+        				        "symbol"
+    					]
+     				 }
+   			 },
+  			 "analyzer": {
+      				"nGram_analyzer": {
+					"type": "custom",
+					"tokenizer": "whitespace",
+					"filter": [
+					 	 "lowercase",
+					  	 "asciifolding",
+					  	 "nGram_filter"
+					]
+    				 },
+      				"standard_analyzer": {
+					"type": "custom",
+					"tokenizer": "standard",
+					"filter": [
+					  	"lowercase",
+					  	"asciifolding"
+					]
+      				},
+       				"case_insensitive": {
+          				  "tokenizer": "keyword",
+           				  "filter": [
+               					 "lowercase"
+            				  ]             
+        			}   
+   			 }
+ 		 }
+	}
 }
 '
 ```
 ```json
 curl -XPUT 'https://URL/index/_mapping/type' -H 'Content-Type: application/json' -d'
 {
-         "properties": {
-            "city": {
+     "properties": {
+         "city": {
                "type": "string",
-               "fields": {
-            		"city_exact": { "type": "string", "analyzer": "case_insensitive" },
+                "fields": {
+             		"city_exact": { "type": "string", "analyzer": "case_insensitive" },
 			"city_completion": {"type": "completion", "analyzer": "simple" , "search_analyzer": "simple", "payloads": false},
 			"city_suggest": {"type": "string","analyzer": "nGram_analyzer", "search_analyzer": "nGram_analyzer"}
-            	}
-             }
-	  }
+                }
+          }
+     }
 }
 ```
 
