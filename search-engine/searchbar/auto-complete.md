@@ -21,15 +21,15 @@ curl -XPUT 'https://URL/index/_settings?pretty' -H 'Content-Type: application/js
       				"nGram_filter": {
         				  "type": "edge_ngram",
 					        "min_gram": 1,
-                  "max_gram": 20,
-                  "token_chars": [
-                      "letter",
-                      "digit",
-                      "punctuation",
-                      "symbol"
-                   ]
-              }
-          },
+                  			"max_gram": 20,
+                		    "token_chars": [
+                    		  	"letter",
+                    		  	"digit",
+                  		      	"punctuation",
+                   		      	"symbol"
+                   			]
+              		}
+          		},
   			  "analyzer": {
       				"standard_analyzer": {
 					          "type": "custom",
