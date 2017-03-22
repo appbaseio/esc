@@ -12,6 +12,6 @@ The main functionality we need for the normal text searching are
 
 Elasticsearch can support to index the same field in different ways for different purposes. We will use the multi-fields provided by elasticsearch to store the data into three different fields. We need to make three sub fields related to three different functionalities. 
 
-```
-Note: Read more about concepts of [multi-field](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html).
-```
+
+**Note:** Read more about concepts of [multi-field](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html).
+
