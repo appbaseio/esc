@@ -15,7 +15,3 @@ Each page will have sections in the following order. The goal is to keep the exp
 ## Data Browser View
 
 ## Queries
-
-### Query use-case: #1
-
-### Query use-case: #2
