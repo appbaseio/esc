@@ -48,7 +48,7 @@ Elasticsearch created these mappings dynamically based on our indexed data.
 
 ## Data Browser View
 
-For accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here](URL-TODO).
+For accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here](appbaseio.github.io/dejavu/live/#?input_state=XQAAAALGAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsf75RGH_jHaI0iFldVUA8qAu_IuFdCiPbQoJXhucJFD7Tx0dCbrMnss3gpLkoGLSlzMWr0Rs78QzD1cInlCxvWqSgdLhvpBcAJW68g0Vhcn0xKzkLHaOzsy68EPdXOYucCl6c8hMMRGu3y4dlzbBXn60r5lbWVcwldsd4kUXc8NRk6kGMuYbn4Qx47XYODZCQPz6_vsDAwA).
 
 ## Queries
 
