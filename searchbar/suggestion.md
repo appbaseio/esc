@@ -12,12 +12,10 @@ For the suggestions we will use string type field with n-grams analyzer.
 
 We will predefine the type and  analyzer of fields by mappings.
 
-## Mapping
+### Mapping
 
-
-**TODO: SID** Explain about how to do mappings and how to define analyzers?
 ```json
-curl -XPUT 'https://URL/index/_settings?pretty' -H 'Content-Type: application/json' -d'
+curl -XPUT "$host/searchbar/_settings?pretty" -d '
 {
 	"settings": {
 		"analysis": {
@@ -35,18 +33,12 @@ curl -XPUT 'https://URL/index/_settings?pretty' -H 'Content-Type: application/js
 				}
 			},
 			"analyzer": {
-				"auto-suggestions": {
+				"auto-suggest": {
 					"type": "custom",
 					"tokenizer": "ngramizer",
 					"filter": [
 						"lowercase",
 						"asciifolding"
-					]
-				},
-				"case_insensitive": {
-					"tokenizer": "keyword",
-					"filter": [
-						"lowercase"
 					]
 				}
 			}
@@ -55,17 +47,16 @@ curl -XPUT 'https://URL/index/_settings?pretty' -H 'Content-Type: application/js
 }
 '
 ```
-
 ```json
-curl -XPUT "$host/index/_mapping/type" -d
-'{
+curl -XPUT "$host/searchbar/_mapping/searchbar" -d '
+{
 	"properties": {
 		"city": {
 			"type": "string",
 			"fields": {
-				"city_suggest": {
+				"city_autosuggest": {
 					"type": "string",
-					"analyzer": "auto-suggestions",
+					"analyzer": "auto-suggest",
 					"search_analyzer": "standard"
 				}
 			}
@@ -74,33 +65,58 @@ curl -XPUT "$host/index/_mapping/type" -d
 }'
 ```
 
-## Data Indexing
+### Data Indexing
 ```json
-
-PUT /searchengine/searchbar/1
-{
-	"city": "New York"
-}
-
+curl -XPUT "$host/searchbar/searchbar/new_york" -d '{
+		"city": "New York"
+}'
 ```
+### Data Browser View
+View the stored document over [here](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAAJDAQAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsf75RGH_jHaI0iFldVUA8qAu_IuFdCiPbQoJXhucJFD7Tx0dCbrMnss3gpLkoGLSlzMWr0Rs78QzD1cInlCxvWqSgdLhvpBcAJW68g0Vhcn0xKzkLHaOzsy68EPdXOYucCl6c8hMMQXZU8RP8JPvBLWiIf_G_5CaVPuXWMq80wmLUMeKsvdkOKaDd_W7WG8h79UJYO3PhPFiPmXeWAeqH_-_KCceHciGmUVoS8Fm9U27k6tat03f-eyZ6WT9TUKabaooF9yVF0YIOuRMkgUbbe6dMN1PEv7QtwA).
 
-## Data Browser View
-
-## Queries
+### Queries
 ```json
-curl -XGET 'https://URL/searchengine/_search?pretty' -H 'Content-Type: application/json' -d'
-{
-		"suggest": {
-				"city-suggest" : {
-						"text" : "new",
-						"completion" : {
-								"field" : "city.city_completion"
-						}
-				}
+curl "$host/searchbar/searchbar/_search?pretty" -d '{
+	"query": {
+		"match": {
+			"city.city_autosuggest": "New York"
 		}
-}
+	}
+}'
 ```
 
-## Query use-case: 1
-
-## Query use-case: 2
+### Query Response
+```json
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 38,
+    "max_score" : 2.6196778,
+    "hits" : [ {
+      "_index" : "searchbar",
+      "_type" : "searchbar",
+      "_id" : "AVsMYRgYhvsk2FETcMug",
+      "_score" : 2.6196778,
+      "_source" : {
+        "city" : "New York",
+        "country" : "United States"
+      }
+    }, {
+      "_index" : "searchbar",
+      "_type" : "searchbar",
+      "_id" : "AVsMYWRohvsk2FETcOKG",
+      "_score" : 1.7387071,
+      "_source" : {
+        "city" : "York",
+        "country" : "United Kingdom"
+      }
+    }]
+  }
+}
+```
