@@ -14,11 +14,11 @@ We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as ou
 
 | Index     | Title    | Description |
 | ---------- | ---------- |---------|
-| 1          | [Simple Match](https://github.com/appbaseio/esc/blob/searchbar/search-engine/searchbar/simple-match.md) | How to build a simple match based search. |
-| 2       | [Multi Match](https://github.com/appbaseio/esc/blob/searchbar/search-engine/searchbar/multi-match.md) | How to search on multiple fields. |
-| 3       | [Auto Completion](https://github.com/appbaseio/esc/blob/searchbar/search-engine/searchbar/auto-complete.md) | How to add a search-as-you-type autocompletion view. |
-| 4       | [Suggestions](https://github.com/appbaseio/esc/blob/searchbar/search-engine/searchbar/suggestions.md) | How to add a search-as-you-type suggestions view. |
-| 5       | [Searchbar](https://github.com/appbaseio/esc/blob/searchbar/search-engine/searchbar/searchbar.md) | Combining all the above steps to build the search bar functionality. |
+| 1          | [Simple Match](https://github.com/appbaseio/esc/blob/master/searchbar/simple-match.md) | How to build a simple match based search. |
+| 2       | [Multi Match](https://github.com/appbaseio/esc/blob/master/searchbar/multi-match.md) | How to search on multiple fields. |
+| 3       | [Auto Completion](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md) | How to add a search-as-you-type autocompletion view. |
+| 4       | [Suggestions](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md) | How to add a search-as-you-type suggestions view. |
+| 5       | [Searchbar](https://github.com/appbaseio/esc/blob/master/searchbar/searchbar.md) | Combining all the above steps to build the search bar functionality. |
 
 ### Live Demo
 
