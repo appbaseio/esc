@@ -13,84 +13,59 @@ We will predefine the type and  analyzer of fields by mappings.
 ## Mapping
 
 ```json
-curl -XPUT 'https://URL/index/_settings?pretty' -H 'Content-Type: application/json' -d'
-{
-	"settings": {
-  		"analysis": {
-    			"filter": {
-      				"nGram_filter": {
-        				  "type": "edge_ngram",
-					        "min_gram": 1,
-                  			"max_gram": 20,
-                		    "token_chars": [
-                    		  	"letter",
-                    		  	"digit",
-                  		      	"punctuation",
-                   		      	"symbol"
-                   			]
-              		}
-          		},
-  			  "analyzer": {
-      				"standard_analyzer": {
-					          "type": "custom",
-					          "tokenizer": "standard",
-					          "filter": [
-					  	          "lowercase",
-					  	          "asciifolding"
-					           ]
-      				 },
-       				"case_insensitive": {
-          				  "tokenizer": "keyword",
-           				  "filter": [
-               					 "lowercase"
-            				  ]             
-        			 }   
-   			  }
- 		  }
-	 }
-}
-'
+curl -XPUT "$host/searchbar/_settings?pretty" -d '{
+	"analyzer": {
+		"case_insensitive": {
+			"tokenizer": "keyword",
+			"filter": [
+				"lowercase"
+			]             
+		}   
+	}
+}'
 ```
 ```json
-curl -XPUT 'https://URL/index/_mapping/type' -H 'Content-Type: application/json' -d'
-{
-     "properties": {
-         "city": {
-               "type": "string",
-                "fields": {
-            			"city_completion": {"type": "completion", "analyzer": "simple" , "search_analyzer": "simple", "payloads": false}
-                }
-          }
-     }
-}
+curl -XPUT "$host/searchbar/_mapping/searchbar" -d '{
+	"properties": {
+		"city": {
+			"type": "string",
+			"fields": {
+				"city_autocomplete": {
+					"type": "completion",
+					"analyzer": "case_insensitive",
+					"search_analyzer": "case_insensitive",
+					"payloads": false
+				}
+			}
+		}
+	}
+}'
 ```
 
 ## Data Indexing
+
 ```json
-
-PUT /searchengine/searchbar/1
-{
-  "city": "New York"
-}
-
+curl -XPUT "$host/searchbar/searchbar/new_york" -d '{
+	"city": "New York"
+}'
 ```
 
 ## Data Browser View
 
-## Queries
+## Query
+
 ```json
-curl -XGET 'https://URL/searchengine/_search?pretty' -H 'Content-Type: application/json' -d'
-{
+curl "$host/searchbar/searchbar/_search?pretty" -d '{
     "suggest": {
         "city-suggest" : {
             "text" : "new",
             "completion" : {
-                "field" : "city.city_completion"
+                "field" : "city.city_autocomplete"
             }
         }
     }
-}
+}'
 ```
-## Query use-case: 1
 
-## Query use-case: 2
+### Query Response
+
