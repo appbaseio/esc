@@ -7,6 +7,7 @@ This chapter provides a simple introduction and guide to building a search bar f
 We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as our search engine and the index (and dataset) is hosted on an [appbase.io](https://appbase.io) app.
 
 ![](https://i.imgur.com/UNkzVkU.jpg)
+**Image:** Search bars from popular websites
 
 ### Table of Contents
 
