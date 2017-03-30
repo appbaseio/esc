@@ -15,60 +15,57 @@ We will predefine the type and  analyzer of fields by mappings.
 ### Mapping
 
 ```json
-curl -XPUT "$host/searchbar/_settings?pretty" -d '
-{
-	"settings": {
-		"analysis": {
-			"tokenizer": {
-				"ngramizer": {
-					"type": "edge_ngram",
-					"min_gram": 1,
-					"max_gram": 10,
-					"token_chars": [
-						"letter",
-						"digit",
-						"punctuation",
-						"symbol"
-					]
-				}
-			},
-			"analyzer": {
-				"auto-suggest": {
-					"type": "custom",
-					"tokenizer": "ngramizer",
-					"filter": [
-						"lowercase",
-						"asciifolding"
-					]
-				}
-			}
-		}
-	}
-}
-'
+curl -XPUT "$host/searchbar/_settings?pretty" -d '{
+  "settings": {
+    "analysis": {
+      "tokenizer": {
+        "ngramizer": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 10,
+          "token_chars": [
+            "letter",
+            "digit",
+            "punctuation",
+            "symbol"
+          ]
+        }
+      },
+      "analyzer": {
+        "auto-suggest": {
+          "type": "custom",
+          "tokenizer": "ngramizer",
+          "filter": [
+            "lowercase",
+            "asciifolding"
+          ]
+        }
+      }
+    }
+  }
+}'
 ```
 ```json
-curl -XPUT "$host/searchbar/_mapping/searchbar" -d '
-{
-	"properties": {
-		"city": {
-			"type": "string",
-			"fields": {
-				"city_autosuggest": {
-					"type": "string",
-					"analyzer": "auto-suggest",
-					"search_analyzer": "standard"
-				}
-			}
-		}
-	}
+curl -XPUT "$host/searchbar/_mapping/searchbar" -d '{
+  "properties": {
+    "city": {
+      "type": "string",
+      "fields": {
+        "city_autosuggest": {
+          "type": "string",
+          "analyzer": "auto-suggest",
+          "search_analyzer": "standard"
+        }
+      }
+    }
+  }
 }'
 ```
 
 ### Data Indexing
 ```json
 curl -XPUT "$host/searchbar/searchbar/new_york" -d '{
-		"city": "New York"
+    "city": "New York"
 }'
 ```
 ### Data Browser View
@@ -77,11 +74,11 @@ View the stored document over [here](https://opensource.appbase.io/dejavu/live/#
 ### Queries
 ```json
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
-	"query": {
-		"match": {
-			"city.city_autosuggest": "New York"
-		}
-	}
+  "query": {
+    "match": {
+      "city.city_autosuggest": "New York"
+    }
+  }
 }'
 ```
 
