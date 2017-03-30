@@ -14,31 +14,31 @@ We will predefine the type and  analyzer of fields by mappings.
 
 ```bash
 curl -XPUT $host/searchbar/_settings?pretty -d '{
-	"analyzer": {
-		"case_insensitive": {
-			"tokenizer": "keyword",
-			"filter": [
-				"lowercase"
-			]             
-		}   
-	}
+  "analyzer": {
+    "case_insensitive": {
+      "tokenizer": "keyword",
+      "filter": [
+        "lowercase"
+      ]             
+    }   
+  }
 }'
 ```
 ```bash
 curl -XPUT $host/searchbar/_mapping/searchbar -d '{
-	"properties": {
-		"city": {
-			"type": "string",
-			"fields": {
-				"city_autocomplete": {
-					"type": "completion",
-					"analyzer": "case_insensitive",
-					"search_analyzer": "case_insensitive",
-					"payloads": false
-				}
-			}
-		}
-	}
+  "properties": {
+    "city": {
+      "type": "string",
+      "fields": {
+        "city_autocomplete": {
+          "type": "completion",
+          "analyzer": "case_insensitive",
+          "search_analyzer": "case_insensitive",
+          "payloads": false
+        }
+      }
+    }
+  }
 }'
 ```
 
@@ -46,7 +46,7 @@ curl -XPUT $host/searchbar/_mapping/searchbar -d '{
 
 ```bash
 curl -XPUT $host/searchbar/searchbar/new_york -d '{
-		"city": "New York"
+    "city": "New York"
 }'
 ```
 
