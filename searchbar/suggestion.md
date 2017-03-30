@@ -2,7 +2,7 @@
 
 ### Suggestions (Full Text Search)
 
-Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user’s inputs..
+Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user’s inputs...
 
 For the suggestions we will use string type field with n-grams analyzer.
 
