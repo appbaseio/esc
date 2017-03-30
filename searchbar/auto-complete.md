@@ -5,7 +5,7 @@
 While user typing we need to provide auto completion for the input queries. Auto-complete functionality should be as fast as a user types to provide instant feedback relevant to what a user has already typed in.  Elasticsearch provides a convenient way to get autocomplete up and running quickly with its completion suggester feature.
 
 The field type for the autocomplete functionality must be completion. It can also be possible through n-grams and prefix suggester algorithms. We will use simple analyzer instead of standard. Because standard analyzer will split the words by spaces.
-
+**TODO**: Add why and which analyzer we used? 
 **Note:** A short note on [analyzer](https://www.elastic.co/blog/found-text-analysis-part-1).
 
 We will predefine the type and  analyzer of fields by mappings.
