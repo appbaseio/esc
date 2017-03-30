@@ -1,6 +1,8 @@
 # Simple Match
 
-### How to build a simple match search?
+This article is a part of the series on [**how to build a search bar**](https://github.com/appbaseio/esc/blob/master/searchbar/introduction.md).
+
+## How To Build A Simple Match Search
 
 Every complex search begins its journey with simplicity.
 
