@@ -21,5 +21,6 @@ We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as ou
 | 5       | [Searchbar](https://github.com/appbaseio/esc/blob/master/searchbar/searchbar.md) | Combining all the above steps to build the search bar functionality. |
 
 ### Live Demo
+<script async src="//jsfiddle.net/1b8tcxs4/3/embed/"></script>
 
 **TODO:** Embed JSFiddle demo
