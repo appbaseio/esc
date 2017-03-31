@@ -125,3 +125,12 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
     }
 }'
 ```
+```bash
+curl "$host/searchbar/searchbar/_search?pretty" -d '{
+  "query": {
+    "match": {
+      "city.city_autosuggest": "New York"
+    }
+  }
+}'
+```
