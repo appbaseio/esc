@@ -22,5 +22,5 @@ We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as ou
 
 ### Live Demo
 <script async src="//jsfiddle.net/1b8tcxs4/3/embed/"></script>
-
+[code](https://jsfiddle.net/1b8tcxs4/3/)
 **TODO:** Embed JSFiddle demo
