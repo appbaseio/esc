@@ -55,7 +55,7 @@ For accessibility, we have indexed ~15,000 data points that can be viewed in the
 
 ## Query
 
-```json
+```bash
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
     "suggest": {
         "city-suggest" : {
