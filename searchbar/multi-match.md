@@ -61,7 +61,7 @@ Now we will write the search query for **multi match**.
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "multi_match": {
-      "query": "New York",
+      "query": "United States",
       "fields": ["city", "country"]
     }
   }
@@ -96,6 +96,7 @@ Response:
   }
 }
 ```
-You can try out this query interactively [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAALDBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4rUljRT-KX0718OJLlPpfWKCUEm56T4kKUyQOIctFML4vd7nbIlNF_HVJf5XthjNmb9bDIZNHNbNitJK5Jn8e2EUlnz479qDBkGPUlTsmLIT7nVfXmBJdSLZ31XFe2BBUJrzKzKu0iHOJNHykD1wPyIC2MmkglG9qmC2SI2bInT4qLUhCFn1GTviO-1iAqhBzz2X8_JNCYZgCmunyXfwPwKioUdz3rOon1QKhKRcNW5ch9W2Bb5dQfRIpm8di3LIGPJ2UCwFHByI4IRXg6qCcmbVhSP43kCAxZrkuAz5PPF9avMk1BEprQN7wCpWOv5rWseLUe1bbyjFw61F71Fa-ciqEr5t84DJw4wkL7jk5FQkIpjq1CUxzIjt63aR7BZZQDRoRcQZj-oyGgV1-ai0BgkrD_och1Q)
+In the response, you will get the list of all the cities which's `country` field matches with `United States`. 
+You can try out this query interactively [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIZBgAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4raO9YJ5f9ys89CsvMS6zZUYGVO9dQZAhRFFYo_azv4LTZfriF9_BEsssqGR2KjAWzg9H8uzZ2EguhV32efxyNTdJ6xpyuZysRE6nwfghFkkQvlqt65nFaorFSIZLo0QsPAXUrR3tK1o3aLZWYYZJkoALfzyHFSjEMprRpOb7vkaoV0XRkIimDiddxkky9n3fggH_wXvCqIC6GU1iMa-DsL0u7WEKyLW_8ptWJO4JlOCR2rIoi-K-wSfzWIMX-Z3BT8N_zgvVO5smP0UQ_5u6x04iqcr36BmXa7GyWHvCj88ywEcNffBvfv24RlKHznoICNln-38-olmY6t6KQrzlTcsUVyJYXBX6qv7myCJ_yWBoZJFPFKBNQgnhRdsZxIrI_t9XwlP-oLV7QPG0OTvoguT4B8xYnizAn_j3YTGuzf_7ku_x)
 
 Next, you should read about [**auto completion**](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md).
