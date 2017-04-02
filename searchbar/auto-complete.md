@@ -1,16 +1,20 @@
-# Use-case
+# Auto completion
 
-### Auto completion with Elastic Search
+This article is a part of the series on [**how to build a search bar**](https://github.com/appbaseio/esc/blob/master/searchbar/introduction.md).
 
-While user typing we need to provide auto completion for the input queries. Auto-complete functionality should be as fast as a user types to provide instant feedback relevant to what a user has already typed in.  Elasticsearch provides a convenient way to get autocomplete up and running quickly with its completion suggester feature.
+### How to add a search-as-you-type autocompletion view.
 
-The field type for the autocomplete functionality must be completion. It can also be possible through n-grams and prefix suggester algorithms. We will use simple analyzer instead of standard. Because standard analyzer will split the words by spaces.
-**TODO**: Add why and which analyzer we used?
-**Note:** A short note on [analyzer](https://www.elastic.co/blog/found-text-analysis-part-1).
+This tutorial will walk through how to display results “as you type” in a searchbar. We’ll be building this feature with Elasticsearch's prefix match based completion type field. 
 
-We will predefine the type and  analyzer of fields by mappings.
+It can also be possible through n-grams and prefix suggester algorithms. But speed is the most important aspect for this feature. We're making suggestions while the user types, so results need to be shown to the user within a few milliseconds, considering the network latency into account.
 
-## Mapping
+## Defining Mappings
+
+We will use own defined `case_insensitive` analyzer to make it case insensitive and to store the words without spliting it by spaces. Default(Type: Standard) analyzer of elasticsearch split the words by spaces. In our case we need space to filter out `New York` and `Newport` like documents.
+**Read more about analyzer over [here](https://www.elastic.co/blog/found-text-analysis-part-1).**
+
+Completion field of elasticsearch generates in-memory data structure called an FST to store and fetch the data. Understand the concepts of `completion` field through this [blog-post](in-memory data structure called an FST ).  
+
 
 ```bash
 curl -XPUT $host/searchbar/_settings?pretty -d '{
@@ -24,6 +28,8 @@ curl -XPUT $host/searchbar/_settings?pretty -d '{
   }
 }'
 ```
+Define custom analyzer using `_settings` endpoint of elasticsearch. 
+
 ```bash
 curl -XPUT $host/searchbar/_mapping/searchbar -d '{
   "properties": {
@@ -106,3 +112,6 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
   }
 }
 ```
+
+Next, you should read about [**Suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md).
+
