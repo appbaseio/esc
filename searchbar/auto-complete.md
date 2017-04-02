@@ -4,7 +4,7 @@ This article is a part of the series on [**how to build a search bar**](https://
 
 ### How to add a search-as-you-type autocompletion view.
 
-This tutorial will walk through how to display results **as you type** in a searchbar. We’ll be building this feature with Elasticsearch's prefix match based completion type field. 
+This tutorial will walk through how to provide completion of the inputs **as you type** in a searchbar. We’ll be building this feature with Elasticsearch's prefix match based **completion** type `field`. 
 
 It can also be possible through n-grams and prefix suggester algorithms. But speed is the most important aspect for this feature. We're making suggestions while the user types, so results need to be shown to the user within a few milliseconds, considering the network latency into account.
 
