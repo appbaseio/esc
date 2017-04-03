@@ -16,9 +16,7 @@ In this section, we will specify the mappings for our two fields: city and count
 
 ### Transforming data to lower case before indexing
 
-We would ideally want the autocompletion feature to work in a case agnostic fashion and at the granularity of phrases, i.e. typing a partial phrase should bring up the rest of the phrase in the autocompletion. To do this, we will create a **case_insensitive** analyzer that tokenizes the text as is (i.e. no white space splitting) and applies a lowercase filter.
-
-**You can read more about analyzers over [here](https://www.elastic.co/blog/found-text-analysis-part-1).**
+We would ideally want the autocompletion feature to work in a case agnostic fashion and at the granularity of phrases, i.e. typing a partial phrase should bring up the rest of the phrase in the autocompletion. To do this, we will create a **case_insensitive** analyzer that tokenizes the text as is (i.e. no white space splitting) and applies a lowercase filter. You can read more about analyzers over [here](https://www.elastic.co/blog/found-text-analysis-part-1).
 
 ```bash
 curl -XPUT $host/searchbar/_settings?pretty -d '{
@@ -33,7 +31,7 @@ curl -XPUT $host/searchbar/_settings?pretty -d '{
 }'
 ```
 
-We just added a custom analyzer using the above request. The `_settings` endpoint can be used for adding one more custom analyzers.
+We just added a custom analyzer. The `_settings` endpoint can be used for adding one more custom analyzers.
 
 ### Updating Mappings
 
@@ -134,6 +132,10 @@ Here, `text` is the actual text that the user has typed so far and `completion` 
   }
 }
 ```
+
+This is it! You can also write a similar query for suggestions on **country** or one where suggestions can be made for both **city** and **country** fields at the same time.
+
+TODO: Extend the query to provide suggestions on both **city** and **country** fields.
 
 Next, you should read about [**Suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md).
 
