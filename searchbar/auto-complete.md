@@ -98,7 +98,7 @@ curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
             }
         },
         "country-suggest" : {
-            "text" : "United",
+            "text" : "New Y",
             "completion" : {
                 "field" : "country.country_autocomplete"
             }
@@ -128,16 +128,10 @@ Here, `text` is the actual text that the user has typed so far and `completion` 
   },
   "suggest" : {
     "country-suggest" : [ {
-      "text" : "United ",
+      "text" : "New Y",
       "offset" : 0,
-      "length" : 6,
-      "options" : [ {
-        "text" : "United States",
-        "score" : 401.0
-      }, {
-        "text" : "United Kingdom",
-        "score" : 401.0
-      }]
+      "length" : 5,
+      "options" : [ ]
     } ],
     "city-suggest" : [ {
       "text" : "New Y",
