@@ -1,4 +1,4 @@
-# Auto completion
+# Auto Completion
 
 This article is a part of the series on [**how to build a search bar**](https://github.com/appbaseio/esc/blob/master/searchbar/introduction.md).
 
