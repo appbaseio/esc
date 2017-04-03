@@ -154,7 +154,6 @@ Here, `text` is the actual text that the user has typed so far and `completion` 
 
 This is it! You can also write a similar query for suggestions on **country** or one where suggestions can be made for both **city** and **country** fields at the same time.
 
-TODO: Extend the query to provide suggestions on both **city** and **country** fields.
 
 Next, you should read about [**Suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md).
 
