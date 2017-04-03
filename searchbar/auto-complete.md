@@ -96,9 +96,16 @@ curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
             "completion" : {
                 "field" : "city.city_autocomplete"
             }
+        },
+        "country-suggest" : {
+            "text" : "United",
+            "completion" : {
+                "field" : "country.country_autocomplete"
+            }
         }
     }
 }'
+
 ```
 
 Here, `text` is the actual text that the user has typed so far and `completion` contains the field in which Elasticsearch will look for completion suggestions.
@@ -107,7 +114,7 @@ Here, `text` is the actual text that the user has typed so far and `completion` 
 
 ```json
 {
-  "took" : 20,
+  "took" : 1,
   "timed_out" : false,
   "_shards" : {
     "total" : 1,
@@ -120,6 +127,18 @@ Here, `text` is the actual text that the user has typed so far and `completion` 
     "hits" : [ ]
   },
   "suggest" : {
+    "country-suggest" : [ {
+      "text" : "United ",
+      "offset" : 0,
+      "length" : 6,
+      "options" : [ {
+        "text" : "United States",
+        "score" : 401.0
+      }, {
+        "text" : "United Kingdom",
+        "score" : 401.0
+      }]
+    } ],
     "city-suggest" : [ {
       "text" : "New Y",
       "offset" : 0,
