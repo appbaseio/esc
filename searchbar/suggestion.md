@@ -2,11 +2,11 @@
 
 This article is a part of the series on [**how to build a search bar**](https://github.com/appbaseio/esc/blob/master/searchbar/introduction.md).
 
-### How to build a search-as-you-type suggestions view.
+### How to build a search-as-you-type suggestions view
 
 This example implements an instant-search based auto-suggestion feature which provides quick suggestions to help users save time, iterate on their searches, and get the results they want. It can also helps to show the relevant data to user’s inputs.
 
-To implement this functionality we will use edge-ngram tokenizer with the custom type analyzer. Custom analyzer allows to combine a appropriate character filters, tokenizer, and token filters. In this case we have used self defined `tokenizer` called ngramizer which will split on characters that don’t belong to the classes specified in `token_chars` field.
+To implement this functionality we will use edge-ngram tokenizer with the custom type analyzer. Custom analyzer allows to combine a appropriate character filters, tokenizer, and token filters. In this case we have used self defined `tokenizer` called `ngramizer` which will split on characters that don’t belong to the classes specified in `token_chars` field.
 
 Let's understand it with the example. Suppose user typed `New York` city. At first tokenizer will split the word by space, because space class does not belong to `token_chars`. Then it will generate all the possible edge-ngrams of length between 1 to 10. Elasticsearch provides `min_gram`and `max_gram` fields to put a cap on length. This iteration will store `New York` as `[N, Ne, New, Y, Yo, Yor, York]`. Then it will pass through the filters. Which will turn the entire input into lowercase.  
 
