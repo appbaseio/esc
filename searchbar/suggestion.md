@@ -4,7 +4,7 @@ This article is a part of the series on [**how to build a search bar**](https://
 
 ### How to build a search-as-you-type suggestions view
 
-This example implements an instant-search based auto-suggestion feature which provides quick suggestions to help users save time, iterate on their searches, and get the results they want. It can also helps to show the relevant data to user’s inputs.
+This example implements an instant-search based auto-suggestion feature which provides quick suggestions to help users save time, iterate on their searches, and get the results they want. It can also suggests data if user starts typing from the middle of the phrase.
 
 To implement this functionality we will use edge-ngram tokenizer with the custom type analyzer. Custom analyzer allows to combine a appropriate character filters, tokenizer, and token filters. In this case we have used self defined `tokenizer` called `ngramizer` which will split on characters that don’t belong to the classes specified in `token_chars` field.
 
