@@ -4,7 +4,7 @@ This article is a part of the series on [**how to build a search bar**](https://
 
 ### How to build a search-as-you-type autocompletion view
 
-This tutorial will walk through how to provide completion of the inputs **as you type** in a searchbar on a dataset containing a list of cities and countries. We will be building this feature using Elasticsearch's **completion** type `field`. 
+In this post, we will show how to provide an auto-completion of the inputs **as the user types** in a searchbar. We will be using a dataset containing a list of cities and countries and we will be building this feature using Elasticsearch's **completion** type `field`.
 
 `Note:` Alternate approaches can be implemented using n-grams and prefix suggester algorithms. But speed is the most important aspect for this feature. We're making suggestions while the user types, so results need to be shown to the user within milliseconds. When using the completion type, Elasticsearch indexes data into a trie like data structure (called FST) which is optimized for fast retrieval and memory usage.
 
@@ -66,7 +66,7 @@ curl -XPUT $host/searchbar/_mapping/searchbar -d '{
 }'
 ```
 
-Here, we have defined a multi-field for both `city` and `country` fields. The `city_autocomplete` field (inner field) has a type **completion** while the `city` field (outer field) has a type **string** and both are indexed simultaneously. We have also used our custom analyzer for both indexing and searching on the \*_autocomplete inner fields.
+Here, we have defined a multi-field for both `city` and `country` fields. The `city_autocomplete` field (inner field) has a type **completion** while the `city` field (outer field) has a type **string** and both are indexed simultaneously. We have also used our custom analyzer for both indexing and searching on the \*\_autocomplete inner fields.
 
 
 ## Data Indexing
@@ -75,14 +75,14 @@ As you can see, while indexing the data, we only need to insert the **city** and
 
 ```bash
 curl -XPUT $host/searchbar/searchbar/1 -d '{
-    "city": "New York",
-    "country": "United States"
+  "city": "New York",
+  "country": "United States"
 }'
 ```
 
 ## Data Browser View
 
-For better accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALGAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsf75RGH_jHaI0iFldVUA8qAu_IuFdCiPbQoJXhucJFD7Tx0dCbrMnss3gpLkoGLSlzMWr0Rs78QzD1cInlCxvWqSgdLhvpBcAJW68g0Vhcn0xKzkLHaOzsy68EPdXOYucCl6c8hMMRGu3y4dlzbBXn60r5lbWVcwldsd4kUXc8NRk6kGMuYbn4Qx47XYODZCQPz6_vsDAwA).
+For better accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALGAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsf75RGH_jHaI0iFldVUA8qAu_IuFdCiPbQoJXhucJFD7Tx0dCbrMnss3gpLkoGLSlzMWr0Rs78QzD1cInlCxvWqSgdLhvpBcAJW68g0Vhcn0xKzkLHaOzsy68EPdXOYucCl6c8hMMRGu3y4dlzbBXn60r5lbWVcwldsd4kUXc8NRk6kGMuYbn4Qx47XYODZCQPz6_vsDAwA)
 
 ## Query
 
@@ -90,31 +90,24 @@ Next, we will move to the queries section. Here, we will be using the **completi
 
 ```bash
 curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
-    "suggest": {
-        "city-suggest" : {
-            "text" : "New Y",
-            "completion" : {
-                "field" : "city.city_autocomplete"
-            }
-        },
-        "country-suggest" : {
-            "text" : "New Y",
-            "completion" : {
-                "field" : "country.country_autocomplete"
-            }
-        }
+  "suggest": {
+    "city-suggest": {
+      "text": "New Y",
+      "completion": {
+        "field": "city.city_autocomplete"
+      }
     }
+  }
 }'
-
 ```
 
 Here, `text` is the actual text that the user has typed so far and `completion` contains the field in which Elasticsearch will look for completion suggestions.
 
-### Query Response
+##### Response
 
 ```json
 {
-  "took" : 1,
+  "took" : 20,
   "timed_out" : false,
   "_shards" : {
     "total" : 1,
@@ -127,12 +120,6 @@ Here, `text` is the actual text that the user has typed so far and `completion` 
     "hits" : [ ]
   },
   "suggest" : {
-    "country-suggest" : [ {
-      "text" : "New Y",
-      "offset" : 0,
-      "length" : 5,
-      "options" : [ ]
-    } ],
     "city-suggest" : [ {
       "text" : "New Y",
       "offset" : 0,
@@ -146,8 +133,95 @@ Here, `text` is the actual text that the user has typed so far and `completion` 
 }
 ```
 
-This is it! You can also write a similar query for suggestions on **country** or one where suggestions can be made for both **city** and **country** fields at the same time.
+Voila! We can see "New York" as the suggestion which we can now display in the search box.
 
+#### Query on Country
 
-Next, you should read about [**Suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md).
+A similar query for suggestions on the **country** field would look like this:
 
+```bash
+curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
+  "suggest": {
+    "country-suggest": {
+      "text": "New",
+      "completion": {
+        "field": "country.country_autocomplete"
+      }
+    }
+  }
+}'
+```
+
+#### Query on both City and Country
+
+What if we wanted to provide autocompletion on both **city** and **country** fields at the same time?
+
+```bash
+curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
+  "suggest": {
+    "city-suggest": {
+      "text": "Chi",
+      "completion": {
+        "field": "city.city_autocomplete"
+      }
+    },
+    "country-suggest": {
+      "text": "Chi",
+      "completion": {
+        "field": "country.country_autocomplete"
+      }
+    }
+  }
+}'
+```
+
+##### Response
+
+```json
+{
+  "took" : 23,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 15506,
+    "max_score" : 0.0,
+    "hits" : [ ]
+  },
+  "suggest" : {
+    "country-suggest" : [ {
+      "text" : "Chi",
+      "offset" : 0,
+      "length" : 3,
+      "options" : [ {
+        "text" : "China",
+        "score" : 401.0
+      }, {
+        "text" : "Chile",
+        "score" : 127.0
+      } ]
+    } ],
+    "city-suggest" : [ {
+      "text" : "Chi",
+      "offset" : 0,
+      "length" : 3,
+      "options" : [ {
+        "text" : "Chita",
+        "score" : 2.0
+      }, {
+        "text" : "Chihuahua",
+        "score" : 2.0
+      } ]
+    } ]
+  }
+}
+```
+
+We can then pick the item with the highest score value: "China" in this case, and display it in the searchbox's input section.
+
+---
+
+Next, you should read about [**full-text search suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md).
