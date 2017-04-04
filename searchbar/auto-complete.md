@@ -222,6 +222,11 @@ curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
 
 We can then pick the item with the highest score value: "China" in this case, and display it in the searchbox's input section.
 
+We can also use the suggest query for building a search as-you-type suggestions feature by arranging the other items in a dropdown list. However, doing so has some limitations.
+
+1. We can't detect suggestions on a full-text phrase if the user starts typing from the middle of the phrase.
+2. We can't show additional fields of the document as a part of the suggestion UI (like images) since the **completion suggest** query only returns the field in question.
+
 ---
 
-Next, you should read about [**full-text search suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md).
+Next, we talk about building a [**search as-you-type suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md) feature using n-grams.
