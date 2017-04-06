@@ -229,4 +229,4 @@ We can also use the suggest query for building a search as-you-type suggestions 
 
 ---
 
-Next, we talk about building a [**search as-you-type suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestion.md) feature using n-grams.
+Next, we talk about building a [**search as-you-type suggestions**](https://github.com/appbaseio/esc/blob/master/searchbar/suggestions.md) feature using n-grams.
