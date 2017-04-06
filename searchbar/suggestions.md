@@ -6,7 +6,6 @@ This article is a part of the series on [**how to build a search bar**](https://
 
 In this post, we will implement a search-as-you-type suggestions feature to help users save time, iterate on their searches, and get the results they want. It can also help with showing the relevant data to user’s inputs. We will be using a dataset containing a list of cities and countries and we will be building this feature using a custom n-gram analyzer.
 
-
 To implement this functionality we will use edge-ngram tokenizer with the custom type analyzer. Custom analyzer allows to combine a appropriate character filters, tokenizer, and token filters. In this case we have used self defined `tokenizer` called `ngramizer` which will split on characters that don’t belong to the classes specified in `token_chars` field.
 
 `Note:` An alternate approach can be implemented using Elasticsearch's **completion** type and queried using a  **suggestor** type query. You can read more about it in our building a search-as-you-type auto-completion feature post [here](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md).
