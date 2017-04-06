@@ -35,7 +35,7 @@ We just added a custom analyzer. The `_settings` endpoint can be used for adding
 
 ### Updating Mappings
 
-Next, we will update the mapping for the **city** and **country** fields. We will exploit a very cool feature of Elaticsearch called [**multi-fields**](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html) in doing so. Multi-fields enable indexing the same field in different ways, thus allowing for multiple ways of querying without requiring any additional effort in indexing of the data.
+Next, we will update the mapping for the **city** and **country** fields. We will exploit a very cool feature of Elasticsearch called [**multi-fields**](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html) in doing so. Multi-fields enable indexing the same field in different ways, thus allowing for multiple ways of querying without requiring any additional effort in indexing of the data.
 
 ```bash
 curl -XPUT $host/searchbar/_mapping/searchbar -d '{
