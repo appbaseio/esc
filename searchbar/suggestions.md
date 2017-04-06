@@ -107,6 +107,74 @@ For better accessibility, we have indexed ~15,000 data points that can be viewed
 
 ### Query
 
+Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions. Let's first query on `city` field.
+
+```bash
+curl "$host/searchbar/searchbar/_search?pretty" -d '{
+  "query": {
+    "match": {
+      "city.city_autosuggest": "York"
+    }                                                        
+  }
+}'
+```
+Here user inputs are passed as a value of `city.city_autosuggest` field.
+
+##### Response
+
+```json
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 2,
+    "max_score" : 4.4288692,
+    "hits" : [ {
+      "_index" : "searchbar",
+      "_type" : "searchbar",
+      "_id" : "AVsMYWRohvsk2FETcOKG",
+      "_score" : 4.4288692,
+      "_source" : {
+        "city" : "York",
+        "country" : "United Kingdom"
+      }
+    }, {
+      "_index" : "searchbar",
+      "_type" : "searchbar",
+      "_id" : "AVsMYRgYhvsk2FETcMug",
+      "_score" : 3.321652,
+      "_source" : {
+        "city" : "New York",
+        "country" : "United States"
+      }
+    }]
+  }
+}
+```
+
+In the response, you can see Elasticsearch has returned two documents which have matched with the `York` query. Match query also provides `_score` field to get the similarity ratio between user inputs and indexed documents.  
+
+#### Query on Country
+
+A similar query for suggestions on the **country** field would look like this:
+
+```bash
+curl "$host/searchbar/searchbar/_search?pretty" -d '{
+  "query": {
+    "match": {
+      "country.country_autosuggest": "States"
+    }
+  }
+}'
+```
+
+#### Query on both City and Country
+
 ```bash
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
   "query": {
@@ -130,7 +198,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
     "failed" : 0
   },
   "hits" : {
-    "total" : 42,
+    "total" : 2,
     "max_score" : 3.1685972,
     "hits" : [ {
       "_index" : "searchbar",
@@ -154,8 +222,5 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
   }
 }
 ```
-Elasticsearch also provides `_score` of each of the matched documents.
-
-**TODO** Break down the query section into different queries. See auto-complete.md for reference.
 
 Next, you should read about [**Searchbar**](https://github.com/appbaseio/esc/blob/master/searchbar/searchbar.md).
