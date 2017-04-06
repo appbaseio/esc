@@ -223,4 +223,6 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
 }
 ```
 
+You can also try out this query interactively  [here. ![](https://opensource.appbase.io/mirage/#?input_state=XQAAAAJzBgAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4rUljRT-KX0718OJLlPpfWKCUEm56Tq8CYlXhOnaN56ZyIdxt1ZJt6hbyNpDC37TiuSHBdw5dUJ8p24QA8uuqOh0kxOaVXIOW5mnqVEvRJWxRnafT2663Um7XL8IiQhcKR_AKv1y-lYc4z-u95F8q94Pv5wP52njSb5Ay05gOZ1-KVHrTKulMUezxcGI8NmpVVDN_cepbY9ZOxRpTzGx4W8I7bBqCM3cO14yonnDaCPfWWF5BHfUZdM0haAjG2GQY9gA8yZnruuRt8ZAcLKBG8_qpUX2QBudrf3gYUeutnn6ghCxaWkJn5h2X67mWsftEOvcdUveMzeZCOEgrJVqgz8RzYTu-ct9Vp0Q81sN4JF2J-DlUptRT-FTOer9sjFPxfGezfZ7-QkNiof9u8F4Eyo8YZjMxf8HYO-7BFQjrBrtmkcUa__BRI0s)
+
 Next, you should read about [**Searchbar**](https://github.com/appbaseio/esc/blob/master/searchbar/searchbar.md).
