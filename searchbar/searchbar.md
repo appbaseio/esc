@@ -253,7 +253,6 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
         "city" : "New Farm",
         "country" : "Australia"
       }
-    }
     } ]
   },
   "suggest" : {
