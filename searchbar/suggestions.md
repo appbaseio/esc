@@ -1,8 +1,8 @@
-# Suggestions (Full Text Search)
+# As-You-Type Suggestions
 
 This article is a part of the series on [**how to build a search bar**](https://github.com/appbaseio/esc/blob/master/searchbar/introduction.md).
 
-### How to build a search-as-you-type suggestions view
+### How to build an as-you-type suggestions view
 
 In this post, we will implement a search-as-you-type suggestions feature to help users save time, iterate on their searches, and get the results they want. It can also help with showing the relevant data to user’s inputs. We will be using a dataset containing a list of cities and countries and we will be building this feature using a custom n-gram analyzer.
 
@@ -103,7 +103,7 @@ curl -XPUT $host/searchbar/searchbar/1 -d '{
 
 ## Data Browser View
 
-For better accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAAI-AQAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsf75RGH_jHaI0iFldVUA8qAu_IuFdCiPbQoJXhucJFD7Tx0dCbrMnss3gpLkoGLSlzMWr0Rs78QzD1cInlCxvWqSgdLhvpBcAJW68g0Vhcn0xKzkLHaOzsy68EPdXOYucCl6c8hMMRGu3y4dlzbBXn60r5lbWVcwldsd4kUXc8NRk6kGMuYbn4Qx47XYTdu7ltXvSb6rTmSxttA5ZONh8TQH1ljQwh7A7pkH2Onet5Fm384jza2JoDwBKVQOFn0TqOzVjhWlMQ5L1D_WGJgdWWmK3RWUWnBpnTqQ_hu-SA).
+For better accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAAI-AQAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsf75RGH_jHaI0iFldVUA8qAu_IuFdCiPbQoJXhucJFD7Tx0dCbrMnss3gpLkoGLSlzMWr0Rs78QzD1cInlCxvWqSgdLhvpBcAJW68g0Vhcn0xKzkLHaOzsy68EPdXOYucCl6c8hMMRGu3y4dlzbBXn60r5lbWVcwldsd4kUXc8NRk6kGMuYbn4Qx47XYTdu7ltXvSb6rTmSxttA5ZONh8TQH1ljQwh7A7pkH2Onet5Fm384jza2JoDwBKVQOFn0TqOzVjhWlMQ5L1D_WGJgdWWmK3RWUWnBpnTqQ_hu-SA)
 
 ### Query
 
@@ -223,6 +223,6 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
 }
 ```
 
-You can also try out this query interactively  [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAJzBgAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4rUljRT-KX0718OJLlPpfWKCUEm56Tq8CYlXhOnaN56ZyIdxt1ZJt6hbyNpDC37TiuSHBdw5dUJ8p24QA8uuqOh0kxOaVXIOW5mnqVEvRJWxRnafT2663Um7XL8IiQhcKR_AKv1y-lYc4z-u95F8q94Pv5wP52njSb5Ay05gOZ1-KVHrTKulMUezxcGI8NmpVVDN_cepbY9ZOxRpTzGx4W8I7bBqCM3cO14yonnDaCPfWWF5BHfUZdM0haAjG2GQY9gA8yZnruuRt8ZAcLKBG8_qpUX2QBudrf3gYUeutnn6ghCxaWkJn5h2X67mWsftEOvcdUveMzeZCOEgrJVqgz8RzYTu-ct9Vp0Q81sN4JF2J-DlUptRT-FTOer9sjFPxfGezfZ7-QkNiof9u8F4Eyo8YZjMxf8HYO-7BFQjrBrtmkcUa__BRI0s)
+You can also try out this query interactively  [here. ![](https://i.imgur.com/nC3g4LR.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAJzBgAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4rUljRT-KX0718OJLlPpfWKCUEm56Tq8CYlXhOnaN56ZyIdxt1ZJt6hbyNpDC37TiuSHBdw5dUJ8p24QA8uuqOh0kxOaVXIOW5mnqVEvRJWxRnafT2663Um7XL8IiQhcKR_AKv1y-lYc4z-u95F8q94Pv5wP52njSb5Ay05gOZ1-KVHrTKulMUezxcGI8NmpVVDN_cepbY9ZOxRpTzGx4W8I7bBqCM3cO14yonnDaCPfWWF5BHfUZdM0haAjG2GQY9gA8yZnruuRt8ZAcLKBG8_qpUX2QBudrf3gYUeutnn6ghCxaWkJn5h2X67mWsftEOvcdUveMzeZCOEgrJVqgz8RzYTu-ct9Vp0Q81sN4JF2J-DlUptRT-FTOer9sjFPxfGezfZ7-QkNiof9u8F4Eyo8YZjMxf8HYO-7BFQjrBrtmkcUa__BRI0s)
 
 Next, you should read about [**Searchbar**](https://github.com/appbaseio/esc/blob/master/searchbar/searchbar.md).
