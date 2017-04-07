@@ -125,6 +125,8 @@ For accessibility, we have indexed ~15,000 data points that can be viewed in the
 
 ### Query
 
+Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions and will be using the **completion** suggestor query for getting the autocomplete suggestions. Let's first query on `city` field.
+
 ```bash
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
   "query": {
@@ -142,6 +144,57 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
   }             
 }'
 ```
+##### Response
+
+```json
+{
+  "took" : 18,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 2,
+    "max_score" : 2.6197505,
+    "hits" : [ {
+      "_index" : "searchbar",
+      "_type" : "searchbar",
+      "_id" : "AVsMYRgYhvsk2FETcMug",
+      "_score" : 2.6197505,
+      "_source" : {
+        "city" : "New York",
+        "country" : "United States"
+      }
+    }, {
+      "_index" : "searchbar",
+      "_type" : "searchbar",
+      "_id" : "AVsMYTTkhvsk2FETcNLo",
+      "_score" : 2.6197505,
+      "_source" : {
+        "city" : "New Farm",
+        "country" : "Australia"
+      }
+    }]
+  },
+  "suggest" : {
+    "city-suggest" : [ {
+      "text" : "New",
+      "offset" : 0,
+      "length" : 3,
+      "options" : [ {
+        "text" : "Newport",
+        "score" : 5.0
+      }, {
+        "text" : "Newmarket",
+        "score" : 2.0
+      } ]
+    } ]
+  }
+}
+```
+#### Query on both City and Country
 
 ```bash
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
