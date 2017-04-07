@@ -167,3 +167,61 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
   }       
 }'
 ```
+
+### Query Response
+
+```json
+{
+  "took" : 15,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 2,
+    "max_score" : 1.7185925,
+    "hits" : [ {
+      "_index" : "searchbar",
+      "_type" : "searchbar",
+      "_id" : "AVsMYRgYhvsk2FETcMug",
+      "_score" : 1.7185925,
+      "_source" : {
+        "city" : "New York",
+        "country" : "United States"
+      }
+    }, {
+      "_index" : "searchbar",
+      "_type" : "searchbar",
+      "_id" : "AVsMYTTkhvsk2FETcNLo",
+      "_score" : 1.7185925,
+      "_source" : {
+        "city" : "New Farm",
+        "country" : "Australia"
+      }
+    }
+    } ]
+  },
+  "suggest" : {
+    "country-suggest" : [ {
+      "text" : "New",
+      "offset" : 0,
+      "length" : 3,
+      "options" : [ ]
+    } ],
+    "city-suggest" : [ {
+      "text" : "New",
+      "offset" : 0,
+      "length" : 3,
+      "options" : [ {
+        "text" : "Newport",
+        "score" : 5.0
+      }, {
+        "text" : "Newmarket",
+        "score" : 2.0
+      } ]
+    } ]
+  }
+}
+```
