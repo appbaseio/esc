@@ -15,6 +15,12 @@ The main functionality we need for the normal text searching are
 
 ## Defining Mappings
 
+If you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.
+
+In this section, we will specify the mappings for our two fields: city and country, with the necessary settings to enable auto-complete and suggestion functionalities.
+
+`auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will create a `case_insensitive` analyzer that tokenizes the text as is (i.e. no white space splitting) and applies a lowercase filter.
+
 ```bash
 curl -XPUT $host/searchbar/_settings?pretty -d '{
   "analysis": {
@@ -50,6 +56,17 @@ curl -XPUT $host/searchbar/_settings?pretty -d '{
   }  
 }'
 ```
+
+We just added a custom analyzers. The `_settings` endpoint can be used for adding one more custom analyzers.
+
+## Defining Mappings
+
+Here we will use two fields and two subfields of each field. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch. 
+
+`city_autocomplete` subfield is useful for the auto completion feature. It index the data using `case_insensitive` analyzer and with type **completion**.
+
+`city_autocomplete` subfield is useful for the auto suggestion feature. It index the data using `auto-suggest` analyzer and with type **string**.
+
 ```bash
 curl -XPUT $host/searchbar/_mapping/searchbar -d '{
   "searchbar": {
@@ -92,6 +109,8 @@ curl -XPUT $host/searchbar/_mapping/searchbar -d '{
 ```
 
 ### Data Indexing
+
+As you can see, while indexing the data, we only need to insert the city and country fields.
 
 ```bash
 curl -XPUT $host/searchbar/searchbar/1 -d '{
