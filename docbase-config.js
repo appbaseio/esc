@@ -21,64 +21,32 @@ var docbaseConfig = {
   "versions" : {
   "v1": [
     {
-      "name": "getting-started",
-      "label": "Getting Started",
+      "name": "searchbar",
+      "label": "Basic Searchbar",
       "files": [
         {
-          "name": "start",
-          "label": "Quick Start"
+          "name": "introduction",
+          "label": "Index"
         },
         {
-          "name": "configure",
-          "label": "Configuration Options"
-        }
-      ]
-    },
-    {
-      "name": "features",
-      "label": "Features",
-      "files": [
-        {
-          "name": "search",
-          "label": "Search"
+          "name": "simple-match",
+          "label": "Simple Match"
         },
         {
-          "name": "colors",
-          "label": "Colorful"
+          "name": "multi-match",
+          "label": "Multi Match"
         },
         {
-          "name": "gh-pages",
-          "label": "Deploy to Github"
+          "name": "auto-complete",
+          "label": "Auto Complete"
         },
         {
-          "name": "versions",
-          "label": "Versatile Navigation"
-        }
-      ]
-    },
-    {
-      "name": "layout",
-      "label": "Layout",
-      "files": [
-        {
-          "name": "navigation",
-          "label": "Site Navigation"
+          "name": "suggestions",
+          "label": "Suggestions"
         },
         {
-          "name": "3col",
-          "label": "Three columns"
-        }
-      ]
-    }
-  ],
-  "v2": [
-    {
-      "name": "changelog",
-      "label": "Changes",
-      "files": [
-        {
-          "name": "changelog",
-          "label": "Changelog"
+          "name": "searchbar",
+          "label": "Searchbar"
         }
       ]
     }
