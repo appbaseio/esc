@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '0.10'
+- '6.9.5'
 branches:
   only:
   - master
@@ -13,5 +13,5 @@ before_script:
 - bower update
 env:
   global:
-  - DOCBASE_TOKEN=""
+  - DOCBASE_TOKEN="OTAwNDU5MTk4M2NlYzViYzQxNzFlN2E3Yjk1MWQ2ZjhkODRjMTg5Yg=="
 sudo: false
