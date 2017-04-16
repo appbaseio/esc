@@ -13,7 +13,7 @@ We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as ou
 | Index     | Title    | Description |
 | ---------- | ---------- |---------|
 | 1          | [Array Datatype](https://github.com/appbaseio/esc/blob/master/searchbar/arrays.md) | How to store data using Elasticsearch arrays. |
-| 2       | [Tag Search](https://github.com/appbaseio/esc/blob/master/searchbar/tag-search.md) | How to perform tag wise search. |
+| 2       | [Exact Match](https://github.com/appbaseio/esc/blob/master/searchbar/tag-search.md) | How to do tag wise search on not analyzed field. |
 
 ### Live Demo
 <script async src="//jsfiddle.net/1b8tcxs4/3/embed/"></script>

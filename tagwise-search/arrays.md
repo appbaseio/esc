@@ -77,7 +77,7 @@ For accessibility, we have indexed ~150 data points that can be viewed in the da
 
 ## Query
 
-Now we will write our first search query, **match**.
+Now we will write our first search query, **term**.
 
 ```bash
 curl $host/tagsearch/search/_search?pretty -d '{
@@ -88,7 +88,7 @@ curl $host/tagsearch/search/_search?pretty -d '{
   }
 }'
 ```
-**TODO** write about term query. 
+**TODO** write about term query.
 
 
 Response:
