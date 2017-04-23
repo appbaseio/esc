@@ -13,7 +13,7 @@ before_script:
 - bower update
 env:
   global:
-  - DOCBASE_TOKEN="296294a2235d40eaac17f7e11eb99a9f473047c8"
+  - DOCBASE_TOKEN="1c63cff238d03f5bc190d6c61c6b98c38af6a9c2"
 sudo: false
 notifications:
   email: false
