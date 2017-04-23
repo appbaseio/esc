@@ -3,7 +3,7 @@ node_js:
 - '6.9.5'
 branches:
   only:
-  - gh-pages
+  - master
 before_install:
   - gem install sass
 before_script:
