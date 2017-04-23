@@ -11,12 +11,12 @@ var docbaseConfig = {
     "user": "appbaseio",
     "repo": "esc",
     "path": "",
-    "branch": "gh-pages",
-    "access_token": ""
+    "branch": "master",
+    "access_token": "OTAwNDU5MTk4M2NlYzViYzQxNzFlN2E3Yjk1MWQ2ZjhkODRjMTg5Yg=="
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
-  "default_version": "",
+  "default_version": "v1",
   "manual_override": false,
   "versions" : {
   "v1": [
