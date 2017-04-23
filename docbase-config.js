@@ -49,6 +49,24 @@ var docbaseConfig = {
           "label": "Searchbar"
         }
       ]
+    },
+    {
+      "name": "tagwise-search",
+      "label": "Tagwise Search",
+      "files": [
+        {
+          "name": "introduction",
+          "label": "Introduction"
+        },
+        {
+          "name": "exact-match",
+          "label": "Exact Match"
+        },
+        {
+          "name": "arrays",
+          "label": "Arrays"
+        }
+      ]
     }
   ]
 },
