@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '6.9.5'
+branches:
+  only:
+  - gh-pages
+before_install:
+  - gem install sass
+before_script:
+- npm install -g grunt-cli
+- npm install -g bower
+- grunt gh-pages-clean
+- bower update
+env:
+  global:
+  - DOCBASE_TOKEN="296294a2235d40eaac17f7e11eb99a9f473047c8"
+sudo: false
+notifications:
+  email: false
