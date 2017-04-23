@@ -12,7 +12,7 @@ var docbaseConfig = {
     "repo": "esc",
     "path": "",
     "branch": "master",
-    "access_token": "MWM2M2NmZjIzOGQwM2Y1YmMxOTBkNmM2MWM2Yjk4YzM4YWY2YTljMg=="
+    "access_token": "ZDYyNTY1YjE3NWRkYWIyOGE1ZmIwNTIxM2NiNGRkMzg5ZTc2YjhmNA=="
   },
   "indexHtml": "./html/main.html",
   "flatdocHtml": "./bower_components/docbase/html/flatdoc.html",
