@@ -1,6 +1,5 @@
 # Summary
 
-* [Introduction](README.md)
 * [Searchbar](/searchbar/introduction.md)
   * [Simple Match](/searchbar/simple-match.md)
   * [Multi Match](/searchbar/multi-match.md)
