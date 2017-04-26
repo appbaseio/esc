@@ -1,5 +1,3 @@
-{"bigh3": true}
-
 ## Search Bar: Introduction
 
 ### How to build a search bar with Elasticsearch?
