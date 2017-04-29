@@ -1,5 +1,3 @@
-{"bigh3": true}
-
 # Tag wise search: Introduction
 
 ### How to build tag wise search engine with Elasticsearch?
