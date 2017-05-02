@@ -7,5 +7,10 @@
   * [Auto Complete](/searchbar/auto-complete.md)
   * [Suggestions](/searchbar/suggestions.md)
   * [Searchbar](/searchbar/searchbar.md)
+* [Tagwise Search](/tagwise-search/introduction.md)
+  * [Arrays](/tagwise-search/arrays.md)
+  * [Exact Match](/tagwise-search/exact-match.md)
 * [License](license.md)
+
+
 
