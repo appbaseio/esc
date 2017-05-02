@@ -2,19 +2,21 @@
 
 This article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://github.com/appbaseio/esc/blob/master/tagwise-search/introduction.md)
 
-### How to do tag wise search on not analyzed field
+### How to do tag wise search
 
-In this post, we will show how to provide an auto-completion of the inputs **as the user types** in a searchbar. We will be using a dataset containing a list of cities and countries and we will be building this feature using Elasticsearch's **completion** type `field`.
+Elasticsearch supports queries as well as data filters. Queries help for full-text search or where the result depends on a relevance score. In general, filters used for binary yes/no searches or for queries on exact values. Filters are faster then queries because they do not calculate relevance score and can be easily cached.
 
-`Note:` Alternate approaches can be implemented using n-grams and prefix suggester algorithms. But speed is the most important aspect for this feature. We're making suggestions while the user types, so results need to be shown to the user within milliseconds. When using the completion type, Elasticsearch indexes data into a trie like data structure (called FST) which is optimized for fast retrieval and memory usage.
+In this post, we will show how to match exact values using Elasticsearch `term` query along with `constant_score` filter.
 
 ## Defining Mappings
 
 If you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.
 
-In this section, we will specify the mappings for our two fields: city and country, with the necessary settings to enable auto-complete functionality.
+By default Elasticsearch analyzes the data before storing it on disk. It has different tokenizer, analyzer and filters to modify the data. Mappings are useful to attach these analyzers with specific fields.
 
-### Transforming data to lower case before indexing
+In this section, we will specify the mappings for our `tags` field. Elasticsearch will create mappings dynamically for the rest of the fields.
+
+### Disable analyzers on `tags` field
 
 We would ideally want the autocompletion feature to work in a case agnostic fashion and at the granularity of phrases, i.e. typing a partial phrase should bring up the rest of the phrase in the autocompletion. To do this, we will create a **case_insensitive** analyzer that tokenizes the text as is (i.e. no white space splitting) and applies a lowercase filter. You can read more about analyzers over [here](https://www.elastic.co/blog/found-text-analysis-part-1).
 
@@ -25,8 +27,8 @@ curl -XPUT $host/searchbar/_settings?pretty -d '{
       "tokenizer": "keyword",
       "filter": [
         "lowercase"
-      ]             
-    }   
+      ]
+    }
   }
 }'
 ```
