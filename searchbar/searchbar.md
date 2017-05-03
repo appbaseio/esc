@@ -1,6 +1,6 @@
 # Searchbar
 
-This article is a part of the series on [**how to build a search bar**](https://github.com/appbaseio/esc/blob/master/searchbar/introduction.md).
+This article is a part of the series on [**how to build a search bar**](https://appbaseio.gitbooks.io/esc/content/searchbar/introduction.html).
 
 ## How to make normal search bar
 
