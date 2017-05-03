@@ -96,4 +96,4 @@ Response:
 ```
 You can also try out this query interactively  [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAALDBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4rUljRT-KX0718OJLlPpfWKCUEm56T4kKUyQOIctFML4vd7nbIlNF_HVJf5XthjNmb9bDIZNHNbNitJK5Jn8e2EUlnz479qDBkGPUlTsmLIT7nVfXmBJdSLZ31XFe2BBUJrzKzKu0iHOJNHykD1wPyIC2MmkglG9qmC2SI2bInT4qLUhCFn1GTviO-1iAqhBzz2X8_JNCYZgCmunyXfwPwKioUdz3rOon1QKhKRcNW5ch9W2Bb5dQfRIpm8di3LIGPJ2UCwFHByI4IRXg6qCcmbVhSP43kCAxZrkuAz5PPF9avMk1BEprQN7wCpWOv5rWseLUe1bbyjFw61F71Fa-ciqEr5t84DJw4wkL7jk5FQkIpjq1CUxzIjt63aR7BZZQDRoRcQZj-oyGgV1-ai0BgkrD_och1Q)
 
-You should next read about [**multi match**](https://github.com/appbaseio/esc/blob/master/searchbar/multi-match.md).
+You should next read about [**multi match**](https://appbaseio.gitbooks.io/esc/content/searchbar/multi-match.html).
