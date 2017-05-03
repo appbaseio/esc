@@ -136,4 +136,4 @@ Response:
 ```
 You can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAKcBAAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmIz331lK48jshXTOfOI7tCDoM8Zd9yiIKWm3DN93aX2GMuvqGST6zHU_peJ4SS2h2zDqpjctgqBVDJwJiljZkC6dqlkLgT8hM9Cs7pHD2pnqvzcEbEgOt6Gg-myLtvRVmSS6VvBx-9SJv3PnFcx7Wyr5nss-M7T_idzZCq1ZeBJjNORxLqvD-kL_xhTllcypE6XRt49DTbaNGzjdUFvfUsCDryloJj0b-Jmzqqe8t3__63udaby9cslsjf9-rv_3lNNvuD62tXTMTDnlRSno-6NX4VPLTyT16wc_g9Fu__01xBmkKFiybU3sChTZ_91SlvdExdLe3mAX_LCcTRcRGkoN_T3k7i-WQjMDJJ_Z92Rx5PsexS3O3cqRoWsWFhIXMAyEFuRWZCCu7NsrBFnGw6MsgXcztpFY6ivrVdqt4Rwg6ATMkj5r2RlzXylJnUr7q015ENC0SoyHLAAX8ngKevbvuAHezDBsezvtcRDuBmE0NjE4G6_56VJX-zWsOPT_94L_y3D2984QPe5tHjss98VogrZcLxe-OD5NtzPjEbcBbG_-buX4bADRwSuyjePgO5X5TtkDONPkUbFkzQf1n52js8Eol66Z_4PCQo)
 
-You should next read about [**exact match**](https://github.com/appbaseio/esc/blob/master/tagwise-search/exact-match.md).
+You should next read about [**exact match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html).
