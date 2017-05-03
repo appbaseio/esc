@@ -12,8 +12,8 @@ We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as ou
 
 | Index     | Title    | Description |
 | ---------- | ---------- |---------|
-| 1          | [Array Datatype](https://github.com/appbaseio/esc/blob/master/searchbar/arrays.md) | How to store data using Elasticsearch arrays. |
-| 2       | [Exact Match](https://github.com/appbaseio/esc/blob/master/searchbar/tag-search.md) | How to build a tag wise search similar to Github's. |
+| 1          | [Array Datatype](https://appbaseio.gitbooks.io/esc/content/tagwise-search/arrays.html) | How to store data using Elasticsearch arrays. |
+| 2       | [Exact Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to build a tag wise search similar to Github's. |
 
 ### Live Demo
 <script async src="//jsfiddle.net/1b8tcxs4/3/embed/"></script>
