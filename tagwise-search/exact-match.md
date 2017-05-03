@@ -1,6 +1,6 @@
 # Exact Match
 
-This article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://github.com/appbaseio/esc/blob/master/tagwise-search/introduction.md)
+This article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html)
 
 ### How to do tag wise search
 
