@@ -40,11 +40,11 @@ Here document is indexed under the `tagsearch` index and `search` type.
 
 If we look back at our data mappings, they should now look like as follows
 
-```bash
+```json
 curl $host/tagsearch/_mapping?pretty
 ```
 
-```
+```json
 {
   "tagsearch": {
     "mappings": {
