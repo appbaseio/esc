@@ -18,15 +18,15 @@ In this section, we will specify the mappings for our two fields: city and count
 
 We would ideally want the autocompletion feature to work in a case agnostic fashion and at the granularity of phrases, i.e. typing a partial phrase should bring up the rest of the phrase in the autocompletion. To do this, we will create a **case_insensitive** analyzer that tokenizes the text as is (i.e. no white space splitting) and applies a lowercase filter. You can read more about analyzers over [here](https://www.elastic.co/blog/found-text-analysis-part-1).
 
-```bash
+```json
 curl -XPUT $host/searchbar/_settings?pretty -d '{
   "analyzer": {
     "case_insensitive": {
       "tokenizer": "keyword",
       "filter": [
         "lowercase"
-      ]             
-    }   
+      ]
+    }
   }
 }'
 ```
@@ -37,7 +37,7 @@ We just added a custom analyzer. The `_settings` endpoint can be used for adding
 
 Next, we will update the mapping for the **city** and **country** fields. We will exploit a very cool feature of Elasticsearch called [**multi-fields**](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html) in doing so. Multi-fields enable indexing the same field in different ways, thus allowing for multiple ways of querying without requiring any additional effort in indexing of the data.
 
-```bash
+```json
 curl -XPUT $host/searchbar/_mapping/searchbar -d '{
   "properties": {
     "city": {
@@ -73,7 +73,7 @@ Here, we have defined a multi-field for both `city` and `country` fields. The `c
 
 As you can see, while indexing the data, we only need to insert the **city** and **country** fields.
 
-```bash
+```json
 curl -XPUT $host/searchbar/searchbar/1 -d '{
   "city": "New York",
   "country": "United States"
@@ -88,7 +88,7 @@ For better accessibility, we have indexed ~15,000 data points that can be viewed
 
 Next, we will move to the queries section. Here, we will be using the **completion** suggestor query for getting the autocomplete suggestions. You can read more about it [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-suggesters-completion.html).
 
-```bash
+```json
 curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
   "suggest": {
     "city-suggest": {
@@ -139,7 +139,7 @@ Voila! We can see "New York" as the suggestion which we can now display in the s
 
 A similar query for suggestions on the **country** field would look like this:
 
-```bash
+```json
 curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
   "suggest": {
     "country-suggest": {
@@ -156,7 +156,7 @@ curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
 
 What if we wanted to provide autocompletion on both **city** and **country** fields at the same time?
 
-```bash
+```json
 curl "$host/searchbar/searchbar/_search?size=0&pretty" -d '{
   "suggest": {
     "city-suggest": {

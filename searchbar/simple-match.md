@@ -16,7 +16,7 @@ Being a NoSQL document store that works with JSON data, it comes with a convenie
 
 ## Indexing Data
 
-```bash
+```json
 curl -XPUT $host/searchbar/searchbar/1 -d '{
   "city": "New York",
   "country": "United States"
@@ -25,7 +25,7 @@ curl -XPUT $host/searchbar/searchbar/1 -d '{
 
 If we look back at our data mappings, they should now look like as follows
 
-```bash
+```json
 curl $host/searchbar/_mapping?pretty
 ```
 

@@ -17,7 +17,7 @@ Being a NoSQL document store that works with JSON data, it comes with a convenie
 
 ## Indexing Data
 
-```bash
+```json
 curl -XPUT $host/searchbar/searchbar/1 -d '{
   "city": "New York",
   "country": "United States"
@@ -26,7 +26,7 @@ curl -XPUT $host/searchbar/searchbar/1 -d '{
 
 If we look back at our data mappings, they should now look like as follows
 
-```bash
+```json
 curl $host/searchbar/_mapping?pretty
 ```
 
@@ -96,7 +96,7 @@ Response:
   }
 }
 ```
-In the response, you will get the list of all the cities which's `country` field matches with `United States`. 
+In the response, you will get the list of all the cities which's `country` field matches with `United States`.
 
 You can try out this query interactively [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIZBgAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4raO9YJ5f9ys89CsvMS6zZUYGVO9dQZAhRFFYo_azv4LTZfriF9_BEsssqGR2KjAWzg9H8uzZ2EguhV32efxyNTdJ6xpyuZysRE6nwfghFkkQvlqt65nFaorFSIZLo0QsPAXUrR3tK1o3aLZWYYZJkoALfzyHFSjEMprRpOb7vkaoV0XRkIimDiddxkky9n3fggH_wXvCqIC6GU1iMa-DsL0u7WEKyLW_8ptWJO4JlOCR2rIoi-K-wSfzWIMX-Z3BT8N_zgvVO5smP0UQ_5u6x04iqcr36BmXa7GyWHvCj88ywEcNffBvfv24RlKHznoICNln-38-olmY6t6KQrzlTcsUVyJYXBX6qv7myCJ_yWBoZJFPFKBNQgnhRdsZxIrI_t9XwlP-oLV7QPG0OTvoguT4B8xYnizAn_j3YTGuzf_7ku_x)
 

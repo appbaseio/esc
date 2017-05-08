@@ -25,42 +25,50 @@ There is no special mapping required for arrays. You can store multiple values w
 ## Indexing Data
 
 ```json
-curl -XPUT $host/tagsearch/search/1 -d '{
-  "repo": "reddit",
-  "tags": [
-    "javascript",
-    "python",
-    "reddit"
-  ],
-  "owner": "reddit",
-  "url": "https://github.com/reddit/reddit"
+curl -XPUT $host/tagwise/search/1 -d '{
+  "repo" : "reddit",
+  "tags" : [ "javascript", "python", "reddit" ],
+  "owner" : "reddit",
+  "url" : "https://github.com/reddit/reddit",
+  "stars" : 13053,
+  "language" : "Python",
+  "created-on" : "2008-06-18T23:30:53Z"
 }'
 ```
-Here document is indexed under the `tagsearch` index and `search` type.
+Here document is indexed under the `tagwise` index and `search` type.
 
 If we look back at our data mappings, they should now look like as follows
 
 ```json
-curl $host/tagsearch/_mapping?pretty
+curl $host/tagwise/_mapping?pretty
 ```
 
 ```json
 {
-  "tagsearch": {
+  "tagwise": {
     "mappings": {
       "search": {
-        "properties" : {
-          "owner" : {
-            "type" : "string"
+        "properties": {
+          "owner": {
+            "type": "string"
           },
-          "repo" : {
-            "type" : "string"
+          "repo": {
+            "type": "string"
           },
-          "tags" : {
-            "type" : "string",
+          "tags": {
+            "type": "string"
           },
-          "url" : {
-            "type" : "string"
+          "url": {
+            "type": "string"
+          },
+          "stars": {
+            "type": "integer"
+          },
+          "language": {
+            "type": "string"
+          },
+          "created-on": {
+            "type": "date"
           }
         }
       }
@@ -73,7 +81,7 @@ Elasticsearch created these mappings dynamically based on our indexed data.
 
 ## Data Browser View
 
-For accessibility, we have indexed ~150 data points that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALHAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsoF_M8R2gxpRSSrM2RItnfZBBZ4BB6CytahtDXqL9iWugbditVu12-io_RDH6EnaWmCJyCnWfQ0iFwrgkbBo0SnU3Xqcim-Pm0-xuDmP7mhQxyoU38QedOV8pTPQXp60TPwSPITJkWwLp0zDZ0FkmDSdaWNRiL00O2mMZFoNsprHUzDlW-vmJSwNDMKKGWWwYOxt7v73H89g)
+For accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)
 
 ## Query
 
@@ -81,7 +89,7 @@ Elasticsearch array supports **match** as well as **term** query. Let's write ou
 
 Syntax for **term** query -
 ```json
-curl $host/tagsearch/search/_search?pretty -d '{
+curl $host/tagwise/search/_search?pretty -d '{
   "query": {
     "term": {
       "tags": "reddit"
@@ -92,7 +100,7 @@ curl $host/tagsearch/search/_search?pretty -d '{
 
 Syntax for **match** query -
 ```json
-curl $host/tagsearch/search/_search?pretty -d '{
+curl $host/tagwise/search/_search?pretty -d '{
   "query": {
     "match": {
       "tags": "reddit"
@@ -100,40 +108,37 @@ curl $host/tagsearch/search/_search?pretty -d '{
   }
 }'
 ```
-Response:
+### Response:
 ```json
 {
-  "took": 14,
-  "timed_out": false,
-  "_shards": {
-    "total": 1,
-    "successful": 1,
-    "failed": 0
+  "took" : 14,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
   },
-  "hits": {
-    "total": 1,
-    "max_score": 0,
-    "hits": [
-      {
-        "_index": "tagsearch",
-        "_type": "search",
-        "_id": "AVtd-WFRtBk7_I4P_kj5",
-        "_score": 0,
-        "_source": {
-          "repo": "reddit",
-          "tags": [
-            "javascript",
-            "python",
-            "reddit"
-          ],
-          "owner": "reddit",
-          "url": "https://github.com/reddit/reddit"
-        }
+  "hits" : {
+    "total" : 1,
+    "max_score" : 6.1179934,
+    "hits" : [ {
+      "_index" : "tagwise",
+      "_type" : "search",
+      "_id" : "AVvR1yM3gPzdwFFNDvs7",
+      "_score" : 6.1179934,
+      "_source" : {
+        "repo" : "reddit",
+        "tags" : [ "javascript", "python", "reddit" ],
+        "owner" : "reddit",
+        "url" : "https://github.com/reddit/reddit",
+        "stars" : 13053,
+        "language" : "Python",
+        "created-on" : "2008-06-18T23:30:53Z"
       }
-    ]
+    } ]
   }
 }
 ```
-You can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAKcBAAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmIz331lK48jshXTOfOI7tCDoM8Zd9yiIKWm3DN93aX2GMuvqGST6zHU_peJ4SS2h2zDqpjctgqBVDJwJiljZkC6dqlkLgT8hM9Cs7pHD2pnqvzcEbEgOt6Gg-myLtvRVmSS6VvBx-9SJv3PnFcx7Wyr5nss-M7T_idzZCq1ZeBJjNORxLqvD-kL_xhTllcypE6XRt49DTbaNGzjdUFvfUsCDryloJj0b-Jmzqqe8t3__63udaby9cslsjf9-rv_3lNNvuD62tXTMTDnlRSno-6NX4VPLTyT16wc_g9Fu__01xBmkKFiybU3sChTZ_91SlvdExdLe3mAX_LCcTRcRGkoN_T3k7i-WQjMDJJ_Z92Rx5PsexS3O3cqRoWsWFhIXMAyEFuRWZCCu7NsrBFnGw6MsgXcztpFY6ivrVdqt4Rwg6ATMkj5r2RlzXylJnUr7q015ENC0SoyHLAAX8ngKevbvuAHezDBsezvtcRDuBmE0NjE4G6_56VJX-zWsOPT_94L_y3D2984QPe5tHjss98VogrZcLxe-OD5NtzPjEbcBbG_-buX4bADRwSuyjePgO5X5TtkDONPkUbFkzQf1n52js8Eol66Z_4PCQo)
+You can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)
 
 You should next read about [**exact match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html).

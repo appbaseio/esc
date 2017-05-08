@@ -21,7 +21,7 @@ In this section, we will specify the mappings for our two fields: city and count
 
 `auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will create a `case_insensitive` analyzer that tokenizes the text as is (i.e. no white space splitting) and applies a lowercase filter.
 
-```bash
+```json
 curl -XPUT $host/searchbar/_settings?pretty -d '{
   "analysis": {
     "tokenizer": {
@@ -61,13 +61,13 @@ We just added a custom analyzers. The `_settings` endpoint can be used for addin
 
 ## Defining Mappings
 
-Here we will use two fields and two subfields of each field. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch. 
+Here we will use two fields and two subfields of each field. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch.
 
 `city_autocomplete` subfield is useful for the auto completion feature. It index the data using `case_insensitive` analyzer and with type **completion**.
 
 `city_autocomplete` subfield is useful for the auto suggestion feature. It index the data using `auto-suggest` analyzer and with type **string**.
 
-```bash
+```json
 curl -XPUT $host/searchbar/_mapping/searchbar -d '{
   "searchbar": {
     "properties": {
@@ -112,7 +112,7 @@ curl -XPUT $host/searchbar/_mapping/searchbar -d '{
 
 As you can see, while indexing the data, we only need to insert the city and country fields.
 
-```bash
+```json
 curl -XPUT $host/searchbar/searchbar/1 -d '{
   "city": "New York",
   "country": "United States"
@@ -127,7 +127,7 @@ For accessibility, we have indexed ~15,000 data points that can be viewed in the
 
 Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions and will be using the **completion** suggestor query for getting the autocomplete suggestions. Let's first query on `city` field.
 
-```bash
+```json
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "match": {
@@ -196,7 +196,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
 ```
 #### Query on both City and Country
 
-```bash
+```json
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
   "query": {
      "multi_match": {

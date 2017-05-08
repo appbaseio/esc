@@ -22,7 +22,7 @@ We would ideally want the auto-suggestion to work on a text phrase in a way that
 
 We will set our tokenizer to create all [1-10] grams of a token. You can read more about ngrams over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-edgengram-tokenizer.html).
 
-```bash
+```json
 curl -XPUT "$host/searchbar/_settings?pretty" -d '{
   "settings": {
     "analysis": {
@@ -61,7 +61,7 @@ We just added a custom analyzer called `auto-suggest` which uses a custom tokeni
 
 Next, we will update the mapping for the **city** and **country** fields. We will exploit a very cool feature of Elasticsearch called [**multi-fields**](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html) in doing so. Multi-fields enable indexing the same field in different ways, thus allowing for multiple ways of querying without requiring any additional effort in indexing of the data.
 
-```bash
+```json
 curl -XPUT "$host/searchbar/_mapping/searchbar" -d '{
   "properties": {
     "city": {
@@ -109,7 +109,7 @@ For better accessibility, we have indexed ~15,000 data points that can be viewed
 
 Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions. Let's first query on `city` field.
 
-```bash
+```json
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "match": {
@@ -163,7 +163,7 @@ In the response, you can see Elasticsearch has returned two documents which have
 
 A similar query for suggestions on the **country** field would look like this:
 
-```bash
+```json
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "match": {
@@ -175,7 +175,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
 
 #### Query on both City and Country
 
-```bash
+```json
 curl "$host/searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "multi_match": {
