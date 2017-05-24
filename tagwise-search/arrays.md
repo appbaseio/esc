@@ -1,20 +1,20 @@
 # Array Datatype
 
-This article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html).
+This article is a part of the series on [**How to build tag wise search with Elasticsearch**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html).
 
 ## How to store data using Elasticsearch arrays
 
-It is quite possible that we want our tag field to contain more than one tag. Instead of a single string, we could index an array of tags.
+A major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the marching content by user specifying either just one or more than one tag labels. A tag wise search is also fundamentally different from a full-text search as here, we are finding an exact match of a tag with a content item.
+
+In this post, we will be using an Array datastructure to store labels with a content document. For making the exact lookups, we will be applying  a term query on the dataset.
 
 In Elasticsearch, there is no dedicated array type. Any field can contain zero or more values by default, however, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.
 
 Elasticsearch can also supports empty array or null array values.
 
-Default array do not support quering each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.
+Default array does not support quering each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.
 
 `Note:` Read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).
-
-
 
 ## Defining Mappings
 
@@ -35,6 +35,7 @@ curl -XPUT $host/tagwise/search/1 -d '{
   "created-on" : "2008-06-18T23:30:53Z"
 }'
 ```
+
 Here document is indexed under the `tagwise` index and `search` type.
 
 If we look back at our data mappings, they should now look like as follows
@@ -88,6 +89,7 @@ For accessibility, we have indexed ~300 data points of Github repos that can be 
 Elasticsearch array supports **match** as well as **term** query. Let's write our first search query for the arrays.
 
 Syntax for **term** query -
+
 ```json
 curl $host/tagwise/search/_search?pretty -d '{
   "query": {
@@ -99,6 +101,7 @@ curl $host/tagwise/search/_search?pretty -d '{
 ```
 
 Syntax for **match** query -
+
 ```json
 curl $host/tagwise/search/_search?pretty -d '{
   "query": {
@@ -108,7 +111,9 @@ curl $host/tagwise/search/_search?pretty -d '{
   }
 }'
 ```
+
 ### Response:
+
 ```json
 {
   "took" : 14,
@@ -139,6 +144,8 @@ curl $host/tagwise/search/_search?pretty -d '{
   }
 }
 ```
+
 You can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)
 
 You should next read about [**exact match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html).
+
