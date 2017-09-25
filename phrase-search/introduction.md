@@ -1,6 +1,6 @@
 ## Phrase search: Introduction
 
-### How to build a search bar using Elasticsearch to match phrases?
+### How to build phrase match search engine using Elasticsearch?
 
 While building a search engine for your e-commerce app, user data, or any structured data set many times we need to match all the query terms in their relative position. This is the case where entities like "quick brown dog", where the three terms individually don’t convey the same meaning as the three of them concatenated in this order.
 
