@@ -28,7 +28,7 @@ curl -XPUT $host/tagwise/_mapping/search -d '{
     "tags": {
   		"type": "string",
   		"index": "not_analyzed"
-  	}
+    }
   }
 }'
 ```
