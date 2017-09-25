@@ -14,97 +14,32 @@ In the following sections, we will go through the process of building a very sim
 
 If you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.
 
-By default Elasticsearch analyzes the data before storing it on disk. It has different tokenizer, analyzer and filters to modify the data. Mappings are useful to attach these analyzers with specific fields. At index time, by default Elasticsearch uses standard analyzer.
+By default Elasticsearch analyzes the data before storing it on disk. It has different tokenizer, analyzer and filters to modify the data. Mappings are useful to attach these analyzers with specific fields. At index time, by default Elasticsearch uses standard analyzer. Standard analyzer tokenize the strings and convert it to the lower case tokens.
 
-In this section, we will specify the mappings for our `tags` field. Elasticsearch will create mappings dynamically for the rest of the fields.
+We will use default english analyzer at the index time which can apply stemming, remove stop words, add synonyms to give us better results.
 
-### Disable analyzers on `tags` field
+In this section, we will specify the mappings for our `text` field. Elasticsearch will create mappings dynamically for the rest of the fields.
 
-To store the data without analyzing it, we have to make `tags` field **not_analyzed**. By doing this Elasticsearch will store the data as usual without any modifications.
+### Put Mappings
+
+Predefine english analyzer on the `text` field to analyze it at index time.
 
 ```json
-curl -XPUT $host/tagwise/_mapping/search -d '{
+curl -XPUT $host/hackernews/_mapping/post -d '{
   "properties": {
-    "tags": {
+    "text": {
   		"type": "string",
-  		"index": "not_analyzed"
+  		"analyzer": "english"
   	}
   }
 }'
 ```
-We just put **mapping** on `search` type of `tagwise` index. Now, let's index some data.
+We just put **mapping** on `post` type of `hackernews` index. Now, let's index some data.
 
 ## Data Indexing
 
-```json
-curl -XPUT $host/tagwise/search/1 -d '{
-  "repo" : "reddit",
-  "tags" : [ "javascript", "python", "reddit" ],
-  "owner" : "reddit",
-  "url" : "https://github.com/reddit/reddit",
-  "stars" : 13053,
-  "language" : "Python",
-  "created-on" : "2008-06-18T23:30:53Z"
-}'
-```
-Voila! We indexed our first document with id `1`. We already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.
-
 ## Data Browser View
-
-For accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)
 
 ## Query
 
-The `term` query will look for the exact value that we specify. By itself, a `term` query is simple. It accepts a field name and the value that we wish to find. Usually, when looking for an exact value, we don’t want to score the query. We just want to include/exclude documents, so we will use a `constant_score` query to execute the term query in a non-scoring mode and apply a uniform score of one.
-
-The final combination will be a `constant_score` query which contains a `term` query looks like this:
-
-```json
-curl $host/tagwise/search/_search?pretty -d '{
-  "query": {
-    "constant_score" : {
-      "filter" : {
-        "term" : {
-          "tags" : "reddit"
-        }
-      }
-    }
-  }
-}'
-```
-We used a `constant_score` to convert the `term` query into a filter.
-
 ### Response
-
-```json
-{
-  "took" : 8,
-  "timed_out" : false,
-  "_shards" : {
-    "total" : 1,
-    "successful" : 1,
-    "failed" : 0
-  },
-  "hits" : {
-    "total" : 1,
-    "max_score" : 1.0,
-    "hits" : [ {
-      "_index" : "tagwise",
-      "_type" : "search",
-      "_id" : "AVvR1yM3gPzdwFFNDvs7",
-      "_score" : 1.0,
-      "_source" : {
-        "repo" : "reddit",
-        "tags" : [ "javascript", "python", "reddit" ],
-        "owner" : "reddit",
-        "url" : "https://github.com/reddit/reddit",
-        "stars" : 13053,
-        "language" : "Python",
-        "created-on" : "2008-06-18T23:30:53Z"
-      }
-    } ]
-  }
-}
-```
-
-To filter the data by numeric values(Github stars) you should next read about [**range query**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/range-query.html).
