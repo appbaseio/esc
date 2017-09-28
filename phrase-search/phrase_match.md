@@ -2,7 +2,7 @@
 
 This article is a part of the series on [**How to build phrase match search engine using Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/phrase-search/introduction.html)
 
-Phrase search is useful when the order of the keywords in our query matter. Using `match_phrase` query of Elasticsearch users can easily provide list of keywords in some specific order to search for documents containing an exact sentence or phrase  which contains those keywords in the same order rather than comparing a set of keywords in random order.
+Phrase search is useful when the order of the keywords in our query matter. Using `match_phrase` query of Elasticsearch users can easily provide the list of keywords in some specific order to search for documents containing an exact sentence or phrase which contains those keywords in the same order rather than comparing a set of keywords in random order.
 
 ### How to do phrase search
 
@@ -14,15 +14,15 @@ In the following sections, we will go through the process of building a very sim
 
 If you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.
 
-By default Elasticsearch analyzes the data before storing it on disk. It has different tokenizer, analyzer and filters to modify the data. Mappings are useful to attach these analyzers with specific fields. At index time, by default Elasticsearch uses standard analyzer. Standard analyzer tokenize the strings and convert it to the lower case tokens.
+By default, Elasticsearch analyzes the data before storing it on disk. It has different tokenizer, analyzer and filters to modify the data. Mappings are useful to attach these analyzers with specific fields. At index time, by default Elasticsearch uses the standard analyzer. Standard analyzer tokenizes the strings and converts it to the lower case tokens.
 
-We will use default english analyzer at the index time which can apply stemming, remove stop words, add synonyms to give us better results.
+We will use default English analyzer at the index time which can apply stemming, remove stop words, add synonyms to give us better results.
 
 In this section, we will specify the mappings for our `text` field. Elasticsearch will create mappings dynamically for the rest of the fields.
 
 ### Put Mappings
 
-Define the english analyzer on the `text` field to analyze it at index time.
+Define the English analyzer on the `text` field to analyze it at index time.
 
 ```json
 curl -XPUT $host/hackernews/_mapping/post -d '{
@@ -39,7 +39,7 @@ We just put **mapping** on `post` type of `hackernews` index. Now, let's index s
 ## Data Indexing
 
 ```json
-curl -XPUT $host/tagwise/_mapping/search -d '{
+curl -XPUT $host/hackernews/_mapping/post -d '{
   "by": "dmihal",
   "id": 13102152,
   "parent": 13101870,
@@ -57,4 +57,74 @@ For accessibility, we have indexed ~6000 data points of Github repos that can be
 
 ## Query
 
-### Response
+Next, we will move to the queries section. Here, we will be using `match_phrase` query to match the phrases. `match_phrase` query first analyze the provided text using the explicit defined analyzer, or using the default search analyzer and produces a list of terms.
+
+### Exact-phrase match
+
+In order to match all the terms consecutively in the same order relative to each other use default `match_phrase` query.
+
+```json
+curl $host/hackernews/post/_search?pretty -d '{
+  "query": {
+    "match_phrase" : {
+      "text": "Cool library"
+    }
+  }
+}'
+```
+
+Here, `text` is the Elasticsearch field against which we performed the phrase match query.
+
+### Mix Search
+
+Every time we can't expect that users will provide the exact query terms with the proper order. Elasticsearch provides a way to match the documents even though the term's positions aren’t exactly equivalent.
+
+We can pass the `slop` parameter in the following way to match the documents which contain all the query terms but in a different order or may be with the distance between them.
+
+```json
+curl $host/hackernews/post/_search?pretty -d '{
+  "query": {
+    "match_phrase": {
+      "text": {
+        "query": "Cool library Meteor.js",
+        "slop": 7
+      }
+    }
+  }
+}'
+```
+
+You can run above query and can get the matched document. If you check out the inserted document, the difference between the position of `"Cool library"` and `"Meteor.js"` will be the 7 words.
+
+#### Response
+
+```json
+{
+  "took" : 21,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : 1,
+    "max_score" : 1.5155549,
+    "hits" : [ {
+      "_index" : "hackernews",
+      "_type" : "post",
+      "_id" : "AVtNnwdOtBk7_I4P_hnC",
+      "_score" : 1.5155549,
+      "_source" : {
+        "by" : "dmihal",
+        "id" : 13102152,
+        "parent" : 13101870,
+        "text" : "Cool library! I&#x27;m a huge fan of Meteor.js, which provides a similar isomorphic database. Cool to see this implemented in such a lightweight package!",
+        "time" : 1480890919,
+        "p_type" : "comment",
+        "score" : 0
+      }
+    } ]
+  }
+}
+```
