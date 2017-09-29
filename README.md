@@ -16,10 +16,24 @@ Practical cookbook recipes for doing stuff with Elaticsearch
   * [Searchbar](/searchbar/searchbar.md)
 * [Tagwise Search](/tagwise-search/introduction.md)
   * [Exact Tag Match](/tagwise-search/exact-match.md)
-  * Partial Tag Match \(TBD\)
+  * Partial Tag Match
   * [Multiple Tag Search](/tagwise-search/arrays.md)
 * [Search Engine](/phrase-search/introduction.md)
   * [Phrase Search](/phrase-search/phrase_match.md)
+* Geolocation Search
+  * Finding Geopoints
+  * Geoshapes
+  * Advanced
+* E-commerce Search
+  * Building Search Facets
+  * Selectively Scoring Results
+  * Combining Search + Facets
+  * Demo
+* Analytics and Dashboarding
+  * Timeseries Data
+  * Buckets
+  * Nested Aggregations
+
 * [License](license.md)
 
 
