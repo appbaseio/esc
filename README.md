@@ -19,9 +19,11 @@ Practical cookbook recipes for doing stuff with Elaticsearch
   * Partial Tag Match
   * [Multiple Tag Search](/tagwise-search/arrays.md)
 * [Search Engine](/phrase-search/introduction.md)
+
   * [Phrase Search](/phrase-search/phrase_match.md)
 
   * Did you mean?
+
 * Geolocation Search
   * Finding Geopoints
   * Geoshapes
