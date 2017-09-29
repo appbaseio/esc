@@ -20,6 +20,8 @@ Practical cookbook recipes for doing stuff with Elaticsearch
   * [Multiple Tag Search](/tagwise-search/arrays.md)
 * [Search Engine](/phrase-search/introduction.md)
   * [Phrase Search](/phrase-search/phrase_match.md)
+
+  * Did you mean?
 * Geolocation Search
   * Finding Geopoints
   * Geoshapes
@@ -34,6 +36,8 @@ Practical cookbook recipes for doing stuff with Elaticsearch
   * Selectively Scoring Results
   * Combining Search + Facets
   * Demo
+* Streaming Data
+  * If this, then that
 * [License](license.md)
 
 
