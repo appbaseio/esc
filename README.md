@@ -30,10 +30,10 @@ Practical cookbook recipes for doing stuff with Elaticsearch
   * Combining Search + Facets
   * Demo
 * Analytics and Dashboarding
-  * Timeseries Data
-  * Buckets
-  * Nested Aggregations
-
+  * Building Search Facets
+  * Selectively Scoring Results
+  * Combining Search + Facets
+  * Demo
 * [License](license.md)
 
 
