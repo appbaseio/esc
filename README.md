@@ -6,7 +6,7 @@ Practical cookbook recipes for doing stuff with Elaticsearch
 
 # TOC
 
-Chapters
+### Chapters
 
 * [Normal Searchbar](/searchbar/introduction.md)
   * [Simple Match](/searchbar/simple-match.md)
