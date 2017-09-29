@@ -8,8 +8,12 @@
   * [Suggestions](/searchbar/suggestions.md)
   * [Searchbar](/searchbar/searchbar.md)
 * [Tagwise Search](/tagwise-search/introduction.md)
-  * [Arrays](/tagwise-search/arrays.md)
-  * [Exact Match](/tagwise-search/exact-match.md)
-* [Phrase Search](/phrase-search/introduction.md)
-  * [Phrase Match](/phrase-search/phrase_match.md)
+  * [Exact Tag Match](/tagwise-search/exact-match.md)
+  * Partial Tag Match \(TBD\)
+  * [Multiple Tag Search](/tagwise-search/arrays.md)
+* [Search Engine](/phrase-search/introduction.md)
+  * [Phrase Search](/phrase-search/phrase_match.md)
 * [License](license.md)
+
+
+
