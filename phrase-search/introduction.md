@@ -1,4 +1,4 @@
-## Phrase search: Introduction
+## Building a Search Engine: Introduction
 
 ### How to build phrase match search engine using Elasticsearch?
 
