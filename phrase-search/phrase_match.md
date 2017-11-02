@@ -30,7 +30,7 @@ English analyzer analyzes the text in the following way. Example text - "I'm not
 * Removes stopwords: [i'm, happy, about, foxes]
 * Stems tokens to their root form: [i'm, happi, about, fox]
 
-By using the english analyzer, we can match text more loosely.
+By using the english analyzer, we can match text more loosely. By default Elasticsearch uses same analyzer at index time and search time to ensure that the terms in the query are in the same format as the terms in the index.
 
 Now, we will specify the mappings for our `text` field. Elasticsearch will create mappings dynamically for the rest of the fields.
 
@@ -42,8 +42,8 @@ Define the English analyzer on the `text` field to analyze it at index time.
 curl -XPUT $host/hackernews/_mapping/post -d '{
   "properties": {
     "text": {
-  		"type": "string",
-  		"analyzer": "english"
+      "type": "string",
+      "analyzer": "english"
     }
   }
 }'
