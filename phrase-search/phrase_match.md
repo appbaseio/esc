@@ -6,7 +6,7 @@ Phrase search is useful when the order of the keywords in our query matter. Usin
 
 ### How to do phrase search
 
-Elasticsearch's `match_phrase` query doesn't require any predefined mappings. We can analyze the data according to our needs while storing it. Like the [match query](https://appbaseio.gitbooks.io/esc/content/searchbar/simple-match.html), the `match_phrase` query first analyzes the query string according to the defined analyzer to produce a list of terms. It then searches for all the terms, but keeps only documents that contain all of the search terms, in the same positions relative to each other.
+Like the [match query](https://appbaseio.gitbooks.io/esc/content/searchbar/simple-match.html), the `match_phrase` query first analyzes the query string according to the defined analyzer to produce a list of terms. It then searches for all the terms, but keeps only documents that contain all of the search terms, in the same positions relative to each other. Our sample dataset contains comments, posts etc. Elasticsearch provides special analyzers to deal with language specific texts.
 
 In the following sections, we will go through the process of building a very simple phrase search for the Hackernews dataset.
 
@@ -18,7 +18,21 @@ By default, Elasticsearch analyzes the data before storing it on disk. It has di
 
 We will use default English analyzer at the index time which can apply stemming, remove stop words, add synonyms to give us better results.
 
-In this section, we will specify the mappings for our `text` field. Elasticsearch will create mappings dynamically for the rest of the fields.
+### English Analyzer
+The default analyzer of Elasticsearch contains following components:
+* **Tokenizer**: Splits the text into individual words by space or defined grammar.
+* **TokenFilters**: Filters the tokenized words. It lowercases all tokens, removes stop words, removes redundant tokens etc.
+
+English analyzer analyzes the text in the following way. Example text - "I'm not happy about the foxes
+".
+* First it tokenizes the text into words - [I'm, not, happy, about, the, foxes]
+* Lowercases tokens: [i'm, not, happy, about, the, foxes]
+* Removes stopwords: [i'm, happy, about, foxes]
+* Stems tokens to their root form: [i'm, happi, about, fox]
+
+By using the english analyzer, we can match text more loosely.
+
+Now, we will specify the mappings for our `text` field. Elasticsearch will create mappings dynamically for the rest of the fields.
 
 ### Put Mappings
 
