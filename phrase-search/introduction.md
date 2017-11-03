@@ -1,6 +1,6 @@
 ## Building a Search Engine: Introduction
 
-### How to build phrase match search engine using Elasticsearch?
+### How to build phrase search engine using Elasticsearch?
 
 While building a search engine for your e-commerce app, user data, or any structured data set many times you need to match all the query terms in their relative position. This is the case where entities like "quick brown dog", where the three terms individually don’t convey the same meaning as the three of them concatenated in this order.
 
@@ -12,4 +12,4 @@ We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as ou
 
 | Index     | Title    | Description |
 | ---------- | ---------- |---------|
-| 1          | [Phrase Match](https://appbaseio.gitbooks.io/esc/content/phrase-search/phrase_match.html) | How to use Elasticsearch phrase_match query. |
+| 1          | [Phrase Search](https://appbaseio.gitbooks.io/esc/content/phrase-search/phrase_match.html) | How to use Elasticsearch phrase_match query. |
