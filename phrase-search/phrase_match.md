@@ -1,6 +1,6 @@
-# Phrase Match
+# Phrase Search
 
-This article is a part of the series on [**How to build phrase match search engine using Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/phrase-search/introduction.html)
+This article is a part of the series on [**How to build phrase search engine using Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/phrase-search/introduction.html)
 
 Phrase search is useful when the order of the keywords in our query matter. Using `match_phrase` query of Elasticsearch users can easily provide the list of keywords in some specific order to search for documents containing an exact sentence or phrase which contains those keywords in the same order rather than comparing a set of keywords in random order.
 
