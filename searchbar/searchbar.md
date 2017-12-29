@@ -2,16 +2,16 @@
 
 This article is a part of the series on [**how to build a search bar**](https://appbaseio.gitbooks.io/esc/content/searchbar/introduction.html).
 
-## How to make normal search bar
+## How to make a normal search bar
 
 This chapter therefore provides a quick implementation details of normal search bar using Elasticsearch.
 
-The main functionality we need for the normal text searching are
+The main functionalities that we will need for doing this are:
 
-1. **Auto complete** - While user typing we need to provide auto completion for the input queries. Auto-complete functionality should be as fast as a user types to provide instant feedback relevant to what a user has already typed in.  Elasticsearch provides a convenient way to get autocomplete up and running quickly with its completion suggester feature.
-2. **Suggestions**(or full text search) - Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user’s inputs.
+1. **Auto complete** - While user types, we need to provide auto-completion for the input queries. Auto-complete functionality should be as fast as a user types to provide instant feedback relevant to what a user has already typed in.  Elasticsearch provides a convenient way to get autocomplete up and running quickly with its completion suggester feature.
+2. **Suggestions**\(or full text search\) - Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user’s inputs.
 
-`Note:` Understand the implementation details of above two functionalities through these chapters - [Auto Completion](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md) and [Suggestions](https://github.com/appbaseio/esc/blob/master/searchbar/suggestions.md)
+`Note:` You can deep dive into the implementation details of the above two functionalities through these chapters - [Auto Completion](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md) and [Suggestions](https://github.com/appbaseio/esc/blob/master/searchbar/suggestions.md).
 
 ## Defining Mappings
 
@@ -19,7 +19,7 @@ If you have worked with a SQL database system before, you are probably familiar 
 
 In this section, we will specify the mappings for our two fields: city and country, with the necessary settings to enable auto-complete and suggestion functionalities.
 
-`auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will create a `case_insensitive` analyzer that tokenizes the text as is (i.e. no white space splitting) and applies a lowercase filter.
+`auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will create a `case_insensitive` analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter.
 
 ```json
 curl -XPUT $host/searchbar/_settings?pretty -d '{
@@ -57,11 +57,11 @@ curl -XPUT $host/searchbar/_settings?pretty -d '{
 }'
 ```
 
-We just added a custom analyzers. The `_settings` endpoint can be used for adding one more custom analyzers.
+We just added a custom analyzers. The `_settings` endpoint can be used for adding one or more custom analyzers.
 
 ## Defining Mappings
 
-Here we will use two fields and two subfields of each field. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch.
+Here we will use two fields and two subfields each of these fields. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch.
 
 `city_autocomplete` subfield is useful for the auto completion feature. It index the data using `case_insensitive` analyzer and with type **completion**.
 
@@ -105,7 +105,7 @@ curl -XPUT $host/searchbar/_mapping/searchbar -d '{
       }
     }
   }
-}'  
+}'
 ```
 
 ### Data Indexing
@@ -144,6 +144,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
   }             
 }'
 ```
+
 ##### Response
 
 ```json
@@ -194,6 +195,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
   }
 }
 ```
+
 #### Query on both City and Country
 
 ```json
@@ -277,3 +279,6 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
   }
 }
 ```
+
+
+
