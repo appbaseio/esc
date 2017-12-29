@@ -31,7 +31,7 @@ curl -XPUT $host/searchbar/_settings?pretty -d '{
 }'
 ```
 
-We just added a custom analyzer. The `_settings` endpoint can be used for adding one more custom analyzers.
+We just added a custom analyzer. The `_settings` endpoint can be used for adding one or more custom analyzers.
 
 ### Updating Mappings
 
