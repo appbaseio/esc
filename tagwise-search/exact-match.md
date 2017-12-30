@@ -107,4 +107,4 @@ We used a `constant_score` to convert the `term` query into a filter.
 }
 ```
 
-To filter the data by numeric values(Github stars) you should next read about [**range query**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/range-query.html).
+To match the documents by multiple tags you should next read about [multiple tag match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/multiple-tag-match.html). 
