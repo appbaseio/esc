@@ -58,9 +58,9 @@ We just added a custom analyzers. The `_settings` endpoint can be used for addin
 
 Here we will use two fields and two subfields each of these fields. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch.
 
-`city_autocomplete` subfield is useful for the auto completion feature. It indexes and searches the data using `simple` analyzer and with type **completion**.
+`city_autocomplete` subfield is useful for the auto-completion feature. It indexes and searches the data using `simple` analyzer and with type **completion**.
 
-`city_autocomplete` subfield is useful for the auto suggestion feature. It indexes the data using `auto-suggest` analyzer, searches the data using `simple` analyzer and is of type **string**.
+`city_autocomplete` subfield is useful for the auto-suggestion feature. It indexes the data using `auto-suggest` analyzer, searches the data using `simple` analyzer and is of type **string**.
 
 Similar sub-field structure will also hold true for the country field.
 
