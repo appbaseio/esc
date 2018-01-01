@@ -4,7 +4,7 @@ This article is a part of the series on [**How to build tag wise search with Ela
 
 ## How to match documents by multiple tags
 
-A major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the matching content by user specifying either just one or more than one tag labels inclusively and exclusively.
+A major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the matching content by user specifying either just one or more than one tag labels in union or intersection output modes.
 
 In this chapter, we will be using an Array datastructure to store labels with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.
 
@@ -78,6 +78,19 @@ Elasticsearch created these mappings dynamically based on our indexed data.
 ## Data Browser View
 
 For accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)
+
+## Bool Query
+
+Through bool query elasticsearch provides a way to combine multiple query types into a single query. There are four different kind of bool clauses(query).
+
+- `must`: The query must appear in matching documents. This is similar to logical **AND**. This query type also participate to calculate overall query score.
+- `must_not`: The query must not appear in the any matching documents. In this query type the score is completely ignored.
+- `filter`: The query must appear in matching documents. This query ignores the score and executes it in filter context.
+- `should`:
+
+### Intersection Query
+
+### Union Query
 
 ## Query
 
