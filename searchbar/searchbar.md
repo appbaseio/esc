@@ -4,12 +4,13 @@ This article is a part of the series on [**how to build a search bar**](https://
 
 ## How to make a normal search bar
 
-This chapter therefore provides a quick implementation details of normal search bar using Elasticsearch. // TODO: Grammar check
+This chapter compiles what we learnt so far in the series to implement a searchbar query and UI using Elasticsearch.
 
 The main functionalities that we will need for doing this are:
 
 1. **Auto complete** - While user types, we need to provide auto-completion for the input queries. Auto-complete functionality should be as fast as a user types to provide instant feedback relevant to what a user has already typed in.  Elasticsearch provides a convenient way to get autocomplete up and running quickly with its completion suggester feature.
 2. **Suggestions**\(or full text search\) - Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user inputs.
+3. **UI** - For building the UI, we will use a React components library that provides us the scaffolding for the UI where we can inject the Elasticsearch query.
 
 `Note:` You can deep dive into the implementation details of the above two functionalities through these chapters - [Auto Completion](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md) and [Suggestions](https://github.com/appbaseio/esc/blob/master/searchbar/suggestions.md).
 
@@ -195,8 +196,9 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
 | Autocompletion | Autosuggestion |
 | :--- | :--- |
 | Uses the suggest query and completion mapping type. | Uses the match query with a n-gram based indexing analyzer. |
-| Only offers suggestions that match the search query, e.g. "Yor" will return "York" but now "New York". | Offers hits that contains the search query, it doesn't necessarily need to start with the query. e.g. "Yor" may also return "New York" in the matching result. |
-| Only provides the complete value of the field on which the query is being applied. | Returns the entire \_source object, which are useful in creating a more contextual dropdown suggestion. In our example, we can use this to show both city and country like "New York, United States", "New Farm, Australia" as suggestions. |
+| Only offers suggestions that match from the beginning of the search query, e.g. "Yor" will return "York" but now "New York". | Offers hits that contains the search query, it doesn't necessarily need to start with the query. e.g. "Yor" may also return "New York" in the matching result. |
+| Since autocompletion doesn't tokenize the word, the suggest query here works on words of most practical lengths. | Since we rely on n-grams here, the search's usability is limited to the max token length - 10 in our example. |
+| Autocompletion's storage is more efficient because it doesn't breakdown the words into overlapping tokens. | The longer the n-gram token length, the storage requirements increase quadratically. |
 
 #### Query on both City and Country
 
@@ -285,6 +287,4 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
 ### Implementing the searchbar with a UI
 
 // TODO
-
-
 
