@@ -4,9 +4,7 @@ This article is a part of the series on [**how to build a search bar**](https://
 
 ## How to make a normal search bar
 
-// Edit this line:
-
-This chapter therefore provides a quick implementation details of normal search bar using Elasticsearch.
+This chapter therefore provides a quick implementation details of normal search bar using Elasticsearch. // TODO: Grammar check
 
 The main functionalities that we will need for doing this are:
 
@@ -21,7 +19,7 @@ If you have worked with a SQL database system before, you are probably familiar 
 
 In this section, we will specify the mappings for our two fields: city and country, with the necessary settings to enable auto-complete and suggestion functionalities.
 
-`auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will create a `case_insensitive` analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter.
+`auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will use the `simple` analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter.
 
 ```json
 curl -XPUT $host/normal_searchbar/_settings?pretty -d '{
@@ -47,12 +45,6 @@ curl -XPUT $host/normal_searchbar/_settings?pretty -d '{
           "lowercase",
           "asciifolding"
         ]
-      },
-      "case_insensitive": {
-        "tokenizer": "keyword",
-        "filter": [
-          "lowercase"
-        ]
       }
     }
   }  
@@ -65,9 +57,11 @@ We just added a custom analyzers. The `_settings` endpoint can be used for addin
 
 Here we will use two fields and two subfields each of these fields. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch.
 
-`city_autocomplete` subfield is useful for the auto completion feature. It index the data using `case_insensitive` analyzer and with type **completion**.
+`city_autocomplete` subfield is useful for the auto completion feature. It indexes and searches the data using `simple` analyzer and with type **completion**.
 
-`city_autocomplete` subfield is useful for the auto suggestion feature. It index the data using `auto-suggest` analyzer and with type **string**.
+`city_autocomplete` subfield is useful for the auto suggestion feature. It indexes the data using `auto-suggest` analyzer, searches the data using `simple` analyzer and is of type **string**.
+
+Similar sub-field structure will also hold true for the country field.
 
 ```json
 curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
@@ -78,13 +72,13 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
         "fields": {
           "city_autocomplete": {
             "type": "completion",
-            "analyzer": "case_insensitive",
-            "search_analyzer": "case_insensitive"
+            "analyzer": "simple",
+            "search_analyzer": "simple"
           },
           "city_autosuggest": {
             "type": "string",
             "analyzer": "auto-suggest",
-            "search_analyzer": "case_insensitive"
+            "search_analyzer": "simple"
           }
         }
       },
@@ -93,13 +87,13 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
         "fields": {
           "country_autocomplete": {
             "type": "completion",
-            "analyzer": "case_insensitive",
-            "search_analyzer": "case_insensitive"
+            "analyzer": "simple",
+            "search_analyzer": "simple"
           },
           "country_autosuggest": {
             "type": "string",
             "analyzer": "auto-suggest",
-            "search_analyzer": "case_insensitive"
+            "search_analyzer": "simple"
           }
         }
       }
@@ -125,7 +119,7 @@ For accessibility, we have indexed ~15,000 data points that can be viewed in the
 
 ### Query
 
-Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions and will be using the **completion** suggestor query for getting the autocomplete suggestions. Let's first query on the `city` field.
+Next, we will move to the queries section. Here, we will be using the match query for getting the dropdown suggestions and will be using the **completion** suggester query for getting the autocomplete suggestions. Let's first query on the `city` field.
 
 ```json
 curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
@@ -195,6 +189,14 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   }
 }
 ```
+
+###### Note: There is some overlap between the autocompletion and autosuggestion feature, here's why we make two separate queries.
+
+| Autocompletion | Autosuggestion |
+| :--- | :--- |
+| Uses the suggest query and completion mapping type. | Uses the match query with a n-gram based indexing analyzer. |
+| Only offers suggestions that match the search query, e.g. "Yor" will return "York" but now "New York". | Offers hits that contains the search query, it doesn't necessarily need to start with the query. e.g. "Yor" may also return "New York" in the matching result. |
+| Only provides the complete value of the field on which the query is being applied. | Returns the entire \_source object, which are useful in creating a more contextual dropdown suggestion. In our example, we can use this to show both city and country like "New York, United States", "New Farm, Australia" as suggestions. |
 
 #### Query on both City and Country
 
@@ -279,6 +281,10 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   }
 }
 ```
+
+### Implementing the searchbar with a UI
+
+// TODO
 
 
 
