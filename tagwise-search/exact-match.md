@@ -2,42 +2,41 @@
 
 This article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html)
 
-### How to do tag wise search
+### How to do a tag wise search
 
-Elasticsearch supports queries as well as data filters. Queries help for full-text search or where the result depends on a relevance score. In general, filters used for binary yes/no searches or for queries on exact values. Filters are faster then queries because they do not calculate relevance score and can be easily cached.
+Elasticsearch supports queries and filters. Queries are useful within full-text search, where results depend on a relevance score. In general, filters are used for binary yes/no searches or within queries for exact value match. Think of filters as an equivalent to the WHERE clause in SQL. Filters are faster than queries because they do not calculate the relevance score and can be easily cached.
 
-In this scenario, we are not interested in calculating relevance score. We just want to filter the data according to specified tags.
+We will be using a sample dataset containing the Github repository info, and we will be using a **term** query to perform a tag wise search.
 
-To store the data we will first put mapping on our index and then to query these data we will use **term** query with **constant_score** filter. The following section shows you how to store and match the data without analyzing it.
-
-## Defining Mappings
+### Defining Mappings
 
 If you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.
 
-By default Elasticsearch analyzes the data before storing it on disk. It has different tokenizer, analyzer and filters to modify the data. Mappings are useful to attach these analyzers with specific fields.
+By default Elasticsearch analyzes the data before storing it on disk. However, since we require an exact match of the data for repository tags, we will apply a `index: not_analyzed` setting to prevent the tag field from being analyzed.
 
-In this section, we will specify the mappings for our `tags` field. Elasticsearch will create mappings dynamically for the rest of the fields.
+We will only specify the mapping for the `tags` field. Elasticsearch will create mappings dynamically for the rest of the fields.
 
 ### Disable analyzers on `tags` field
 
-To store the data without analyzing it, we have to make `tags` field **not_analyzed**. By doing this Elasticsearch will store the data as usual without any modifications.
+To store the data without analyzing it, we have to make `tags` field **not\_analyzed**. By doing this, Elasticsearch will store the data as usual without any modifications.
 
 ```json
-curl -XPUT $host/tagwise/_mapping/search -d '{
+curl -XPUT $host/tagwise/_mapping/tagwise -d '{
   "properties": {
     "tags": {
-  		"type": "string",
-  		"index": "not_analyzed"
+          "type": "string",
+          "index": "not_analyzed"
     }
   }
 }'
 ```
-We just put **mapping** on `search` type of `tagwise` index. Now, let's index some data.
+
+Now, let's index some data.
 
 ## Data Indexing
 
 ```json
-curl -XPUT $host/tagwise/search/1 -d '{
+curl -XPUT $host/tagwise/tagwise/1 -d '{
   "repo" : "reddit",
   "tags" : [ "javascript", "python", "reddit" ],
   "owner" : "reddit",
@@ -47,6 +46,7 @@ curl -XPUT $host/tagwise/search/1 -d '{
   "created-on" : "2008-06-18T23:30:53Z"
 }'
 ```
+
 Voila! We indexed our first document with id `1`. We already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.
 
 ## Data Browser View
@@ -57,10 +57,10 @@ For accessibility, we have indexed ~300 data points of Github repos that can be 
 
 The `term` query will look for the exact value that we specify. By itself, a `term` query is simple. It accepts a field name and the value that we wish to find. Usually, when looking for an exact value, we don’t want to score the query. We just want to include/exclude documents, so we will use a `constant_score` query to execute the term query in a non-scoring mode and apply a uniform score of one.
 
-The final combination will be a `constant_score` query which contains a `term` query looks like this:
+The final combination of a `constant_score` query which contains a `term` query will look like this:
 
 ```json
-curl $host/tagwise/search/_search?pretty -d '{
+curl $host/tagwise/tagwise/_search?pretty -d '{
   "query": {
     "constant_score" : {
       "filter" : {
@@ -72,7 +72,20 @@ curl $host/tagwise/search/_search?pretty -d '{
   }
 }'
 ```
-We used a `constant_score` to convert the `term` query into a filter. Here we used additional filter clause to not to calculate additional scores.
+
+We used a `constant_score` to use the `term` query with a filter context. We could also have written the same query as below:
+
+```json
+curl $host/tagwise/tagwise/_search?pretty -d '{
+  "query": {
+    "term": {
+      "tags": "reddit"
+    }
+  }
+}'
+```
+
+While the latter query looks much simpler, the above query is marked by Elasticsearch for caching because of the filter context. This helps speed up subsequent searches of the same request type.
 
 ### Response
 
@@ -107,4 +120,7 @@ We used a `constant_score` to convert the `term` query into a filter. Here we us
 }
 ```
 
-To match the documents by multiple tags you should next read about [multiple tag match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/multiple-tag-match.html).
+As we can see in the above response object, we found a hit containing the "reddit" tag.
+
+However, we might often want to either index multiple tags with a document or search documents by more than one tags. We talk about this in the next article on [multiple tag match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/multiple-tag-match.html).
+
