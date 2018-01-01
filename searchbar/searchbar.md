@@ -4,12 +4,14 @@ This article is a part of the series on [**how to build a search bar**](https://
 
 ## How to make a normal search bar
 
+// Edit this line:
+
 This chapter therefore provides a quick implementation details of normal search bar using Elasticsearch.
 
 The main functionalities that we will need for doing this are:
 
 1. **Auto complete** - While user types, we need to provide auto-completion for the input queries. Auto-complete functionality should be as fast as a user types to provide instant feedback relevant to what a user has already typed in.  Elasticsearch provides a convenient way to get autocomplete up and running quickly with its completion suggester feature.
-2. **Suggestions**\(or full text search\) - Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user’s inputs.
+2. **Suggestions**\(or full text search\) - Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user inputs.
 
 `Note:` You can deep dive into the implementation details of the above two functionalities through these chapters - [Auto Completion](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md) and [Suggestions](https://github.com/appbaseio/esc/blob/master/searchbar/suggestions.md).
 
@@ -26,7 +28,7 @@ curl -XPUT $host/normal_searchbar/_settings?pretty -d '{
   "analysis": {
     "tokenizer": {
       "ngramizer": {
-        "type": "edge_ngram",
+        "type": "ngram",
         "min_gram": 1,
         "max_gram": 10,
         "token_chars": [
@@ -82,7 +84,7 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
           "city_autosuggest": {
             "type": "string",
             "analyzer": "auto-suggest",
-            "search_analyzer": "standard"
+            "search_analyzer": "case_insensitive"
           }
         }
       },
@@ -97,7 +99,7 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
           "country_autosuggest": {
             "type": "string",
             "analyzer": "auto-suggest",
-            "search_analyzer": "standard"
+            "search_analyzer": "case_insensitive"
           }
         }
       }
@@ -123,7 +125,7 @@ For accessibility, we have indexed ~15,000 data points that can be viewed in the
 
 ### Query
 
-Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions and will be using the **completion** suggestor query for getting the autocomplete suggestions. Let's first query on `city` field.
+Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions and will be using the **completion** suggestor query for getting the autocomplete suggestions. Let's first query on the `city` field.
 
 ```json
 curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
@@ -277,3 +279,6 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   }
 }
 ```
+
+
+
