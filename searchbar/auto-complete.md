@@ -14,27 +14,6 @@ If you have worked with a SQL database system before, you are probably familiar 
 
 In this section, we will specify the mappings for our two fields: city and country, with the necessary settings to enable auto-complete functionality.
 
-### Transforming data to lower case before indexing // TODO: Replace **case\_insensitive to simple** 
-
-We would ideally want the autocompletion feature to work in a case agnostic fashion and at the granularity of phrases, i.e. typing a partial phrase should bring up the rest of the phrase in the autocompletion. To do this, we will create a **case\_insensitive** analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter. You can read more about analyzers over [here](https://www.elastic.co/blog/found-text-analysis-part-1).
-
-```json
-curl -XPUT $host/normal_searchbar/_settings?pretty -d '{
-  "analysis": {
-    "analyzer": {
-      "case_insensitive": {
-        "tokenizer": "keyword",
-        "filter": [
-          "lowercase"
-        ]
-      }
-    }
-  }
-}'
-```
-
-We just added a custom analyzer. The `_settings` endpoint can be used for adding one or more custom analyzers.
-
 ### Updating Mappings
 
 Next, we will update the mapping for the **city** and **country** fields. We will exploit a very cool feature of Elasticsearch called [**multi-fields**](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html) in doing so. Multi-fields enable indexing the same field in different ways, thus allowing for multiple ways of querying without requiring any additional effort in indexing of the data.
@@ -47,8 +26,8 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
       "fields": {
         "city_autocomplete": {
           "type": "completion",
-          "analyzer": "case_insensitive",
-          "search_analyzer": "case_insensitive"
+          "analyzer": "simple",
+          "search_analyzer": "simple"
         }
       }
     },
@@ -57,8 +36,8 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
       "fields": {
         "country_autocomplete": {
           "type": "completion",
-          "analyzer": "case_insensitive",
-          "search_analyzer": "case_insensitive"
+          "analyzer": "simple",
+          "search_analyzer": "simple"
         }
       }
     }
@@ -66,7 +45,7 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
 }'
 ```
 
-Here, we have defined a multi-field for both `city` and `country` fields. The `city_autocomplete` field \(inner field\) has a type **completion** while the `city` field \(outer field\) has a type **string** and both are indexed simultaneously. We have also used our custom analyzer for both indexing and searching on the \*\_autocomplete inner fields.
+Here, we have defined a multi-field for both `city` and `country` fields. The `city_autocomplete` field \(inner field\) has a type **completion** while the `city` field \(outer field\) has a type **string** and both are indexed simultaneously. We also use the `simple` analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter for both indexing and searching on the \*\_autocomplete inner fields.
 
 ## Data Indexing
 
@@ -223,8 +202,8 @@ We can then pick the item with the highest score value: "China" in this case, an
 
 We can also use the suggest query for building a search as-you-type suggestions feature by arranging the other items in a dropdown list. However, doing so has some limitations.
 
-1. We can't detect suggestions on a full-text phrase if the user starts typing from the middle of the phrase.
-2. We can't show additional fields of the document as a part of the suggestion UI \(like images\) since the **completion suggest** query only returns the field in question.
+1. We can't detect suggestions on a full-text phrase if the user starts typing from the middle of the phrase or even the middle of the word.
+2. Prior to v5 of Elasticsearch, we couldn't show additional fields of the document as a part of the suggestion UI \(like images\) since the **completion suggest** query only returns the field in question.
 
 ---
 
