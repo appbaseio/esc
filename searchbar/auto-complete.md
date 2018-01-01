@@ -6,7 +6,7 @@ This article is a part of the series on [**how to build a search bar**](https://
 
 In this post, we will show how to provide an auto-completion of the inputs **as the user types** in a searchbar. We will be using a dataset containing a list of cities and countries and we will be building this feature using Elasticsearch's **completion** type `field`.
 
-`Note:` Alternate approaches can be implemented using n-grams and prefix suggester algorithms. But speed is the most important aspect for this feature. We're making suggestions while the user types, so results need to be shown to the user within milliseconds. When using the completion type, Elasticsearch indexes data into a trie like data structure (called FST) which is optimized for fast retrieval and memory usage.
+`Note:` Alternate approaches can be implemented using n-grams and prefix suggester algorithms. But speed is the most important aspect for this feature. We're making suggestions while the user types, so results need to be shown to the user within milliseconds. When using the completion type, Elasticsearch indexes data into a trie like data structure \(called FST\) which is optimized for fast retrieval and memory usage.
 
 ## Defining Mappings
 
@@ -14,9 +14,9 @@ If you have worked with a SQL database system before, you are probably familiar 
 
 In this section, we will specify the mappings for our two fields: city and country, with the necessary settings to enable auto-complete functionality.
 
-### Transforming data to lower case before indexing
+### Transforming data to lower case before indexing // TODO: Replace **case\_insensitive to simple** 
 
-We would ideally want the autocompletion feature to work in a case agnostic fashion and at the granularity of phrases, i.e. typing a partial phrase should bring up the rest of the phrase in the autocompletion. To do this, we will create a **case_insensitive** analyzer that tokenizes the text as is (i.e. no white space splitting) and applies a lowercase filter. You can read more about analyzers over [here](https://www.elastic.co/blog/found-text-analysis-part-1).
+We would ideally want the autocompletion feature to work in a case agnostic fashion and at the granularity of phrases, i.e. typing a partial phrase should bring up the rest of the phrase in the autocompletion. To do this, we will create a **case\_insensitive** analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter. You can read more about analyzers over [here](https://www.elastic.co/blog/found-text-analysis-part-1).
 
 ```json
 curl -XPUT $host/normal_searchbar/_settings?pretty -d '{
@@ -66,8 +66,7 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
 }'
 ```
 
-Here, we have defined a multi-field for both `city` and `country` fields. The `city_autocomplete` field (inner field) has a type **completion** while the `city` field (outer field) has a type **string** and both are indexed simultaneously. We have also used our custom analyzer for both indexing and searching on the \*\_autocomplete inner fields.
-
+Here, we have defined a multi-field for both `city` and `country` fields. The `city_autocomplete` field \(inner field\) has a type **completion** while the `city` field \(outer field\) has a type **string** and both are indexed simultaneously. We have also used our custom analyzer for both indexing and searching on the \*\_autocomplete inner fields.
 
 ## Data Indexing
 
@@ -225,8 +224,9 @@ We can then pick the item with the highest score value: "China" in this case, an
 We can also use the suggest query for building a search as-you-type suggestions feature by arranging the other items in a dropdown list. However, doing so has some limitations.
 
 1. We can't detect suggestions on a full-text phrase if the user starts typing from the middle of the phrase.
-2. We can't show additional fields of the document as a part of the suggestion UI (like images) since the **completion suggest** query only returns the field in question.
+2. We can't show additional fields of the document as a part of the suggestion UI \(like images\) since the **completion suggest** query only returns the field in question.
 
 ---
 
 Next, we talk about building a [**search as-you-type suggestions**](https://appbaseio.gitbooks.io/esc/content/searchbar/suggestions.html) feature using n-grams.
+
