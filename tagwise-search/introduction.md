@@ -4,7 +4,7 @@
 
 A tag is a label or metadata used on social networks and blogging services which makes it easier for users to find the data with a specific theme or content. Also, it can be useful to filter data according to single or multiple categories.
 
-In this chapter, we’re going to build tag wise search very similar to Github's to search user repositories by their tags. We will also show you how to do multiple tag searching and partial tag match.
+In this chapter, we’re going to build tag wise search very similar to Github's. We will also show you how to do multiple tag searching and partial tag match.
 
 We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as our search engine and the index (and dataset) is hosted on an [appbase.io](https://appbase.io) app.
 
