@@ -22,34 +22,30 @@ We would ideally want the auto-suggestion to work on a text phrase in a way that
 
 We will set our tokenizer to create all \[1-10\] grams of a token. You can read more about ngrams over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html).
 
-// TODO: Re-index data using n-grams \(current dataset is indexed with edge\_ngram tokenizer\).
-
 ```json
-curl -XPUT "$host/searchbar/_settings?pretty" -d '{
-  "settings": {
-    "analysis": {
-      "tokenizer": {
-        "ngramizer": {
-          "type": "ngram",
-          "min_gram": 1,
-          "max_gram": 10,
-          "token_chars": [
-            "letter",
-            "digit",
-            "punctuation",
-            "symbol"
-          ]
-        }
-      },
-      "analyzer": {
-        "auto-suggest": {
-          "type": "custom",
-          "tokenizer": "ngramizer",
-          "filter": [
-            "lowercase",
-            "asciifolding"
-          ]
-        }
+curl -XPUT "$host/normal_searchbar/_settings?pretty" -d '{
+  "analysis": {
+    "tokenizer": {
+      "ngramizer": {
+        "type": "ngram",
+        "min_gram": 1,
+        "max_gram": 10,
+        "token_chars": [
+          "letter",
+          "digit",
+          "punctuation",
+          "symbol"
+        ]
+      }
+    },
+    "analyzer": {
+      "auto-suggest": {
+        "type": "custom",
+        "tokenizer": "ngramizer",
+        "filter": [
+          "lowercase",
+          "asciifolding"
+        ]
       }
     }
   }
@@ -66,10 +62,8 @@ We just added a custom analyzer called `auto-suggest` which uses a custom tokeni
 
 Next, we will update the mapping for the **city** and **country** fields. We will exploit a very cool feature of Elasticsearch called [**multi-fields**](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html) in doing so. Multi-fields enable indexing the same field in different ways, thus allowing for multiple ways of querying without requiring any additional effort in indexing of the data.
 
-// TODO: Re-apply this mapping.
-
 ```json
-curl -XPUT "$host/searchbar/_mapping/searchbar" -d '{
+curl -XPUT "$host/normal_searchbar/_mapping/searchbar" -d '{
   "properties": {
     "city": {
       "type": "string",
@@ -102,7 +96,7 @@ Note that we are only analyzing the data into n-grams at index time. At search t
 As you can see, while indexing the data, we only need to insert the **city** and **country** fields.
 
 ```json
-curl -XPUT $host/searchbar/searchbar/1 -d '{
+curl -XPUT $host/normal_searchbar/searchbar/1 -d '{
   "city": "New York",
   "country": "United States"
 }'
@@ -117,7 +111,7 @@ For better accessibility, we have indexed ~15,000 data points that can be viewed
 Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions. Let's first query on `city` field.
 
 ```json
-curl "$host/searchbar/searchbar/_search?pretty" -d '{
+curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "match": {
       "city.city_autosuggest": "York"
@@ -143,7 +137,7 @@ Here user inputs are passed as a value of `city.city_autosuggest` field.
     "total" : 2,
     "max_score" : 4.4288692,
     "hits" : [ {
-      "_index" : "searchbar",
+      "_index" : "normal_searchbar",
       "_type" : "searchbar",
       "_id" : "AVsMYWRohvsk2FETcOKG",
       "_score" : 4.4288692,
@@ -172,7 +166,7 @@ In the response, you can see Elasticsearch has returned two documents which have
 A similar query for suggestions on the **country** field would look like this:
 
 ```json
-curl "$host/searchbar/searchbar/_search?pretty" -d '{
+curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "match": {
       "country.country_autosuggest": "States"
@@ -184,7 +178,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
 #### Query on both City and Country
 
 ```json
-curl "$host/searchbar/searchbar/_search?pretty" -d '{
+curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "multi_match": {
       "query": "New York",
@@ -209,7 +203,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
     "total" : 2,
     "max_score" : 3.1685972,
     "hits" : [ {
-      "_index" : "searchbar",
+      "_index" : "normal_searchbar",
       "_type" : "searchbar",
       "_id" : "AVsMYRgYhvsk2FETcMug",
       "_score" : 3.1685972,
@@ -218,7 +212,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
         "country" : "United States"
       }
     }, {
-      "_index" : "searchbar",
+      "_index" : "normal_searchbar",
       "_type" : "searchbar",
       "_id" : "AVsMYWRohvsk2FETcOKG",
       "_score" : 1.3023362,
@@ -239,4 +233,3 @@ Benefits and Drawbacks v/s auto-complete.
 2. Sometimes, you really don't want to match incomplete words, auto-complete is better in such a scenario.
 
 Next, you should read about [**Searchbar**](https://appbaseio.gitbooks.io/esc/content/searchbar/searchbar.html).
-

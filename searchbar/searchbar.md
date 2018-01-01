@@ -22,7 +22,7 @@ In this section, we will specify the mappings for our two fields: city and count
 `auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will create a `case_insensitive` analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter.
 
 ```json
-curl -XPUT $host/searchbar/_settings?pretty -d '{
+curl -XPUT $host/normal_searchbar/_settings?pretty -d '{
   "analysis": {
     "tokenizer": {
       "ngramizer": {
@@ -68,7 +68,7 @@ Here we will use two fields and two subfields each of these fields. These subfie
 `city_autocomplete` subfield is useful for the auto suggestion feature. It index the data using `auto-suggest` analyzer and with type **string**.
 
 ```json
-curl -XPUT $host/searchbar/_mapping/searchbar -d '{
+curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
   "searchbar": {
     "properties": {
       "city": {
@@ -77,8 +77,7 @@ curl -XPUT $host/searchbar/_mapping/searchbar -d '{
           "city_autocomplete": {
             "type": "completion",
             "analyzer": "case_insensitive",
-            "search_analyzer": "case_insensitive",
-            "payloads": false
+            "search_analyzer": "case_insensitive"
           },
           "city_autosuggest": {
             "type": "string",
@@ -93,8 +92,7 @@ curl -XPUT $host/searchbar/_mapping/searchbar -d '{
           "country_autocomplete": {
             "type": "completion",
             "analyzer": "case_insensitive",
-            "search_analyzer": "case_insensitive",
-            "payloads": false
+            "search_analyzer": "case_insensitive"
           },
           "country_autosuggest": {
             "type": "string",
@@ -113,7 +111,7 @@ curl -XPUT $host/searchbar/_mapping/searchbar -d '{
 As you can see, while indexing the data, we only need to insert the city and country fields.
 
 ```json
-curl -XPUT $host/searchbar/searchbar/1 -d '{
+curl -XPUT $host/normal_searchbar/searchbar/1 -d '{
   "city": "New York",
   "country": "United States"
 }'
@@ -128,7 +126,7 @@ For accessibility, we have indexed ~15,000 data points that can be viewed in the
 Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions and will be using the **completion** suggestor query for getting the autocomplete suggestions. Let's first query on `city` field.
 
 ```json
-curl "$host/searchbar/searchbar/_search?pretty" -d '{
+curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "match": {
       "city.city_autosuggest": "New"
@@ -160,7 +158,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
     "total" : 2,
     "max_score" : 2.6197505,
     "hits" : [ {
-      "_index" : "searchbar",
+      "_index" : "normal_searchbar",
       "_type" : "searchbar",
       "_id" : "AVsMYRgYhvsk2FETcMug",
       "_score" : 2.6197505,
@@ -169,7 +167,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
         "country" : "United States"
       }
     }, {
-      "_index" : "searchbar",
+      "_index" : "normal_searchbar",
       "_type" : "searchbar",
       "_id" : "AVsMYTTkhvsk2FETcNLo",
       "_score" : 2.6197505,
@@ -199,7 +197,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
 #### Query on both City and Country
 
 ```json
-curl "$host/searchbar/searchbar/_search?pretty" -d '{
+curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   "query": {
      "multi_match": {
         "query": "New",
@@ -238,7 +236,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
     "total" : 2,
     "max_score" : 1.7185925,
     "hits" : [ {
-      "_index" : "searchbar",
+      "_index" : "normal_searchbar",
       "_type" : "searchbar",
       "_id" : "AVsMYRgYhvsk2FETcMug",
       "_score" : 1.7185925,
@@ -247,7 +245,7 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
         "country" : "United States"
       }
     }, {
-      "_index" : "searchbar",
+      "_index" : "normal_searchbar",
       "_type" : "searchbar",
       "_id" : "AVsMYTTkhvsk2FETcNLo",
       "_score" : 1.7185925,
@@ -279,6 +277,3 @@ curl "$host/searchbar/searchbar/_search?pretty" -d '{
   }
 }
 ```
-
-
-

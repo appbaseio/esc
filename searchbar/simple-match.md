@@ -17,7 +17,7 @@ Being a NoSQL document store that works with JSON data, it comes with a convenie
 ## Indexing Data
 
 ```json
-curl -XPUT $host/searchbar/searchbar/1 -d '{
+curl -XPUT $host/normal_searchbar/searchbar/1 -d '{
   "city": "New York",
   "country": "United States"
 }'
@@ -26,7 +26,7 @@ curl -XPUT $host/searchbar/searchbar/1 -d '{
 If we look back at our data mappings, they should now look like as follows
 
 ```json
-curl $host/searchbar/_mapping?pretty
+curl $host/normal_searchbar/_mapping?pretty
 ```
 
 ```
@@ -57,7 +57,7 @@ For accessibility, we have indexed ~15,000 data points that can be viewed in the
 Now we will write our first search query, **match**.
 
 ```json
-curl "$host/searchbar/searchbar/_search?pretty" -d '{
+curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "match": {
       "city": "New York"
@@ -82,7 +82,7 @@ Response:
     "total" : 1,
     "max_score" : 7.445813,
     "hits" : [ {
-      "_index" : "searchbar",
+      "_index" : "normal_searchbar",
       "_type" : "searchbar",
       "_id" : "1",
       "_score" : 7.445813,
