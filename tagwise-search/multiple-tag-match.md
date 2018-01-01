@@ -4,28 +4,18 @@ This article is a part of the series on [**How to build tag wise search with Ela
 
 ## How to match documents by multiple tags
 
-We often want to match documents 
+A major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the matching content by user specifying either just one or more than one tag labels inclusively and exclusively.
+
+In this chapter, we will be using an Array datastructure to store labels with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.
 
 
-## How to store data using Elasticsearch arrays
+### How to store data using Elasticsearch arrays
 
-A major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the marching content by user specifying either just one or more than one tag labels. A tag wise search is also fundamentally different from a full-text search as here, we are finding an exact match of a tag with a content item.
-
-In this post, we will be using an Array datastructure to store labels with a content document. For making the exact lookups, we will be applying  a term query on the dataset.
-
-In Elasticsearch, there is no dedicated array type. Any field can contain zero or more values by default, however, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.
-
-Elasticsearch can also supports empty array or null array values.
+For one or more then one inputs elasticsearch by default considers that field as an array type. However, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.
 
 Default array does not support quering each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.
 
 `Note:` Read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).
-
-## Defining Mappings
-
-If you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.
-
-There is no special mapping required for arrays. You can store multiple values with single field without predefining schema.
 
 ## Indexing Data
 
