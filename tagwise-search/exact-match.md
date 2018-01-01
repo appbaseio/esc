@@ -72,7 +72,7 @@ curl $host/tagwise/search/_search?pretty -d '{
   }
 }'
 ```
-We used a `constant_score` to convert the `term` query into a filter.
+We used a `constant_score` to convert the `term` query into a filter. Here we used additional filter clause to not to calculate additional scores.
 
 ### Response
 
@@ -107,4 +107,4 @@ We used a `constant_score` to convert the `term` query into a filter.
 }
 ```
 
-To match the documents by multiple tags you should next read about [multiple tag match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/multiple-tag-match.html). 
+To match the documents by multiple tags you should next read about [multiple tag match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/multiple-tag-match.html).

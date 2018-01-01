@@ -4,7 +4,7 @@
 
 A tag is a label or metadata used on social networks and blogging services which makes it easier for users to find the data with a specific theme or content. Also, it can be useful to filter data according to single or multiple categories.
 
-In this chapter, we’re going to build tag wise search very similar to Github's to search user repositories by their tags. We will also show you how to do multiple tag matching and partial tag search.
+In this chapter, we’re going to build tag wise search very similar to Github's to search user repositories by their tags. We will also show you how to do multiple tag searching and partial tag match.
 
 We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as our search engine and the index (and dataset) is hosted on an [appbase.io](https://appbase.io) app.
 
@@ -13,8 +13,8 @@ We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as ou
 | Index     | Title    | Description |
 | ---------- | ---------- |---------|
 | 1       | [Exact Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to build a tag wise search similar to Github's. |
-| 2       | [Multiple Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to match documents by multiple tags. |
-
+| 2       | [Multiple Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to match documents by multiple tags.
+| 3       | [Partial Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbh.html) | How to provide tag suggestions based on prefix. |
 
 ### Live Demo
 <script async src="//jsfiddle.net/1b8tcxs4/3/embed/"></script>
