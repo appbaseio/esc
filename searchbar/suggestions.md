@@ -66,20 +66,20 @@ Next, we will update the mapping for the **city** and **country** fields. We wil
 curl -XPUT "$host/normal_searchbar/_mapping/searchbar" -d '{
   "properties": {
     "city": {
-      "type": "string",
+      "type": "text",
       "fields": {
         "city_autosuggest": {
-          "type": "string",
+          "type": "text",
           "analyzer": "auto-suggest",
           "search_analyzer": "simple"
         }
       }
     },
     "country": {
-      "type": "string",
+      "type": "text",
       "fields": {
         "country_autosuggest": {
-          "type": "string",
+          "type": "text",
           "analyzer": "auto-suggest",
           "search_analyzer": "simple"
         }
@@ -115,7 +115,7 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
   "query": {
     "match": {
       "city.city_autosuggest": "York"
-    }                                                        
+    }
   }
 }'
 ```

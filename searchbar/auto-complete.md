@@ -22,7 +22,7 @@ Next, we will update the mapping for the **city** and **country** fields. We wil
 curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
   "properties": {
     "city": {
-      "type": "string",
+      "type": "text",
       "fields": {
         "city_autocomplete": {
           "type": "completion",
@@ -32,7 +32,7 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
       }
     },
     "country": {
-      "type": "string",
+      "type": "text",
       "fields": {
         "country_autocomplete": {
           "type": "completion",
@@ -208,4 +208,3 @@ We can also use the suggest query for building a search as-you-type suggestions 
 ---
 
 Next, we talk about building a [**search as-you-type suggestions**](https://appbaseio.gitbooks.io/esc/content/searchbar/suggestions.html) feature using n-grams.
-

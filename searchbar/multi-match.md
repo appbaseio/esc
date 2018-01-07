@@ -36,10 +36,10 @@ curl $host/normal_searchbar/_mapping?pretty
     "mappings": {
       "searchbar": {
         "city" : {
-          "type" : "string"
+          "type" : "text"
         },
         "country" : {
-          "type" : "string"
+          "type" : "text"
         }
       }
     }

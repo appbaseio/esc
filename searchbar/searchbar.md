@@ -48,7 +48,7 @@ curl -XPUT $host/normal_searchbar/_settings?pretty -d '{
         ]
       }
     }
-  }  
+  }
 }'
 ```
 
@@ -69,7 +69,7 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
   "searchbar": {
     "properties": {
       "city": {
-        "type": "string",
+        "type": "text",
         "fields": {
           "city_autocomplete": {
             "type": "completion",
@@ -77,14 +77,14 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
             "search_analyzer": "simple"
           },
           "city_autosuggest": {
-            "type": "string",
+            "type": "text",
             "analyzer": "auto-suggest",
             "search_analyzer": "simple"
           }
         }
       },
       "country": {
-        "type": "string",
+        "type": "text",
         "fields": {
           "country_autocomplete": {
             "type": "completion",
@@ -92,7 +92,7 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
             "search_analyzer": "simple"
           },
           "country_autosuggest": {
-            "type": "string",
+            "type": "text",
             "analyzer": "auto-suggest",
             "search_analyzer": "simple"
           }
@@ -136,7 +136,7 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
         "field": "city.city_autocomplete"
       }
     }
-  }             
+  }
 }'
 ```
 
@@ -287,4 +287,3 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
 ### Implementing the searchbar with a UI
 
 // TODO
-
