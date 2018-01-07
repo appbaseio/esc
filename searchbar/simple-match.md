@@ -50,7 +50,7 @@ Elasticsearch created these mappings dynamically based on our indexed data.
 
 ## Data Browser View
 
-For accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/gCu8brp.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALvAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfHIpqiZLy7KkpFdELeIYbSmc-tBzk85k8KWOC8MaaYbaeds-YXPQCzqHfy7yoiJ7CC_QkR8qYcAPJ0OVXxilr-HlzZd0JFHROj9X0nkOPakZXQm9sugL0UVvjqjJCuXeCq-_LtiPbe1jGNvX8752yf7RHNLAlwLGQK6wg-CPBULmx7tZsraAZnEhJHOqzlqm6pxpluPVq-rhncN1_hQAAe03d4AneZI9XsPRMTd-IR4AA&editable=false)
+For accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/gCu8brp.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALvAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFslF8ZMg7A6kGLFGPADbJVmb5ysVqinQQuiFLkb4deUgCDkj3Ca7c1o_y8XA0-MkniaJtriPLcO0sOs-he9RgZSsY1-Dj7M1oUHcSMXEdlL__k05smSCpzBnTIbIxXMyoFoHyy8Z_g-Ku8eQnTdtXdsrQgMg_wmz9OmY-26TdzjLWp-v2Wf1WiRDeMXYvBl1QvLH_j_iLGk7AkFU5rmsqyCR3BmLVt2baZT9KRDsA_8PvEAA&editable=false)
 
 ## Query
 
