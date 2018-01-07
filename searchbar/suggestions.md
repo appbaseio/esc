@@ -104,7 +104,7 @@ curl -XPUT $host/normal_searchbar/searchbar/1 -d '{
 
 ## Data Browser View
 
-For better accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAAI-AQAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsf75RGH_jHaI0iFldVUA8qAu_IuFdCiPbQoJXhucJFD7Tx0dCbrMnss3gpLkoGLSlzMWr0Rs78QzD1cInlCxvWqSgdLhvpBcAJW68g0Vhcn0xKzkLHaOzsy68EPdXOYucCl6c8hMMRGu3y4dlzbBXn60r5lbWVcwldsd4kUXc8NRk6kGMuYbn4Qx47XYTdu7ltXvSb6rTmSxttA5ZONh8TQH1ljQwh7A7pkH2Onet5Fm384jza2JoDwBKVQOFn0TqOzVjhWlMQ5L1D_WGJgdWWmK3RWUWnBpnTqQ_hu-SA)
+For better accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALvAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFslF8ZMg7A6kGLFGPADbJVmb5ysVqinQQuiFLkb4deUgCDkj3Ca7c1o_y8XA0-MkniaJtriPLcO0sOs-he9RgZSsY1-Dj7M1oUHcSMXEdlL__k05smSCpzBnTIbIxXMyoFoHyy8Z_g-Ku8eQnTdtXdsrQgMg_wmz9OmY-26TdzjLWp-v2Wf1WiRDeMXYvBl1QvLH_j_iLGk7AkFU5rmsqyCR3BmLVt2baZT9KRDsA_8PvEAA&editable=false)
 
 ### Query
 
@@ -225,7 +225,7 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
 }
 ```
 
-You can also try out this query interactively [here. ![](https://i.imgur.com/nC3g4LR.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAJzBgAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4rUljRT-KX0718OJLlPpfWKCUEm56Tq8CYlXhOnaN56ZyIdxt1ZJt6hbyNpDC37TiuSHBdw5dUJ8p24QA8uuqOh0kxOaVXIOW5mnqVEvRJWxRnafT2663Um7XL8IiQhcKR_AKv1y-lYc4z-u95F8q94Pv5wP52njSb5Ay05gOZ1-KVHrTKulMUezxcGI8NmpVVDN_cepbY9ZOxRpTzGx4W8I7bBqCM3cO14yonnDaCPfWWF5BHfUZdM0haAjG2GQY9gA8yZnruuRt8ZAcLKBG8_qpUX2QBudrf3gYUeutnn6ghCxaWkJn5h2X67mWsftEOvcdUveMzeZCOEgrJVqgz8RzYTu-ct9Vp0Q81sN4JF2J-DlUptRT-FTOer9sjFPxfGezfZ7-QkNiof9u8F4Eyo8YZjMxf8HYO-7BFQjrBrtmkcUa__BRI0s)
+You can also try out this query interactively [here. ![](https://i.imgur.com/nC3g4LR.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAISBgAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmIMRwpW8tLJEeyKCwoHzPOkL9M0KdbHLZtMVPxIPMlh7YYAQinNjBTPX006UGzGERYNqNYjacxklVFkEoKyx2zaubRUqhqxScMG9gD-h7bDyj7ZQ6VU2Kj2rkJ1mds7BRVYkDfAHTEbtNa5GW20cp1fus1prbJbNXISvUEQNnPsDOsiH93N8mrqk4ZUuFt9U-a6lycH_ep550RD_dqNp8O-_A9qC47n_yrU_BAyybWtYEqbqRubgwH5baTC-QUPkZhVv-NTguSpvY87WPm9DYiLbJIjGia60W7q-RJW_8qOldSdcuXZuaV-oe_SSrUY6SdSRnGUasF9jyyODzAvfMcKpMSaTmK2W9N2p9c-TjmKn0qNpP8rb_94BIPECIrPMS2bpz4FxVM4auqLxGt8ytJTGmaKWfXmxwlAKO5AZgEJNkz43JbjaPFoWka-u-2ZIYI3-aKmUOgeRoAQ9KuWN1P0Rx-Y3EoXZs3_Iodp48WS8L8kreylBybw8CiRF4K3xl8P0HMKBF0-Pk1p8N0mYLM6HEvjqseDb2elEtSWW8WrYoXyWb6AIIF9EkVvrCGbUYUeY6PcCg8O3Wv9vTP2h4sdg6o2CZb4kdrWmfDRACzWA1mdJXttyT4v-P24C9pE5NI7QALLlAkSPaURi91BbCgbH7yXgjG7_DYbag)
 
 Benefits and Drawbacks v/s auto-complete.
 
