@@ -51,7 +51,7 @@ Elasticsearch created these mappings dynamically based on our indexed data.
 
 ## Data Browser View
 
-For accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALGAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsf75RGH_jHaI0iFldVUA8qAu_IuFdCiPbQoJXhucJFD7Tx0dCbrMnss3gpLkoGLSlzMWr0Rs78QzD1cInlCxvWqSgdLhvpBcAJW68g0Vhcn0xKzkLHaOzsy68EPdXOYucCl6c8hMMRGu3y4dlzbBXn60r5lbWVcwldsd4kUXc8NRk6kGMuYbn4Qx47XYODZCQPz6_vsDAwA)
+For accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAAKUAQAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFslF8ZMg7A6kGLFGPADbJVmb5ysVqinQQuiFLkb4deUgCDkj3Ca7c1o_y8XA0-MkniaJtriPLcO0sOs-he9RgZSsY1-Dj7M1oUHcSMXEdlL__k05smSCpzBnTIbIxXMyoFoHyy8Z_g-Ku8eQnTdZF4_hjSV7EdPDTy97DMkG9PlZFBp_bLIhTq50OaXXwxPtBuMRIcPoLj3jT4xckRg5gb7pSiw9fFAJoH5HAeiXsya9za62wB2R_mv16L4HlA_xHvdGfdp0418nmqFUmW6PphBtnkRfvGlb2yeCvcT6ZS5VZTHbbm30EuT94MJLydUHyurtrtMNZaLDIZ8fEM2COgl1-0zP_-F7ACg&editable=false)
 
 ## Query
 
@@ -98,6 +98,6 @@ Response:
 ```
 In the response, you will get the list of all the cities whos `country` field matches with `United States`.
 
-You can try out this query interactively [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIZBgAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHIOnFYWKnjL6-LioSaiwWbKm_OIbIe7ew9C3YQvvSfy-iE0mJ3iUHlS7SxqW4Kfd54TO7SG1hbWbzeo-WSJR46OsqZykOAMwSirRgXpSq5OMBdelMP92rD8WwuEem48-PmehVw-xj9TrrjLdB6QMZ24tgkCj4S8wY4NKZdxnxGJNXHDAiW8CYZ41X_QLVWCkTCtI9soPwJzqCRAE57BJ3eXhcn_e98cm9ym9LyFbfx47JbGMzG-tP4raO9YJ5f9ys89CsvMS6zZUYGVO9dQZAhRFFYo_azv4LTZfriF9_BEsssqGR2KjAWzg9H8uzZ2EguhV32efxyNTdJ6xpyuZysRE6nwfghFkkQvlqt65nFaorFSIZLo0QsPAXUrR3tK1o3aLZWYYZJkoALfzyHFSjEMprRpOb7vkaoV0XRkIimDiddxkky9n3fggH_wXvCqIC6GU1iMa-DsL0u7WEKyLW_8ptWJO4JlOCR2rIoi-K-wSfzWIMX-Z3BT8N_zgvVO5smP0UQ_5u6x04iqcr36BmXa7GyWHvCj88ywEcNffBvfv24RlKHznoICNln-38-olmY6t6KQrzlTcsUVyJYXBX6qv7myCJ_yWBoZJFPFKBNQgnhRdsZxIrI_t9XwlP-oLV7QPG0OTvoguT4B8xYnizAn_j3YTGuzf_7ku_x)
+You can try out this query interactively [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAK0BQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmIMRwpW8tLJEeyKCwoHzPOkL9M0KdbHLZtMVPxIPMlh7YYAQinNjBTPX006UGzGERYNqNYjacxklVFkEoKyx2zaubRUqhqxScMG9gD-h7bDyj7ZQ6VU2Kj2rkJ1mds7BRVYkDfAHTEbtNa5GW20cp1fus1prbJbNXISvUEQNnPsDOsiH93N8mrqk4ZUuFt9U-a6lycH_ep550RD_dqNp8O-_A9qC47n_yrU_BAyybWtYEqbqRubgwH5baTC-QSqOaNVNANksc4-2BgClNbtmRec6DIggUIQApnQW6Ka43GNQq1VJspFdL6BLifAI_I-zupa4IFDLS-eq3oykTMVHE9e6IrKvHb6vbhP8saKnhS2CQ_qXkx0ckZvsg4eCPzeCWx35T2MqDCqRc_8schvvRofTxHNCKHQ4ziO5mson_yplVSlGqxmKIc3ZjYBcBkOWNDwGomNYQzguPGCc0pV8IBHXRIUZBhplz_Fg146eLXsFr7__5mfaXglRnlw8k8SEgxCXeQRDByqHthvrhtqHBxwQLZcDckQuuwOc-DvMrqUauiIvXXmpg2s62fIQHu7PeB63NkcE_elwz5DoAqJwgtnm9GSN_cgn7UJLTscZO85i41qOLF0pCCCmeqp38E9Ich-tipAfgkk5wLmKaEuhNn_8PccSA)
 
 Next, you should read about [**auto completion**](https://appbaseio.gitbooks.io/esc/content/searchbar/auto-complete.html).
