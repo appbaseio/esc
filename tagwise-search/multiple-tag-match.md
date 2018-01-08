@@ -6,15 +6,15 @@ This article is a part of the series on [**How to build tag wise search with Ela
 
 A major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the matching content by user specifying either just one or more than one tag labels in union or intersection output modes.
 
-In this chapter, we will be using an Array datastructure to store more than one label with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.
+In this chapter, we will be using an Array data structure to store more than one label with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.
 
 ### How to store data using Elasticsearch arrays
 
 For one or more then one inputs elasticsearch by default considers that field as an array type. However, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.
 
-Default array does not support quering each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.
+Default array does not support querying each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.
 
-`Note:` Read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).
+`Note:` You can read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).
 
 ## Defining Mappings
 
@@ -26,14 +26,13 @@ We will only specify the mapping for the tags field. Elasticsearch will create m
 
 ### Disable analyzers on `tags` field
 
-To store the data without analyzing it, we have to make `tags` field **not_analyzed**. By doing this Elasticsearch will store the data as usual without any modifications.
+To store the data without analyzing it, we have to make `tags` field **not\_analyzed**. By doing this Elasticsearch will store the data as usual without any modifications.
 
 ```json
 curl -XPUT $host/tagwise/_mapping/search -d '{
   "properties": {
     "tags": {
-      "type": "keyword",
-      "index": "not_analyzed"
+      "type": "keyword"
     }
   }
 }'
@@ -107,12 +106,12 @@ Elasticsearch provides a way through bool query to combine the multiple query ty
 
 ### Bool Query
 
-The bool query is composed of four clauses(query).
+The bool query is composed of four clauses\(query\).
 
-- `must`: All of these clauses must match. The equivalent of **AND**.
-- `must_not`: All of these clauses must not match. The equivalent of **NOT**.
-- `should`: At least one of these clauses must match. The equivalent of **OR**.
-- `filter`: The query must appear in matching documents. This query ignores the score and executes it in filter context.
+* `must`: All of these clauses must match. The equivalent of **AND**.
+* `must_not`: All of these clauses must not match. The equivalent of **NOT**.
+* `should`: At least one of these clauses must match. The equivalent of **OR**.
+* `filter`: The query must appear in matching documents. This query ignores the score and executes it in filter context.
 
 We will execute bool queries in non-scoring mode since we have disabled analyzer on `tags` field. We will use `constant_score` query to wrap everything with its filter clause.
 
@@ -278,3 +277,4 @@ As you can see in the response the first result contains only one of the mention
 You can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)
 
 You should next read about [**partial tag match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbd.html).
+
