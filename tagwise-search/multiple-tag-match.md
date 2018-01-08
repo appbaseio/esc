@@ -6,8 +6,7 @@ This article is a part of the series on [**How to build tag wise search with Ela
 
 A major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the matching content by user specifying either just one or more than one tag labels in union or intersection output modes.
 
-In this chapter, we will be using an Array datastructure to store labels with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.
-
+In this chapter, we will be using an Array datastructure to store more than one label with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.
 
 ### How to store data using Elasticsearch arrays
 
@@ -33,8 +32,8 @@ To store the data without analyzing it, we have to make `tags` field **not_analy
 curl -XPUT $host/tagwise/_mapping/search -d '{
   "properties": {
     "tags": {
-  		"type": "string",
-  		"index": "not_analyzed"
+      "type": "keyword",
+      "index": "not_analyzed"
     }
   }
 }'
@@ -69,22 +68,22 @@ curl $host/tagwise/_mapping?pretty
       "search": {
         "properties": {
           "owner": {
-            "type": "string"
+            "type": "text"
           },
           "repo": {
-            "type": "string"
+            "type": "text"
           },
           "tags": {
-            "type": "string"
+            "type": "keyword"
           },
           "url": {
-            "type": "string"
+            "type": "text"
           },
           "stars": {
-            "type": "integer"
+            "type": "long"
           },
           "language": {
-            "type": "string"
+            "type": "text"
           },
           "created-on": {
             "type": "date"
@@ -136,11 +135,11 @@ So our basic query json structure looks like this:
 }
 ```
 
-We will use `must` and `should` clauses to filter the data. Through `must` clause we can get the results which contains all the mentioned tags and through `should` clause we can get the results which contains either of the mentioned tags.
+We will use `must` and `should` clauses to filter the data. Through `must` clause we can get the results which contain all the mentioned tags and through `should` clause we can get the results which contain either of the mentioned tags.
 
 ### Must Query
 
-We will use `term` query inside `must` clause. The `term` query finds documents that contain the exact term specified at the index time.
+We will use `term` query inside `must` clause. The `term` query finds documents that contain the exact term specified at the index time and `must` query take **AND** of all the results.
 
 ```json
 curl $host/tagwise/search/_search?pretty -d '{
@@ -235,9 +234,10 @@ curl $host/tagwise/search/_search?pretty -d '{
 }'
 ```
 
-### Response:
+#### Response:
 
 As you can see in the response the first result contains only one of the mentioned tag - `python`.
+
 ```json
 {
   "took": 28,
@@ -275,7 +275,6 @@ As you can see in the response the first result contains only one of the mention
 }
 ```
 
-
 You can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)
 
-You should next read about [**exact match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html).
+You should next read about [**partial tag match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbd.html).
