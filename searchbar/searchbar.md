@@ -60,7 +60,7 @@ Here we will use two fields and two subfields each of these fields. These subfie
 
 `city_autocomplete` subfield is useful for the auto-completion feature. It indexes and searches the data using `simple` analyzer and with type **completion**.
 
-`city_autocomplete` subfield is useful for the auto-suggestion feature. It indexes the data using `auto-suggest` analyzer, searches the data using `simple` analyzer and is of type **string**.
+`city_autocomplete` subfield is useful for the auto-suggestion feature. It indexes the data using `auto-suggest` analyzer, searches the data using `simple` analyzer and is of type **text**.
 
 Similar sub-field structure will also hold true for the country field.
 
