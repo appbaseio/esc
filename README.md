@@ -16,8 +16,8 @@ Practical cookbook recipes for doing stuff with Elaticsearch
   * [Searchbar](/searchbar/searchbar.md)
 * [Tagwise Search](/tagwise-search/introduction.md)
   * [Exact Tag Match](/tagwise-search/exact-match.md)
-  * Partial Tag Match
   * [Multiple Tag Search](/tagwise-search/arrays.md)
+  * Partial Tag Match
 * [Search Engine](/phrase-search/introduction.md)
 
   * [Phrase Search](/phrase-search/phrase_match.md)
@@ -41,6 +41,3 @@ Practical cookbook recipes for doing stuff with Elaticsearch
 * Streaming Data
   * If this, then that
 * [License](license.md)
-
-
-
