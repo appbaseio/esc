@@ -45,7 +45,7 @@ curl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{
 }'
 ```
 
-Here, we have defined a multi-field for both `city` and `country` fields. The `city_autocomplete` field \(inner field\) has a type **completion** while the `city` field \(outer field\) has a type **string** and both are indexed simultaneously. We also use the `simple` analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter for both indexing and searching on the \*\_autocomplete inner fields.
+Here, we have defined a multi-field for both `city` and `country` fields. The `city_autocomplete` field \(inner field\) has a type **completion** while the `city` field \(outer field\) has a type **text** and both are indexed simultaneously. We also use the `simple` analyzer that tokenizes the text as is \(i.e. no white space splitting\) and applies a lowercase filter for both indexing and searching on the \*\_autocomplete inner fields.
 
 ## Data Indexing
 
