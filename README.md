@@ -16,7 +16,7 @@ Practical cookbook recipes for doing stuff with Elaticsearch
   * [Searchbar](/searchbar/searchbar.md)
 * [Tagwise Search](/tagwise-search/introduction.md)
   * [Exact Tag Match](/tagwise-search/exact-match.md)
-  * [Multiple Tag Search](/tagwise-search/arrays.md)
+  * [Multiple Tag Search](/tagwise-search/multiple-tag-match.md)
   * Partial Tag Match
 * [Search Engine](/phrase-search/introduction.md)
 
