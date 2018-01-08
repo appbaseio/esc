@@ -151,12 +151,12 @@ curl $host/tagwise/search/_search?pretty -d '{
               "must": [
                 {
                   "term": {
-                    "tags": "ruby"
+                    "tags": "reddit"
                   }
                 },
                 {
                   "term": {
-                    "tags": "server"
+                    "tags": "python"
                   }
                 }
               ]
@@ -167,7 +167,48 @@ curl $host/tagwise/search/_search?pretty -d '{
 }'
 ```
 
+#### Response
+
+```json
+{
+  "took": 20,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
+  },
+  "hits": {
+    "total": 1,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "tagwise",
+        "_type": "search",
+        "_id": "AVvR1yM3gPzdwFFNDvs7",
+        "_score": 1,
+        "_source": {
+          "repo": "reddit",
+          "tags": [
+            "javascript",
+            "python",
+            "reddit"
+          ],
+          "owner": "reddit",
+          "url": "https://github.com/reddit/reddit",
+          "stars": 13053,
+          "language": "Python",
+          "created-on": "2008-06-18T23:30:53Z"
+        }
+      }
+    ]
+  }
+}
+```
+
 ### Should Query
+
+The `should` query in filter context fetches documents which match with at least one of the mentioned should queries.
 
 ```json
 curl $host/tagwise/search/_search?pretty -d '{
@@ -178,12 +219,12 @@ curl $host/tagwise/search/_search?pretty -d '{
               "should": [
                 {
                   "term": {
-                    "tags": "ruby"
+                    "tags": "reddit"
                   }
                 },
                 {
                   "term": {
-                    "tags": "server"
+                    "tags": "python"
                   }
                 }
               ]
@@ -196,6 +237,43 @@ curl $host/tagwise/search/_search?pretty -d '{
 
 ### Response:
 
+As you can see in the response the first result contains only one of the mentioned tag - `python`.
+```json
+{
+  "took": 28,
+  "timed_out": false,
+  "_shards": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0
+  },
+  "hits": {
+    "total": 51,
+    "max_score": 1,
+    "hits": [
+      {
+        "_index": "tagwise",
+        "_type": "search",
+        "_id": "AVvR1yI5hvsk2FETc3bb",
+        "_score": 1,
+        "_source": {
+          "repo": "awesome-python",
+          "tags": [
+            "awesome",
+            "collections",
+            "python"
+          ],
+          "owner": "vinta",
+          "url": "https://github.com/vinta/awesome-python",
+          "stars": 33500,
+          "language": "Python",
+          "created-on": "2014-06-27T21:00:06Z"
+        }
+      }
+    ]
+  }
+}
+```
 
 
 You can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)
