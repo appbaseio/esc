@@ -2,7 +2,7 @@
 
 This article is a part of the series on [**How to build tag wise search with Elasticsearch**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html).
 
-## How to match documents by multiple tags
+## How to find multiple exact values
 
 A major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the matching content by user specifying either just one or more than one tag labels in union or intersection output modes.
 
@@ -17,6 +17,31 @@ Default array does not support quering each object independently of the other ob
 
 `Note:` Read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).
 
+## Defining Mappings
+
+If you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.
+
+By default Elasticsearch analyzes the data before storing it on disk. However, since we require an exact match of the data for repository tags, we will apply a `index: not_analyzed` setting to prevent the tag field from being analyzed.
+
+We will only specify the mapping for the tags field. Elasticsearch will create mappings dynamically for the rest of the fields.
+
+### Disable analyzers on `tags` field
+
+To store the data without analyzing it, we have to make `tags` field **not_analyzed**. By doing this Elasticsearch will store the data as usual without any modifications.
+
+```json
+curl -XPUT $host/tagwise/_mapping/search -d '{
+  "properties": {
+    "tags": {
+  		"type": "string",
+  		"index": "not_analyzed"
+    }
+  }
+}'
+```
+
+We just put **mapping** on `search` type of `tagwise` index. Now, let's index some data.
+
 ## Indexing Data
 
 ```json
@@ -30,8 +55,6 @@ curl -XPUT $host/tagwise/search/1 -d '{
   "created-on" : "2008-06-18T23:30:53Z"
 }'
 ```
-
-Here document is indexed under the `tagwise` index and `search` type.
 
 If we look back at our data mappings, they should now look like as follows
 
@@ -73,15 +96,19 @@ curl $host/tagwise/_mapping?pretty
 }
 ```
 
-Elasticsearch created these mappings dynamically based on our indexed data.
+We already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.
 
 ## Data Browser View
 
 For accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)
 
-## Bool Query
+## Query
 
-Through bool query elasticsearch provides a way to combine multiple query types into a single query. There are four different kind of bool clauses(query).
+Elasticsearch provides a way through bool query to combine the multiple query types into a single query with `and`, `or`, and `not` logic.
+
+### Bool Query
+
+The bool query is composed of four sections.
 
 - `must`: The query must appear in matching documents. This is similar to logical **AND**. This query type also participate to calculate overall query score.
 - `must_not`: The query must not appear in the any matching documents. In this query type the score is completely ignored.
