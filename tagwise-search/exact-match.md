@@ -18,6 +18,8 @@ We will only specify the mapping for the `tags` field. Elasticsearch will create
 
 ### Disable analyzers on `tags` field
 
+// TODO: Use Keyword and also explain the difference wrt Text.
+
 To store the data without analyzing it, we have to make `tags` field **not\_analyzed**. By doing this, Elasticsearch will store the data as usual without any modifications.
 
 ```json
