@@ -30,16 +30,28 @@ If we look back at our data mappings, they should now look like as follows
 curl $host/normal_searchbar/_mapping?pretty
 ```
 
-```
-{
-  "searchbar": {
-    "mappings": {
-      "searchbar": {
+```json
+"normal_searchbar" : {
+  "mappings" : {
+    "searchbar" : {
+      "properties" : {
         "city" : {
-          "type" : "text"
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
         },
         "country" : {
-          "type" : "text"
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
         }
       }
     }
@@ -96,8 +108,11 @@ Response:
   }
 }
 ```
+
 In the response, you will get the list of all the cities whos `country` field matches with `United States`.
 
 You can try out this query interactively [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAK0BQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmIMRwpW8tLJEeyKCwoHzPOkL9M0KdbHLZtMVPxIPMlh7YYAQinNjBTPX006UGzGERYNqNYjacxklVFkEoKyx2zaubRUqhqxScMG9gD-h7bDyj7ZQ6VU2Kj2rkJ1mds7BRVYkDfAHTEbtNa5GW20cp1fus1prbJbNXISvUEQNnPsDOsiH93N8mrqk4ZUuFt9U-a6lycH_ep550RD_dqNp8O-_A9qC47n_yrU_BAyybWtYEqbqRubgwH5baTC-QSqOaNVNANksc4-2BgClNbtmRec6DIggUIQApnQW6Ka43GNQq1VJspFdL6BLifAI_I-zupa4IFDLS-eq3oykTMVHE9e6IrKvHb6vbhP8saKnhS2CQ_qXkx0ckZvsg4eCPzeCWx35T2MqDCqRc_8schvvRofTxHNCKHQ4ziO5mson_yplVSlGqxmKIc3ZjYBcBkOWNDwGomNYQzguPGCc0pV8IBHXRIUZBhplz_Fg146eLXsFr7__5mfaXglRnlw8k8SEgxCXeQRDByqHthvrhtqHBxwQLZcDckQuuwOc-DvMrqUauiIvXXmpg2s62fIQHu7PeB63NkcE_elwz5DoAqJwgtnm9GSN_cgn7UJLTscZO85i41qOLF0pCCCmeqp38E9Ich-tipAfgkk5wLmKaEuhNn_8PccSA)
+
+---
 
 Next, you should read about [**auto completion**](https://appbaseio.gitbooks.io/esc/content/searchbar/auto-complete.html).

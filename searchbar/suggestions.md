@@ -111,7 +111,7 @@ For better accessibility, we have indexed ~15,000 data points that can be viewed
 Next, we will move to the queries section. Here, we will be using the match query for getting the suggestions. Let's first query on `city` field.
 
 ```json
-curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
+curl $host/normal_searchbar/searchbar/_search?pretty -d '{
   "query": {
     "match": {
       "city.city_autosuggest": "York"
@@ -166,7 +166,7 @@ In the response, you can see Elasticsearch has returned two documents which have
 A similar query for suggestions on the **country** field would look like this:
 
 ```json
-curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
+curl $host/normal_searchbar/searchbar/_search?pretty -d '{
   "query": {
     "match": {
       "country.country_autosuggest": "States"
@@ -178,7 +178,7 @@ curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
 #### Query on both City and Country
 
 ```json
-curl "$host/normal_searchbar/searchbar/_search?pretty" -d '{
+curl $host/normal_searchbar/searchbar/_search?pretty -d '{
   "query": {
     "multi_match": {
       "query": "New York",
@@ -231,5 +231,7 @@ Benefits and Drawbacks v/s auto-complete.
 
 1. Highlight the trade-off of increased index size because of space requirements of ngram.
 2. Sometimes, you really don't want to match incomplete words, auto-complete is better in such a scenario.
+
+---
 
 Next, you should read about [**Searchbar**](https://appbaseio.gitbooks.io/esc/content/searchbar/searchbar.html).

@@ -26,8 +26,7 @@ To store the data without analyzing it, we have to make `tags` field **not\_anal
 curl -XPUT $host/tagwise/_mapping/tagwise -d '{
   "properties": {
     "tags": {
-          "type": "string",
-          "index": "not_analyzed"
+      "type": "keyword",
     }
   }
 }'
@@ -125,4 +124,3 @@ While the latter query looks much simpler, the above query is marked by Elastics
 As we can see in the above response object, we found a hit containing the "reddit" tag.
 
 However, we might often want to either index multiple tags with a document or search documents by more than one tags. We talk about this in the next article on [multiple tag match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/multiple-tag-match.html).
-

@@ -29,16 +29,28 @@ If we look back at our data mappings, they should now look like as follows
 curl $host/normal_searchbar/_mapping?pretty
 ```
 
-```
-{
-  "searchbar": {
-    "mappings": {
-      "searchbar": {
+```json
+"normal_searchbar" : {
+  "mappings" : {
+    "searchbar" : {
+      "properties" : {
         "city" : {
-          "type" : "text"
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
         },
         "country" : {
-          "type" : "text"
+          "type" : "text",
+          "fields" : {
+            "keyword" : {
+              "type" : "keyword",
+              "ignore_above" : 256
+            }
+          }
         }
       }
     }
@@ -96,5 +108,7 @@ Response:
 ```
 
 You can also try out this query interactively  [here. ![](https://i.imgur.com/Z4Vt76n.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAJeBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmIMRwpW8tLJEeyKCwoHzPOkL9M0KdbHLZtMVPxIPMlh7YYAQinNjBTPX006UGzGERYNqNYjacxklVFkEoKyx2zaubRUqhqxScMG9gD-h7bDyj7ZQ6VU2Kj2rkJ1mds7BRVYkDfAHTEbtNa5GW20cp1fus1prbJbNXISvUEQNnPsDOsiH93N8mrqk4ZUuFt9U-a6lycH_ep550RD_dqNp8O-_A9qC47n_yrU_BAyybWtYEqbqRubgwH5baTC-QR8cqtVNANksc4-2BgClNbtmRec6DIggUIQApnQW6Ka43GNQq1VJspFdL6BLiepaIvHsDim4UET7rm6-S-XBuAgmxwXg3uRZWbHsh2dXJc7OFlkkJ5ya2vtztZPA8jbWub8fNumuGGaas26ulK15v1eC6OvUVIizE6-4gA5Hf2VtlzBtduJrH6OUSJpSwOEThH8-2BKVYsJC11RK1IZz_CfkD1pl9s6Krlk6IjK2dlIIoqFy3S5dN5Z77hoOOVGDCTlDFL450xutJaPdENBxXQP4p98KwkK4Ph6fLGgTL7c5MY7Oqgd9P-tqeiPkaYCzZ9h4OQUqcxCn6MrWlo-g3XhMAmDaXD1N8VLhNAic0F2XkN1MLisvMMdHftDHr6zn96c6i4T_5fw9rw)
+
+---
 
 You should next read about [**multi match**](https://appbaseio.gitbooks.io/esc/content/searchbar/multi-match.html).

@@ -70,7 +70,7 @@ Next, we will move to the queries section. Here, we will be using the **completi
 curl "$host/normal_searchbar/searchbar/_search?size=0&pretty" -d '{
   "suggest": {
     "city-suggest": {
-      "text": "New Y",
+      "text": "new y",
       "completion": {
         "field": "city.city_autocomplete"
       }
@@ -99,7 +99,7 @@ Here, `text` is the actual text that the user has typed so far and `completion` 
   },
   "suggest" : {
     "city-suggest" : [ {
-      "text" : "New Y",
+      "text" : "new y",
       "offset" : 0,
       "length" : 5,
       "options" : [ {
@@ -121,7 +121,7 @@ A similar query for suggestions on the **country** field would look like this:
 curl "$host/normal_searchbar/searchbar/_search?size=0&pretty" -d '{
   "suggest": {
     "country-suggest": {
-      "text": "New",
+      "text": "united st",
       "completion": {
         "field": "country.country_autocomplete"
       }
@@ -157,43 +157,60 @@ curl "$host/normal_searchbar/searchbar/_search?size=0&pretty" -d '{
 
 ```json
 {
-  "took" : 23,
+  "took" : 49,
   "timed_out" : false,
   "_shards" : {
-    "total" : 1,
-    "successful" : 1,
+    "total" : 2,
+    "successful" : 2,
+    "skipped" : 0,
     "failed" : 0
   },
   "hits" : {
-    "total" : 15506,
+    "total" : 0,
     "max_score" : 0.0,
     "hits" : [ ]
   },
   "suggest" : {
-    "country-suggest" : [ {
-      "text" : "Chi",
-      "offset" : 0,
-      "length" : 3,
-      "options" : [ {
-        "text" : "China",
-        "score" : 401.0
-      }, {
-        "text" : "Chile",
-        "score" : 127.0
-      } ]
-    } ],
-    "city-suggest" : [ {
-      "text" : "Chi",
-      "offset" : 0,
-      "length" : 3,
-      "options" : [ {
-        "text" : "Chita",
-        "score" : 2.0
-      }, {
-        "text" : "Chihuahua",
-        "score" : 2.0
-      } ]
-    } ]
+    "city-suggest" : [
+      {
+        "text" : "Chi",
+        "offset" : 0,
+        "length" : 3,
+        "options" : [
+          {
+            "text" : "Chiajna",
+            "_index" : "normal_searchbar",
+            "_type" : "searchbar",
+            "_id" : "AWDMLdpE5Q83Zq9GY7SX",
+            "_score" : 1.0,
+            "_source" : {
+              "city" : "Chiajna",
+              "country" : "Romania"
+            }
+          }
+        ]
+      }
+    ],
+    "country-suggest" : [
+      {
+        "text" : "Chi",
+        "offset" : 0,
+        "length" : 3,
+        "options" : [
+          {
+            "text" : "Chile",
+            "_index" : "normal_searchbar",
+            "_type" : "searchbar",
+            "_id" : "AWDMLep65Q83Zq9GY7hi",
+            "_score" : 1.0,
+            "_source" : {
+              "city" : "ViÃÂÃÂ±a del Mar",
+              "country" : "Chile"
+            }
+          }
+        ]
+      }
+    ]
   }
 }
 ```
