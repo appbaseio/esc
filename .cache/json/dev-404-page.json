@@ -1,0 +1,95 @@
+{
+    "data": {
+        "allSitePage": {
+            "totalCount": 17,
+            "edges": [
+                {
+                    "node": {
+                        "path": "/docs/tagwise-search/partial-tag-match-tbd.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/searchbar/introduction.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/404.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/docs/phrase-search/introduction.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/searchbar/auto-complete.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/searchbar/multi-match.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/searchbar/searchbar.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/searchbar/simple-match.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/docs/phrase-search/phrase_match.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/searchbar/suggestions.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/docs/tagwise-search/arrays.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/docs/tagwise-search/exact-match.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/docs/tagwise-search/introduction.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/docs/tagwise-search/multiple-tag-match.html"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/404/"
+                    }
+                },
+                {
+                    "node": {
+                        "path": "/jsx-compiler.html/"
+                    }
+                }
+            ]
+        }
+    },
+    "pathContext": {}
+}

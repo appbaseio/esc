@@ -1,0 +1,21 @@
+{
+    "data": {
+        "markdownRemark": {
+            "html": "<p>We couldn’t find what you were looking for.</p>",
+            "frontmatter": {
+                "title": "Page Not Found",
+                "next": null,
+                "prev": null,
+                "nextTitle": null,
+                "prevTitle": null
+            },
+            "fields": {
+                "path": "404.md",
+                "slug": "404.html"
+            }
+        }
+    },
+    "pathContext": {
+        "slug": "404.html"
+    }
+}

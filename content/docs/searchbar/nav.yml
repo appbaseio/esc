@@ -1,0 +1,26 @@
+- title: Searchbar
+  items:
+    - id: introduction
+      title: Introduction
+      href: /searchbar/introduction.html
+      forceInternal: true
+    - id: simple-match
+      title: Simple Match
+      href: /searchbar/simple-match.html
+      forceInternal: true
+    - id: multi-match
+      title: Multi Match
+      href: /searchbar/multi-match.html
+      forceInternal: true
+    - id: auto-complete
+      title: Auto Complete
+      href: /searchbar/auto-complete.html
+      forceInternal: true
+    - id: suggestions
+      title: Suggestions
+      href: /searchbar/suggestions.html
+      forceInternal: true
+    - id: searchbar
+      title: Searchbar
+      href: /searchbar/searchbar.html
+      forceInternal: true
