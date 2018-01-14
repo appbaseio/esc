@@ -1,4 +1,12 @@
-# Multiple Tag match
+---
+id: multiple-tag-match
+title: "Multiple Tag Match"
+layout: tutorial
+sectionid: multiple-tag-match
+permalink: tagwise-search/multiple-tag-match.html
+prev: arrays.html
+prevTitle: "Array Datatype"
+---
 
 This article is a part of the series on [**How to build tag wise search with Elasticsearch**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html).
 

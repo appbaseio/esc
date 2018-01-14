@@ -1,4 +1,14 @@
-# Exact Match
+---
+id: exact-tag-match
+title: "Exact Tag Match"
+layout: tutorial
+sectionid: exact-tag-match
+permalink: tagwise-search/exact-match.html
+next: arrays.html
+nextTitle: "Arrays Datatype"
+prev: introduction.html
+prevTitle: "Tagwise search: Introduction"
+---
 
 This article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html)
 

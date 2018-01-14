@@ -1,4 +1,12 @@
-# Tag wise search: Introduction
+---
+id: tagwise-search-introduction
+title: "Tagwise search: Introduction"
+layout: tutorial
+sectionid: tagwise-search-introduction
+permalink: tagwise-search/introduction.html
+next: exact-match.html
+nextTitle: "Exact Tag Match"
+---
 
 ### How to build tag wise search with Elasticsearch?
 
