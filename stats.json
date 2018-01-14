@@ -1,0 +1,108 @@
+{
+  "assetsByChunkName": {
+    "path---tagwise-search-multiple-tag-match-html": [
+      "path---tagwise-search-multiple-tag-match-html-4e50031f42b7b0a73fd1.js",
+      "path---tagwise-search-multiple-tag-match-html-4e50031f42b7b0a73fd1.js.map"
+    ],
+    "path---": [
+      "path----6611940bd40871b680a6.js",
+      "path----6611940bd40871b680a6.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-901c196d5c516a7d1c2a.js",
+      "component---src-layouts-index-js-901c196d5c516a7d1c2a.js.map"
+    ],
+    "path---searchbar-auto-complete-html": [
+      "path---searchbar-auto-complete-html-4ebb24e01258644fa001.js",
+      "path---searchbar-auto-complete-html-4ebb24e01258644fa001.js.map"
+    ],
+    "path---jsx-compiler-html": [
+      "path---jsx-compiler-html-586c7e095e534a3909ec.js",
+      "path---jsx-compiler-html-586c7e095e534a3909ec.js.map"
+    ],
+    "path---searchbar-suggestions-html": [
+      "path---searchbar-suggestions-html-d90e1a616283d7f82140.js",
+      "path---searchbar-suggestions-html-d90e1a616283d7f82140.js.map"
+    ],
+    "path---tagwise-search-introduction-html": [
+      "path---tagwise-search-introduction-html-65f30637ff1bc5735aba.js",
+      "path---tagwise-search-introduction-html-65f30637ff1bc5735aba.js.map"
+    ],
+    "path---searchbar-introduction-html": [
+      "path---searchbar-introduction-html-ac752ba26ed1694a7d7e.js",
+      "path---searchbar-introduction-html-ac752ba26ed1694a7d7e.js.map"
+    ],
+    "path---tagwise-search-exact-match-html": [
+      "path---tagwise-search-exact-match-html-938d01b5a3c4b667c40f.js",
+      "path---tagwise-search-exact-match-html-938d01b5a3c4b667c40f.js.map"
+    ],
+    "path---index": [
+      "path---index-d651ea599fb7bf67da69.js",
+      "path---index-d651ea599fb7bf67da69.js.map"
+    ],
+    "path---docs-tagwise-search-partial-tag-match-tbd-html": [
+      "path---docs-tagwise-search-partial-tag-match-tbd-html-23bebd8dc7480deb4041.js",
+      "path---docs-tagwise-search-partial-tag-match-tbd-html-23bebd8dc7480deb4041.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-d0160e5e1acfd265b9e1.js",
+      "component---src-pages-404-js-d0160e5e1acfd265b9e1.js.map"
+    ],
+    "component---src-pages-jsx-compiler-html-js": [
+      "component---src-pages-jsx-compiler-html-js-2753891fbdf65b8eb673.js",
+      "component---src-pages-jsx-compiler-html-js-2753891fbdf65b8eb673.js.map"
+    ],
+    "path---docs-phrase-search-introduction-html": [
+      "path---docs-phrase-search-introduction-html-44095a49b503c0f3bec1.js",
+      "path---docs-phrase-search-introduction-html-44095a49b503c0f3bec1.js.map"
+    ],
+    "path---searchbar-simple-match-html": [
+      "path---searchbar-simple-match-html-dd47413fb326b6a2351c.js",
+      "path---searchbar-simple-match-html-dd47413fb326b6a2351c.js.map"
+    ],
+    "commons": [
+      "commons-1afa9f54f73255c00a53.js",
+      "build-js-styles.css",
+      "commons-1afa9f54f73255c00a53.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404-html": [
+      "path---404-html-586c7e095e534a3909ec.js",
+      "path---404-html-586c7e095e534a3909ec.js.map"
+    ],
+    "path---searchbar-searchbar-html": [
+      "path---searchbar-searchbar-html-04382beef4e1c1c2c4f4.js",
+      "path---searchbar-searchbar-html-04382beef4e1c1c2c4f4.js.map"
+    ],
+    "path---tagwise-search-arrays-html": [
+      "path---tagwise-search-arrays-html-6901251808f9c10065c2.js",
+      "path---tagwise-search-arrays-html-6901251808f9c10065c2.js.map"
+    ],
+    "path---docs-phrase-search-phrase-match-html": [
+      "path---docs-phrase-search-phrase-match-html-aff3633654d0efdd8d61.js",
+      "path---docs-phrase-search-phrase-match-html-aff3633654d0efdd8d61.js.map"
+    ],
+    "app": [
+      "app-e044d5d42b51069afbc9.js",
+      "build-js-styles.css",
+      "app-e044d5d42b51069afbc9.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-templates-docs-js": [
+      "component---src-templates-docs-js-d1aec09bf6d16538cd68.js",
+      "component---src-templates-docs-js-d1aec09bf6d16538cd68.js.map"
+    ],
+    "path---searchbar-multi-match-html": [
+      "path---searchbar-multi-match-html-089864905a5f9d1d4a03.js",
+      "path---searchbar-multi-match-html-089864905a5f9d1d4a03.js.map"
+    ],
+    "path---404": [
+      "path---404-586c7e095e534a3909ec.js",
+      "path---404-586c7e095e534a3909ec.js.map"
+    ],
+    "component---src-templates-home-js": [
+      "component---src-templates-home-js-0b567c92b811370eb8b1.js",
+      "component---src-templates-home-js-0b567c92b811370eb8b1.js.map"
+    ]
+  }
+}
