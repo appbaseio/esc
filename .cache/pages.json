@@ -1,12 +1,5 @@
 [
     {
-        "componentChunkName": "component---cache-dev-404-page-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "dev-404-page.json",
-        "path": "/dev-404-page/"
-    },
-    {
         "componentChunkName": "component---src-templates-docs-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
@@ -21,14 +14,7 @@
         "path": "/"
     },
     {
-        "componentChunkName": "component---src-templates-docs-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "searchbar-introduction-html.json",
-        "path": "/searchbar/introduction.html"
-    },
-    {
-        "componentChunkName": "component---src-templates-docs-js",
+        "componentChunkName": "component---src-pages-404-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "404-html.json",
@@ -45,6 +31,20 @@
         "componentChunkName": "component---src-templates-docs-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "tagwise-search-multiple-tag-match-html.json",
+        "path": "/tagwise-search/multiple-tag-match.html"
+    },
+    {
+        "componentChunkName": "component---src-templates-docs-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "tagwise-search-introduction-html.json",
+        "path": "/tagwise-search/introduction.html"
+    },
+    {
+        "componentChunkName": "component---src-templates-docs-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "searchbar-auto-complete-html.json",
         "path": "/searchbar/auto-complete.html"
     },
@@ -52,22 +52,15 @@
         "componentChunkName": "component---src-templates-docs-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "searchbar-multi-match-html.json",
-        "path": "/searchbar/multi-match.html"
+        "jsonName": "searchbar-introduction-html.json",
+        "path": "/searchbar/introduction.html"
     },
     {
         "componentChunkName": "component---src-templates-docs-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "searchbar-searchbar-html.json",
-        "path": "/searchbar/searchbar.html"
-    },
-    {
-        "componentChunkName": "component---src-templates-docs-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "searchbar-simple-match-html.json",
-        "path": "/searchbar/simple-match.html"
+        "jsonName": "tagwise-search-exact-match-html.json",
+        "path": "/tagwise-search/exact-match.html"
     },
     {
         "componentChunkName": "component---src-templates-docs-js",
@@ -80,36 +73,36 @@
         "componentChunkName": "component---src-templates-docs-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "searchbar-multi-match-html.json",
+        "path": "/searchbar/multi-match.html"
+    },
+    {
+        "componentChunkName": "component---src-templates-docs-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "searchbar-simple-match-html.json",
+        "path": "/searchbar/simple-match.html"
+    },
+    {
+        "componentChunkName": "component---src-templates-docs-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "tagwise-search-arrays-html.json",
+        "path": "/tagwise-search/arrays.html"
+    },
+    {
+        "componentChunkName": "component---src-templates-docs-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "searchbar-searchbar-html.json",
+        "path": "/searchbar/searchbar.html"
+    },
+    {
+        "componentChunkName": "component---src-templates-docs-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "searchbar-suggestions-html.json",
         "path": "/searchbar/suggestions.html"
-    },
-    {
-        "componentChunkName": "component---src-templates-docs-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "docs-tagwise-search-arrays-html.json",
-        "path": "/docs/tagwise-search/arrays.html"
-    },
-    {
-        "componentChunkName": "component---src-templates-docs-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "docs-tagwise-search-exact-match-html.json",
-        "path": "/docs/tagwise-search/exact-match.html"
-    },
-    {
-        "componentChunkName": "component---src-templates-docs-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "docs-tagwise-search-introduction-html.json",
-        "path": "/docs/tagwise-search/introduction.html"
-    },
-    {
-        "componentChunkName": "component---src-templates-docs-js",
-        "layout": "layout---index",
-        "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "docs-tagwise-search-multiple-tag-match-html.json",
-        "path": "/docs/tagwise-search/multiple-tag-match.html"
     },
     {
         "componentChunkName": "component---src-pages-404-js",

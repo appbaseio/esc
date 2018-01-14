@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/esc',
   siteMetadata: {
     title:
       'Elasticsearch Cookbook',

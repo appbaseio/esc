@@ -1,23 +1,13 @@
 {
   "nodes": {
     "SitePage /dev-404-page/": {
-      "layout": "index",
-      "jsonName": "dev-404-page.json",
-      "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/Users/siddharthlatest/dev/github/esc/.cache/dev-404-page.js",
-      "componentChunkName": "component---cache-dev-404-page-js",
-      "context": {},
-      "updatedAt": 1515631017602,
-      "pluginCreator___NODE": "Plugin dev-404-page",
-      "pluginCreatorId": "Plugin dev-404-page",
-      "componentPath": "/Users/siddharthlatest/dev/github/esc/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7630ae99a43263eccbcf2cb05354d68e",
+        "contentDigest": "f91d29e10ba680b413138cf9ed86e655",
         "owner": "internal-data-bridge"
       }
     },
@@ -691,7 +681,7 @@
               "wrapperStyle": "",
               "backgroundColor": "white",
               "linkImagesToOriginal": true,
-              "pathPrefix": ""
+              "pathPrefix": "/esc"
             },
             "nodeAPIs": [],
             "pluginFilepath": "/Users/siddharthlatest/dev/github/esc/node_modules/gatsby-remark-images"
@@ -960,7 +950,7 @@
         "wrapperStyle": "",
         "backgroundColor": "white",
         "linkImagesToOriginal": true,
-        "pathPrefix": ""
+        "pathPrefix": "/esc"
       },
       "nodeAPIs": [],
       "pluginFilepath": "/Users/siddharthlatest/dev/github/esc/node_modules/gatsby-remark-images",
@@ -1691,7 +1681,7 @@
       "resolve": "/Users/siddharthlatest/dev/github/esc",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "4fd27bef2b992907fcd35ef4bd74e7a8",
+      "version": "7eaf1a80e6cf0b119b9e00084bf5a28f",
       "pluginOptions": {
         "plugins": []
       },
@@ -1928,7 +1918,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "125496391397522efde67cf6c07436ab",
+        "contentDigest": "3b7c95ce078db629305d0c0337985646",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -1940,19 +1930,17 @@
         "rssFeedTitle": "Elasticsearch Cookbook (ESC)",
         "rssFeedDescription": "Elasticsearch Cookbook aka ESC - teaching Elasticsearch with interactive examples."
       },
-      "port": "8000",
-      "host": "localhost",
+      "pathPrefix": "/esc",
       "mapping": {
         "MarkdownRemark.frontmatter.author": "AuthorYaml"
       },
-      "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-01-11T00:28:20.110Z",
+      "buildTime": "2018-01-14T06:57:52.880Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "12caf5cc1dcc0bf312efe67d377a0e75",
+        "contentDigest": "6bcd2394567ff7f99fba803cf9ce349b",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -2000,7 +1988,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0475da14ae10821023eeabb305e73cdc",
+        "contentDigest": "0563456692af47c034c73bf1ab672395",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2011,7 +1999,7 @@
       "size": 170,
       "prettySize": "170 B",
       "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-11T00:28:29.000Z",
+      "accessTime": "2018-01-14T06:58:12.000Z",
       "changeTime": "2018-01-10T23:45:56.000Z",
       "birthTime": "2018-01-10T23:45:56.000Z",
       "root": "/",
@@ -2029,99 +2017,11 @@
       "blksize": 4096,
       "ino": 19404048,
       "blocks": 0,
-      "atimeMs": 1515630509000,
+      "atimeMs": 1515913092000,
       "mtimeMs": 1515627956000,
       "ctimeMs": 1515627956000,
       "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:28:29.000Z",
-      "mtime": "2018-01-10T23:45:56.000Z",
-      "ctime": "2018-01-10T23:45:56.000Z",
-      "birthtime": "2018-01-10T23:45:56.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/src/pages/favicon.ico absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/src/pages/favicon.ico absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "c6acedaff906029fc5455d9ec52c7f42",
-        "mediaType": "image/x-icon",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/src/pages/favicon.ico",
-      "relativePath": "favicon.ico",
-      "extension": "ico",
-      "size": 198,
-      "prettySize": "198 B",
-      "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-11T00:06:54.000Z",
-      "changeTime": "2018-01-10T23:45:56.000Z",
-      "birthTime": "2018-01-10T23:45:56.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/src/pages",
-      "base": "favicon.ico",
-      "ext": ".ico",
-      "name": "favicon",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 19404050,
-      "blocks": 8,
-      "atimeMs": 1515629214000,
-      "mtimeMs": 1515627956000,
-      "ctimeMs": 1515627956000,
-      "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:06:54.000Z",
-      "mtime": "2018-01-10T23:45:56.000Z",
-      "ctime": "2018-01-10T23:45:56.000Z",
-      "birthtime": "2018-01-10T23:45:56.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/src/pages/404.js absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/src/pages/404.js absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "163f023290cf988c308c0d11c7754a07",
-        "mediaType": "application/javascript",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "pages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/src/pages/404.js",
-      "relativePath": "404.js",
-      "extension": "js",
-      "size": 681,
-      "prettySize": "681 B",
-      "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-11T00:06:54.000Z",
-      "changeTime": "2018-01-10T23:45:56.000Z",
-      "birthTime": "2018-01-10T23:45:56.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/src/pages",
-      "base": "404.js",
-      "ext": ".js",
-      "name": "404",
-      "relativeDirectory": "",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 19404049,
-      "blocks": 8,
-      "atimeMs": 1515629214000,
-      "mtimeMs": 1515627956000,
-      "ctimeMs": 1515627956000,
-      "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:06:54.000Z",
+      "atime": "2018-01-14T06:58:12.000Z",
       "mtime": "2018-01-10T23:45:56.000Z",
       "ctime": "2018-01-10T23:45:56.000Z",
       "birthtime": "2018-01-10T23:45:56.000Z"
@@ -2143,7 +2043,7 @@
       "size": 777,
       "prettySize": "777 B",
       "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-11T00:06:54.000Z",
+      "accessTime": "2018-01-14T06:45:54.000Z",
       "changeTime": "2018-01-10T23:45:56.000Z",
       "birthTime": "2018-01-10T23:45:56.000Z",
       "root": "/",
@@ -2161,11 +2061,99 @@
       "blksize": 4096,
       "ino": 19404051,
       "blocks": 8,
-      "atimeMs": 1515629214000,
+      "atimeMs": 1515912354000,
       "mtimeMs": 1515627956000,
       "ctimeMs": 1515627956000,
       "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:06:54.000Z",
+      "atime": "2018-01-14T06:45:54.000Z",
+      "mtime": "2018-01-10T23:45:56.000Z",
+      "ctime": "2018-01-10T23:45:56.000Z",
+      "birthtime": "2018-01-10T23:45:56.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/src/pages/favicon.ico absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/src/pages/favicon.ico absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "c6acedaff906029fc5455d9ec52c7f42",
+        "mediaType": "image/x-icon",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/src/pages/favicon.ico",
+      "relativePath": "favicon.ico",
+      "extension": "ico",
+      "size": 198,
+      "prettySize": "198 B",
+      "modifiedTime": "2018-01-10T23:45:56.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
+      "changeTime": "2018-01-10T23:45:56.000Z",
+      "birthTime": "2018-01-10T23:45:56.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/src/pages",
+      "base": "favicon.ico",
+      "ext": ".ico",
+      "name": "favicon",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 19404050,
+      "blocks": 8,
+      "atimeMs": 1515912113000,
+      "mtimeMs": 1515627956000,
+      "ctimeMs": 1515627956000,
+      "birthtimeMs": 1515627956000,
+      "atime": "2018-01-14T06:41:53.000Z",
+      "mtime": "2018-01-10T23:45:56.000Z",
+      "ctime": "2018-01-10T23:45:56.000Z",
+      "birthtime": "2018-01-10T23:45:56.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/src/pages/404.js absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/src/pages/404.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "163f023290cf988c308c0d11c7754a07",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "pages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/src/pages/404.js",
+      "relativePath": "404.js",
+      "extension": "js",
+      "size": 681,
+      "prettySize": "681 B",
+      "modifiedTime": "2018-01-10T23:45:56.000Z",
+      "accessTime": "2018-01-14T06:45:54.000Z",
+      "changeTime": "2018-01-10T23:45:56.000Z",
+      "birthTime": "2018-01-10T23:45:56.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/src/pages",
+      "base": "404.js",
+      "ext": ".js",
+      "name": "404",
+      "relativeDirectory": "",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 19404049,
+      "blocks": 8,
+      "atimeMs": 1515912354000,
+      "mtimeMs": 1515627956000,
+      "ctimeMs": 1515627956000,
+      "birthtimeMs": 1515627956000,
+      "atime": "2018-01-14T06:45:54.000Z",
       "mtime": "2018-01-10T23:45:56.000Z",
       "ctime": "2018-01-10T23:45:56.000Z",
       "birthtime": "2018-01-10T23:45:56.000Z"
@@ -2175,7 +2163,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b537ceb9c3117175a993cadc6be2bb6f",
+        "contentDigest": "51288a35022bad5ed278a63f4c63e70b",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2186,7 +2174,7 @@
       "size": 204,
       "prettySize": "204 B",
       "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-11T00:28:29.000Z",
+      "accessTime": "2018-01-14T06:58:12.000Z",
       "changeTime": "2018-01-10T23:45:56.000Z",
       "birthTime": "2018-01-10T23:45:56.000Z",
       "root": "/",
@@ -2204,11 +2192,11 @@
       "blksize": 4096,
       "ino": 19404091,
       "blocks": 0,
-      "atimeMs": 1515630509000,
+      "atimeMs": 1515913092000,
       "mtimeMs": 1515627956000,
       "ctimeMs": 1515627956000,
       "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:28:29.000Z",
+      "atime": "2018-01-14T06:58:12.000Z",
       "mtime": "2018-01-10T23:45:56.000Z",
       "ctime": "2018-01-10T23:45:56.000Z",
       "birthtime": "2018-01-10T23:45:56.000Z"
@@ -2218,7 +2206,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "b8a58284d16aaf1fdb2d7ee5fad0bf4c",
+        "contentDigest": "434c9b7c4c2034a393ebd6e9a682c302",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2229,7 +2217,7 @@
       "size": 170,
       "prettySize": "170 B",
       "modifiedTime": "2018-01-10T23:50:40.000Z",
-      "accessTime": "2018-01-11T00:28:29.000Z",
+      "accessTime": "2018-01-14T06:58:12.000Z",
       "changeTime": "2018-01-10T23:50:40.000Z",
       "birthTime": "2018-01-10T23:45:56.000Z",
       "root": "/",
@@ -2247,64 +2235,21 @@
       "blksize": 4096,
       "ino": 19404094,
       "blocks": 0,
-      "atimeMs": 1515630509000,
+      "atimeMs": 1515913092000,
       "mtimeMs": 1515628240000,
       "ctimeMs": 1515628240000,
       "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:28:29.000Z",
+      "atime": "2018-01-14T06:58:12.000Z",
       "mtime": "2018-01-10T23:50:40.000Z",
       "ctime": "2018-01-10T23:50:40.000Z",
       "birthtime": "2018-01-10T23:45:56.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "913defa1d6d2f2983e48ab03e8706389",
-        "type": "Directory",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
-      "relativePath": "docs/searchbar",
-      "extension": "",
-      "size": 306,
-      "prettySize": "306 B",
-      "modifiedTime": "2018-01-10T23:49:50.000Z",
-      "accessTime": "2018-01-11T00:28:29.000Z",
-      "changeTime": "2018-01-10T23:49:50.000Z",
-      "birthTime": "2017-03-18T18:25:20.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs",
-      "base": "searchbar",
-      "ext": "",
-      "name": "searchbar",
-      "relativeDirectory": "docs",
-      "dev": 16777220,
-      "mode": 16877,
-      "nlink": 9,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 6819916,
-      "blocks": 0,
-      "atimeMs": 1515630509000,
-      "mtimeMs": 1515628190000,
-      "ctimeMs": 1515628190000,
-      "birthtimeMs": 1489861520000,
-      "atime": "2018-01-11T00:28:29.000Z",
-      "mtime": "2018-01-10T23:49:50.000Z",
-      "ctime": "2018-01-10T23:49:50.000Z",
-      "birthtime": "2017-03-18T18:25:20.000Z"
     },
     "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search absPath of file": {
       "id": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "0a668835750fb2b1e3ccf24556b60d9d",
+        "contentDigest": "493edbdc9265229bf40e82a7e145bbc1",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2315,7 +2260,7 @@
       "size": 170,
       "prettySize": "170 B",
       "modifiedTime": "2018-01-10T23:49:41.000Z",
-      "accessTime": "2018-01-11T00:28:29.000Z",
+      "accessTime": "2018-01-14T06:58:12.000Z",
       "changeTime": "2018-01-10T23:49:41.000Z",
       "birthTime": "2017-09-30T21:14:08.000Z",
       "root": "/",
@@ -2333,21 +2278,64 @@
       "blksize": 4096,
       "ino": 14866375,
       "blocks": 0,
-      "atimeMs": 1515630509000,
+      "atimeMs": 1515913092000,
       "mtimeMs": 1515628181000,
       "ctimeMs": 1515628181000,
       "birthtimeMs": 1506806048000,
-      "atime": "2018-01-11T00:28:29.000Z",
+      "atime": "2018-01-14T06:58:12.000Z",
       "mtime": "2018-01-10T23:49:41.000Z",
       "ctime": "2018-01-10T23:49:41.000Z",
       "birthtime": "2017-09-30T21:14:08.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f9e801025a284f308c6e58fa67d7d21e",
+        "type": "Directory",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "packages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
+      "relativePath": "docs/searchbar",
+      "extension": "",
+      "size": 306,
+      "prettySize": "306 B",
+      "modifiedTime": "2018-01-10T23:49:50.000Z",
+      "accessTime": "2018-01-14T06:58:12.000Z",
+      "changeTime": "2018-01-10T23:49:50.000Z",
+      "birthTime": "2017-03-18T18:25:20.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs",
+      "base": "searchbar",
+      "ext": "",
+      "name": "searchbar",
+      "relativeDirectory": "docs",
+      "dev": 16777220,
+      "mode": 16877,
+      "nlink": 9,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 6819916,
+      "blocks": 0,
+      "atimeMs": 1515913092000,
+      "mtimeMs": 1515628190000,
+      "ctimeMs": 1515628190000,
+      "birthtimeMs": 1489861520000,
+      "atime": "2018-01-14T06:58:12.000Z",
+      "mtime": "2018-01-10T23:49:50.000Z",
+      "ctime": "2018-01-10T23:49:50.000Z",
+      "birthtime": "2017-03-18T18:25:20.000Z"
     },
     "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search absPath of file": {
       "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search absPath of file",
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "dd74882f455878ef7fc1e925ff6a7b91",
+        "contentDigest": "88638d866a3bf8a0bb4eb3f0ff136536",
         "type": "Directory",
         "owner": "gatsby-source-filesystem"
       },
@@ -2358,7 +2346,7 @@
       "size": 272,
       "prettySize": "272 B",
       "modifiedTime": "2018-01-10T23:50:01.000Z",
-      "accessTime": "2018-01-11T00:28:29.000Z",
+      "accessTime": "2018-01-14T06:58:12.000Z",
       "changeTime": "2018-01-10T23:50:01.000Z",
       "birthTime": "2017-04-23T14:51:19.000Z",
       "root": "/",
@@ -2376,11 +2364,11 @@
       "blksize": 4096,
       "ino": 8698977,
       "blocks": 0,
-      "atimeMs": 1515630509000,
+      "atimeMs": 1515913092000,
       "mtimeMs": 1515628201000,
       "ctimeMs": 1515628201000,
       "birthtimeMs": 1492959079000,
-      "atime": "2018-01-11T00:28:29.000Z",
+      "atime": "2018-01-14T06:58:12.000Z",
       "mtime": "2018-01-10T23:50:01.000Z",
       "ctime": "2018-01-10T23:50:01.000Z",
       "birthtime": "2017-04-23T14:51:19.000Z"
@@ -2404,7 +2392,7 @@
       "size": 0,
       "prettySize": "0 B",
       "modifiedTime": "2018-01-10T23:44:36.000Z",
-      "accessTime": "2018-01-11T00:15:59.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
       "changeTime": "2018-01-10T23:44:36.000Z",
       "birthTime": "2018-01-10T23:44:36.000Z",
       "root": "/",
@@ -2422,11 +2410,11 @@
       "blksize": 4096,
       "ino": 19352643,
       "blocks": 0,
-      "atimeMs": 1515629759000,
+      "atimeMs": 1515912113000,
       "mtimeMs": 1515627876000,
       "ctimeMs": 1515627876000,
       "birthtimeMs": 1515627876000,
-      "atime": "2018-01-11T00:15:59.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
       "mtime": "2018-01-10T23:44:36.000Z",
       "ctime": "2018-01-10T23:44:36.000Z",
       "birthtime": "2018-01-10T23:44:36.000Z"
@@ -2448,7 +2436,7 @@
       "size": 353,
       "prettySize": "353 B",
       "modifiedTime": "2018-01-10T23:51:06.000Z",
-      "accessTime": "2018-01-11T00:19:15.000Z",
+      "accessTime": "2018-01-14T06:58:12.000Z",
       "changeTime": "2018-01-10T23:51:06.000Z",
       "birthTime": "2018-01-10T23:45:56.000Z",
       "root": "/",
@@ -2466,11 +2454,11 @@
       "blksize": 4096,
       "ino": 19404093,
       "blocks": 8,
-      "atimeMs": 1515629955000,
+      "atimeMs": 1515913092000,
       "mtimeMs": 1515628266000,
       "ctimeMs": 1515628266000,
       "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:19:15.000Z",
+      "atime": "2018-01-14T06:58:12.000Z",
       "mtime": "2018-01-10T23:51:06.000Z",
       "ctime": "2018-01-10T23:51:06.000Z",
       "birthtime": "2018-01-10T23:45:56.000Z"
@@ -2492,7 +2480,7 @@
       "size": 365,
       "prettySize": "365 B",
       "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-10T23:45:56.000Z",
+      "accessTime": "2018-01-14T06:45:55.000Z",
       "changeTime": "2018-01-10T23:45:56.000Z",
       "birthTime": "2018-01-10T23:45:56.000Z",
       "root": "/",
@@ -2510,11 +2498,11 @@
       "blksize": 4096,
       "ino": 19404096,
       "blocks": 8,
-      "atimeMs": 1515627956000,
+      "atimeMs": 1515912355000,
       "mtimeMs": 1515627956000,
       "ctimeMs": 1515627956000,
       "birthtimeMs": 1515627956000,
-      "atime": "2018-01-10T23:45:56.000Z",
+      "atime": "2018-01-14T06:45:55.000Z",
       "mtime": "2018-01-10T23:45:56.000Z",
       "ctime": "2018-01-10T23:45:56.000Z",
       "birthtime": "2018-01-10T23:45:56.000Z"
@@ -2538,7 +2526,7 @@
       "size": 1184,
       "prettySize": "1.18 kB",
       "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-10T23:51:09.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
       "changeTime": "2018-01-10T23:45:56.000Z",
       "birthTime": "2018-01-10T23:45:56.000Z",
       "root": "/",
@@ -2556,11 +2544,11 @@
       "blksize": 4096,
       "ino": 19404109,
       "blocks": 8,
-      "atimeMs": 1515628269000,
+      "atimeMs": 1515912113000,
       "mtimeMs": 1515627956000,
       "ctimeMs": 1515627956000,
       "birthtimeMs": 1515627956000,
-      "atime": "2018-01-10T23:51:09.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
       "mtime": "2018-01-10T23:45:56.000Z",
       "ctime": "2018-01-10T23:45:56.000Z",
       "birthtime": "2018-01-10T23:45:56.000Z"
@@ -2584,7 +2572,7 @@
       "size": 110,
       "prettySize": "110 B",
       "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-10T23:45:56.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
       "changeTime": "2018-01-10T23:45:56.000Z",
       "birthTime": "2018-01-10T23:45:56.000Z",
       "root": "/",
@@ -2602,60 +2590,14 @@
       "blksize": 4096,
       "ino": 19404092,
       "blocks": 8,
-      "atimeMs": 1515627956000,
+      "atimeMs": 1515912113000,
       "mtimeMs": 1515627956000,
       "ctimeMs": 1515627956000,
       "birthtimeMs": 1515627956000,
-      "atime": "2018-01-10T23:45:56.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
       "mtime": "2018-01-10T23:45:56.000Z",
       "ctime": "2018-01-10T23:45:56.000Z",
       "birthtime": "2018-01-10T23:45:56.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file",
-      "children": [
-        "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "02212317ee0111a85188ca17352e8bd9",
-        "mediaType": "text/x-markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md",
-      "relativePath": "docs/searchbar/introduction.md",
-      "extension": "md",
-      "size": 1716,
-      "prettySize": "1.72 kB",
-      "modifiedTime": "2018-01-11T00:30:13.000Z",
-      "accessTime": "2018-01-11T00:30:13.000Z",
-      "changeTime": "2018-01-11T00:30:13.000Z",
-      "birthTime": "2017-09-30T21:14:08.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
-      "base": "introduction.md",
-      "ext": ".md",
-      "name": "introduction",
-      "relativeDirectory": "docs/searchbar",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 14866379,
-      "blocks": 8,
-      "atimeMs": 1515630613000,
-      "mtimeMs": 1515630613000,
-      "ctimeMs": 1515630613000,
-      "birthtimeMs": 1506806048000,
-      "atime": "2018-01-11T00:30:13.000Z",
-      "mtime": "2018-01-11T00:30:13.000Z",
-      "ctime": "2018-01-11T00:30:13.000Z",
-      "birthtime": "2017-09-30T21:14:08.000Z"
     },
     "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/introduction.md absPath of file": {
       "id": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/introduction.md absPath of file",
@@ -2676,7 +2618,7 @@
       "size": 983,
       "prettySize": "983 B",
       "modifiedTime": "2018-01-10T23:44:36.000Z",
-      "accessTime": "2018-01-10T23:44:37.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
       "changeTime": "2018-01-10T23:44:36.000Z",
       "birthTime": "2018-01-10T23:44:36.000Z",
       "root": "/",
@@ -2694,14 +2636,150 @@
       "blksize": 4096,
       "ino": 19352633,
       "blocks": 8,
-      "atimeMs": 1515627877000,
+      "atimeMs": 1515912113000,
       "mtimeMs": 1515627876000,
       "ctimeMs": 1515627876000,
       "birthtimeMs": 1515627876000,
-      "atime": "2018-01-10T23:44:37.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
       "mtime": "2018-01-10T23:44:36.000Z",
       "ctime": "2018-01-10T23:44:36.000Z",
       "birthtime": "2018-01-10T23:44:36.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file",
+      "children": [
+        "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "9064a2970f349c3c1a0bdb07526c2a7c",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "packages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md",
+      "relativePath": "docs/tagwise-search/introduction.md",
+      "extension": "md",
+      "size": 1616,
+      "prettySize": "1.62 kB",
+      "modifiedTime": "2018-01-14T06:34:53.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
+      "changeTime": "2018-01-14T06:34:53.000Z",
+      "birthTime": "2018-01-10T23:44:36.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
+      "base": "introduction.md",
+      "ext": ".md",
+      "name": "introduction",
+      "relativeDirectory": "docs/tagwise-search",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 19352641,
+      "blocks": 8,
+      "atimeMs": 1515912113000,
+      "mtimeMs": 1515911693000,
+      "ctimeMs": 1515911693000,
+      "birthtimeMs": 1515627876000,
+      "atime": "2018-01-14T06:41:53.000Z",
+      "mtime": "2018-01-14T06:34:53.000Z",
+      "ctime": "2018-01-14T06:34:53.000Z",
+      "birthtime": "2018-01-10T23:44:36.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file",
+      "children": [
+        "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "1fe4b61c91d0d94653d554272cb99654",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "packages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md",
+      "relativePath": "docs/tagwise-search/multiple-tag-match.md",
+      "extension": "md",
+      "size": 10374,
+      "prettySize": "10.4 kB",
+      "modifiedTime": "2018-01-14T06:39:49.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
+      "changeTime": "2018-01-14T06:39:49.000Z",
+      "birthTime": "2018-01-10T23:44:36.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
+      "base": "multiple-tag-match.md",
+      "ext": ".md",
+      "name": "multiple-tag-match",
+      "relativeDirectory": "docs/tagwise-search",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 19352642,
+      "blocks": 24,
+      "atimeMs": 1515912113000,
+      "mtimeMs": 1515911989000,
+      "ctimeMs": 1515911989000,
+      "birthtimeMs": 1515627876000,
+      "atime": "2018-01-14T06:41:53.000Z",
+      "mtime": "2018-01-14T06:39:49.000Z",
+      "ctime": "2018-01-14T06:39:49.000Z",
+      "birthtime": "2018-01-10T23:44:36.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/nav.yml absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/nav.yml absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d16e230f05ccd54e04e05b6d06b36bae",
+        "mediaType": "text/yaml",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "packages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/nav.yml",
+      "relativePath": "docs/tagwise-search/nav.yml",
+      "extension": "yml",
+      "size": 546,
+      "prettySize": "546 B",
+      "modifiedTime": "2018-01-14T06:37:51.000Z",
+      "accessTime": "2018-01-14T06:45:55.000Z",
+      "changeTime": "2018-01-14T06:37:51.000Z",
+      "birthTime": "2018-01-10T23:45:56.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
+      "base": "nav.yml",
+      "ext": ".yml",
+      "name": "nav",
+      "relativeDirectory": "docs/tagwise-search",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 19404107,
+      "blocks": 8,
+      "atimeMs": 1515912355000,
+      "mtimeMs": 1515911871000,
+      "ctimeMs": 1515911871000,
+      "birthtimeMs": 1515627956000,
+      "atime": "2018-01-14T06:45:55.000Z",
+      "mtime": "2018-01-14T06:37:51.000Z",
+      "ctime": "2018-01-14T06:37:51.000Z",
+      "birthtime": "2018-01-10T23:45:56.000Z"
     },
     "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/auto-complete.md absPath of file": {
       "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/auto-complete.md absPath of file",
@@ -2722,7 +2800,7 @@
       "size": 7937,
       "prettySize": "7.94 kB",
       "modifiedTime": "2018-01-11T00:31:32.000Z",
-      "accessTime": "2018-01-11T00:31:33.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
       "changeTime": "2018-01-11T00:31:32.000Z",
       "birthTime": "2018-01-10T23:44:36.000Z",
       "root": "/",
@@ -2740,40 +2818,42 @@
       "blksize": 4096,
       "ino": 19352635,
       "blocks": 16,
-      "atimeMs": 1515630693000,
+      "atimeMs": 1515912113000,
       "mtimeMs": 1515630692000,
       "ctimeMs": 1515630692000,
       "birthtimeMs": 1515627876000,
-      "atime": "2018-01-11T00:31:33.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
       "mtime": "2018-01-11T00:31:32.000Z",
       "ctime": "2018-01-11T00:31:32.000Z",
       "birthtime": "2018-01-10T23:44:36.000Z"
     },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/nav.yml absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/nav.yml absPath of file",
-      "children": [],
+    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file",
+      "children": [
+        "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file >>> MarkdownRemark"
+      ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "50c997ccb4df7e024e81758ed544ddc4",
-        "mediaType": "text/yaml",
+        "contentDigest": "02212317ee0111a85188ca17352e8bd9",
+        "mediaType": "text/x-markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/nav.yml",
-      "relativePath": "docs/searchbar/nav.yml",
-      "extension": "yml",
-      "size": 712,
-      "prettySize": "712 B",
-      "modifiedTime": "2018-01-11T00:17:00.000Z",
-      "accessTime": "2018-01-11T00:17:04.000Z",
-      "changeTime": "2018-01-11T00:17:00.000Z",
-      "birthTime": "2018-01-10T23:45:56.000Z",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md",
+      "relativePath": "docs/searchbar/introduction.md",
+      "extension": "md",
+      "size": 1716,
+      "prettySize": "1.72 kB",
+      "modifiedTime": "2018-01-11T00:30:13.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
+      "changeTime": "2018-01-11T00:30:13.000Z",
+      "birthTime": "2017-09-30T21:14:08.000Z",
       "root": "/",
       "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
-      "base": "nav.yml",
-      "ext": ".yml",
-      "name": "nav",
+      "base": "introduction.md",
+      "ext": ".md",
+      "name": "introduction",
       "relativeDirectory": "docs/searchbar",
       "dev": 16777220,
       "mode": 33188,
@@ -2782,45 +2862,45 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 19404104,
+      "ino": 14866379,
       "blocks": 8,
-      "atimeMs": 1515629824000,
-      "mtimeMs": 1515629820000,
-      "ctimeMs": 1515629820000,
-      "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:17:04.000Z",
-      "mtime": "2018-01-11T00:17:00.000Z",
-      "ctime": "2018-01-11T00:17:00.000Z",
-      "birthtime": "2018-01-10T23:45:56.000Z"
+      "atimeMs": 1515912113000,
+      "mtimeMs": 1515630613000,
+      "ctimeMs": 1515630613000,
+      "birthtimeMs": 1506806048000,
+      "atime": "2018-01-14T06:41:53.000Z",
+      "mtime": "2018-01-11T00:30:13.000Z",
+      "ctime": "2018-01-11T00:30:13.000Z",
+      "birthtime": "2017-09-30T21:14:08.000Z"
     },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md absPath of file",
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file",
       "children": [
-        "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md absPath of file >>> MarkdownRemark"
+        "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file >>> MarkdownRemark"
       ],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "6a61cb40fa42c1ddb1b8d86635f7af05",
+        "contentDigest": "4921b51bb05d4a80bb15a3454177c916",
         "mediaType": "text/x-markdown",
         "type": "File",
         "owner": "gatsby-source-filesystem"
       },
       "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md",
-      "relativePath": "docs/searchbar/multi-match.md",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md",
+      "relativePath": "docs/tagwise-search/exact-match.md",
       "extension": "md",
-      "size": 4720,
-      "prettySize": "4.72 kB",
-      "modifiedTime": "2018-01-11T00:30:36.000Z",
-      "accessTime": "2018-01-11T00:30:36.000Z",
-      "changeTime": "2018-01-11T00:30:36.000Z",
+      "size": 5275,
+      "prettySize": "5.28 kB",
+      "modifiedTime": "2018-01-14T06:34:48.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
+      "changeTime": "2018-01-14T06:34:48.000Z",
       "birthTime": "2018-01-10T23:44:36.000Z",
       "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
-      "base": "multi-match.md",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
+      "base": "exact-match.md",
       "ext": ".md",
-      "name": "multi-match",
-      "relativeDirectory": "docs/searchbar",
+      "name": "exact-match",
+      "relativeDirectory": "docs/tagwise-search",
       "dev": 16777220,
       "mode": 33188,
       "nlink": 1,
@@ -2828,61 +2908,15 @@
       "gid": 20,
       "rdev": 0,
       "blksize": 4096,
-      "ino": 19352636,
+      "ino": 19352640,
       "blocks": 16,
-      "atimeMs": 1515630636000,
-      "mtimeMs": 1515630636000,
-      "ctimeMs": 1515630636000,
+      "atimeMs": 1515912113000,
+      "mtimeMs": 1515911688000,
+      "ctimeMs": 1515911688000,
       "birthtimeMs": 1515627876000,
-      "atime": "2018-01-11T00:30:36.000Z",
-      "mtime": "2018-01-11T00:30:36.000Z",
-      "ctime": "2018-01-11T00:30:36.000Z",
-      "birthtime": "2018-01-10T23:44:36.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file",
-      "children": [
-        "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "6bc7111300fbb808a72102bf1a8e18ac",
-        "mediaType": "text/x-markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md",
-      "relativePath": "docs/searchbar/searchbar.md",
-      "extension": "md",
-      "size": 9581,
-      "prettySize": "9.58 kB",
-      "modifiedTime": "2018-01-11T00:31:09.000Z",
-      "accessTime": "2018-01-11T00:31:09.000Z",
-      "changeTime": "2018-01-11T00:31:09.000Z",
-      "birthTime": "2018-01-10T23:44:36.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
-      "base": "searchbar.md",
-      "ext": ".md",
-      "name": "searchbar",
-      "relativeDirectory": "docs/searchbar",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 19352637,
-      "blocks": 24,
-      "atimeMs": 1515630669000,
-      "mtimeMs": 1515630669000,
-      "ctimeMs": 1515630669000,
-      "birthtimeMs": 1515627876000,
-      "atime": "2018-01-11T00:31:09.000Z",
-      "mtime": "2018-01-11T00:31:09.000Z",
-      "ctime": "2018-01-11T00:31:09.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
+      "mtime": "2018-01-14T06:34:48.000Z",
+      "ctime": "2018-01-14T06:34:48.000Z",
       "birthtime": "2018-01-10T23:44:36.000Z"
     },
     "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file": {
@@ -2904,7 +2938,7 @@
       "size": 6593,
       "prettySize": "6.59 kB",
       "modifiedTime": "2018-01-10T23:44:36.000Z",
-      "accessTime": "2018-01-10T23:44:37.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
       "changeTime": "2018-01-10T23:44:36.000Z",
       "birthTime": "2018-01-10T23:44:36.000Z",
       "root": "/",
@@ -2922,13 +2956,59 @@
       "blksize": 4096,
       "ino": 19352634,
       "blocks": 16,
-      "atimeMs": 1515627877000,
+      "atimeMs": 1515912113000,
       "mtimeMs": 1515627876000,
       "ctimeMs": 1515627876000,
       "birthtimeMs": 1515627876000,
-      "atime": "2018-01-10T23:44:37.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
       "mtime": "2018-01-10T23:44:36.000Z",
       "ctime": "2018-01-10T23:44:36.000Z",
+      "birthtime": "2018-01-10T23:44:36.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md absPath of file",
+      "children": [
+        "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6a61cb40fa42c1ddb1b8d86635f7af05",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "packages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md",
+      "relativePath": "docs/searchbar/multi-match.md",
+      "extension": "md",
+      "size": 4720,
+      "prettySize": "4.72 kB",
+      "modifiedTime": "2018-01-11T00:30:36.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
+      "changeTime": "2018-01-11T00:30:36.000Z",
+      "birthTime": "2018-01-10T23:44:36.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
+      "base": "multi-match.md",
+      "ext": ".md",
+      "name": "multi-match",
+      "relativeDirectory": "docs/searchbar",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 19352636,
+      "blocks": 16,
+      "atimeMs": 1515912113000,
+      "mtimeMs": 1515630636000,
+      "ctimeMs": 1515630636000,
+      "birthtimeMs": 1515627876000,
+      "atime": "2018-01-14T06:41:53.000Z",
+      "mtime": "2018-01-11T00:30:36.000Z",
+      "ctime": "2018-01-11T00:30:36.000Z",
       "birthtime": "2018-01-10T23:44:36.000Z"
     },
     "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/simple-match.md absPath of file": {
@@ -2950,7 +3030,7 @@
       "size": 4062,
       "prettySize": "4.06 kB",
       "modifiedTime": "2018-01-11T00:36:57.000Z",
-      "accessTime": "2018-01-11T00:36:57.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
       "changeTime": "2018-01-11T00:36:57.000Z",
       "birthTime": "2018-01-10T23:44:36.000Z",
       "root": "/",
@@ -2968,13 +3048,149 @@
       "blksize": 4096,
       "ino": 19352638,
       "blocks": 8,
-      "atimeMs": 1515631017000,
+      "atimeMs": 1515912113000,
       "mtimeMs": 1515631017000,
       "ctimeMs": 1515631017000,
       "birthtimeMs": 1515627876000,
-      "atime": "2018-01-11T00:36:57.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
       "mtime": "2018-01-11T00:36:57.000Z",
       "ctime": "2018-01-11T00:36:57.000Z",
+      "birthtime": "2018-01-10T23:44:36.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file",
+      "children": [
+        "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "f933b295467b5969ac16747d475fbb48",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "packages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md",
+      "relativePath": "docs/tagwise-search/arrays.md",
+      "extension": "md",
+      "size": 6019,
+      "prettySize": "6.02 kB",
+      "modifiedTime": "2018-01-14T06:33:39.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
+      "changeTime": "2018-01-14T06:33:39.000Z",
+      "birthTime": "2017-09-30T21:14:08.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
+      "base": "arrays.md",
+      "ext": ".md",
+      "name": "arrays",
+      "relativeDirectory": "docs/tagwise-search",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 14866384,
+      "blocks": 16,
+      "atimeMs": 1515912113000,
+      "mtimeMs": 1515911619000,
+      "ctimeMs": 1515911619000,
+      "birthtimeMs": 1506806048000,
+      "atime": "2018-01-14T06:41:53.000Z",
+      "mtime": "2018-01-14T06:33:39.000Z",
+      "ctime": "2018-01-14T06:33:39.000Z",
+      "birthtime": "2017-09-30T21:14:08.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/nav.yml absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/nav.yml absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "50c997ccb4df7e024e81758ed544ddc4",
+        "mediaType": "text/yaml",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "packages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/nav.yml",
+      "relativePath": "docs/searchbar/nav.yml",
+      "extension": "yml",
+      "size": 712,
+      "prettySize": "712 B",
+      "modifiedTime": "2018-01-11T00:17:00.000Z",
+      "accessTime": "2018-01-14T06:45:55.000Z",
+      "changeTime": "2018-01-11T00:17:00.000Z",
+      "birthTime": "2018-01-10T23:45:56.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
+      "base": "nav.yml",
+      "ext": ".yml",
+      "name": "nav",
+      "relativeDirectory": "docs/searchbar",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 19404104,
+      "blocks": 8,
+      "atimeMs": 1515912355000,
+      "mtimeMs": 1515629820000,
+      "ctimeMs": 1515629820000,
+      "birthtimeMs": 1515627956000,
+      "atime": "2018-01-14T06:45:55.000Z",
+      "mtime": "2018-01-11T00:17:00.000Z",
+      "ctime": "2018-01-11T00:17:00.000Z",
+      "birthtime": "2018-01-10T23:45:56.000Z"
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file",
+      "children": [
+        "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file >>> MarkdownRemark"
+      ],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "6bc7111300fbb808a72102bf1a8e18ac",
+        "mediaType": "text/x-markdown",
+        "type": "File",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "packages",
+      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md",
+      "relativePath": "docs/searchbar/searchbar.md",
+      "extension": "md",
+      "size": 9581,
+      "prettySize": "9.58 kB",
+      "modifiedTime": "2018-01-11T00:31:09.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
+      "changeTime": "2018-01-11T00:31:09.000Z",
+      "birthTime": "2018-01-10T23:44:36.000Z",
+      "root": "/",
+      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar",
+      "base": "searchbar.md",
+      "ext": ".md",
+      "name": "searchbar",
+      "relativeDirectory": "docs/searchbar",
+      "dev": 16777220,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 19352637,
+      "blocks": 24,
+      "atimeMs": 1515912113000,
+      "mtimeMs": 1515630669000,
+      "ctimeMs": 1515630669000,
+      "birthtimeMs": 1515627876000,
+      "atime": "2018-01-14T06:41:53.000Z",
+      "mtime": "2018-01-11T00:31:09.000Z",
+      "ctime": "2018-01-11T00:31:09.000Z",
       "birthtime": "2018-01-10T23:44:36.000Z"
     },
     "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/suggestions.md absPath of file": {
@@ -2996,7 +3212,7 @@
       "size": 9459,
       "prettySize": "9.46 kB",
       "modifiedTime": "2018-01-11T00:30:41.000Z",
-      "accessTime": "2018-01-11T00:30:41.000Z",
+      "accessTime": "2018-01-14T06:41:53.000Z",
       "changeTime": "2018-01-11T00:30:41.000Z",
       "birthTime": "2018-01-10T23:44:36.000Z",
       "root": "/",
@@ -3014,241 +3230,13 @@
       "blksize": 4096,
       "ino": 19352639,
       "blocks": 24,
-      "atimeMs": 1515630641000,
+      "atimeMs": 1515912113000,
       "mtimeMs": 1515630641000,
       "ctimeMs": 1515630641000,
       "birthtimeMs": 1515627876000,
-      "atime": "2018-01-11T00:30:41.000Z",
+      "atime": "2018-01-14T06:41:53.000Z",
       "mtime": "2018-01-11T00:30:41.000Z",
       "ctime": "2018-01-11T00:30:41.000Z",
-      "birthtime": "2018-01-10T23:44:36.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file",
-      "children": [
-        "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "1cb5de7a732b4f2224f156af951a4923",
-        "mediaType": "text/x-markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md",
-      "relativePath": "docs/tagwise-search/arrays.md",
-      "extension": "md",
-      "size": 5797,
-      "prettySize": "5.8 kB",
-      "modifiedTime": "2017-09-30T21:14:08.000Z",
-      "accessTime": "2017-09-30T21:14:08.000Z",
-      "changeTime": "2017-09-30T21:14:08.000Z",
-      "birthTime": "2017-09-30T21:14:08.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
-      "base": "arrays.md",
-      "ext": ".md",
-      "name": "arrays",
-      "relativeDirectory": "docs/tagwise-search",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 14866384,
-      "blocks": 16,
-      "atimeMs": 1506806048000,
-      "mtimeMs": 1506806048000,
-      "ctimeMs": 1506806048000,
-      "birthtimeMs": 1506806048000,
-      "atime": "2017-09-30T21:14:08.000Z",
-      "mtime": "2017-09-30T21:14:08.000Z",
-      "ctime": "2017-09-30T21:14:08.000Z",
-      "birthtime": "2017-09-30T21:14:08.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file",
-      "children": [
-        "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "a325fb2c0447db0e1060b7291ba7f41b",
-        "mediaType": "text/x-markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md",
-      "relativePath": "docs/tagwise-search/exact-match.md",
-      "extension": "md",
-      "size": 5026,
-      "prettySize": "5.03 kB",
-      "modifiedTime": "2018-01-10T23:44:36.000Z",
-      "accessTime": "2018-01-10T23:44:37.000Z",
-      "changeTime": "2018-01-10T23:44:36.000Z",
-      "birthTime": "2018-01-10T23:44:36.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
-      "base": "exact-match.md",
-      "ext": ".md",
-      "name": "exact-match",
-      "relativeDirectory": "docs/tagwise-search",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 19352640,
-      "blocks": 16,
-      "atimeMs": 1515627877000,
-      "mtimeMs": 1515627876000,
-      "ctimeMs": 1515627876000,
-      "birthtimeMs": 1515627876000,
-      "atime": "2018-01-10T23:44:37.000Z",
-      "mtime": "2018-01-10T23:44:36.000Z",
-      "ctime": "2018-01-10T23:44:36.000Z",
-      "birthtime": "2018-01-10T23:44:36.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/nav.yml absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/nav.yml absPath of file",
-      "children": [],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "892ce6a2827dbc2f28b54e0a9bb04c3d",
-        "mediaType": "text/yaml",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/nav.yml",
-      "relativePath": "docs/tagwise-search/nav.yml",
-      "extension": "yml",
-      "size": 1547,
-      "prettySize": "1.55 kB",
-      "modifiedTime": "2018-01-10T23:45:56.000Z",
-      "accessTime": "2018-01-11T00:16:01.000Z",
-      "changeTime": "2018-01-10T23:45:56.000Z",
-      "birthTime": "2018-01-10T23:45:56.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
-      "base": "nav.yml",
-      "ext": ".yml",
-      "name": "nav",
-      "relativeDirectory": "docs/tagwise-search",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 19404107,
-      "blocks": 8,
-      "atimeMs": 1515629761000,
-      "mtimeMs": 1515627956000,
-      "ctimeMs": 1515627956000,
-      "birthtimeMs": 1515627956000,
-      "atime": "2018-01-11T00:16:01.000Z",
-      "mtime": "2018-01-10T23:45:56.000Z",
-      "ctime": "2018-01-10T23:45:56.000Z",
-      "birthtime": "2018-01-10T23:45:56.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file",
-      "children": [
-        "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "7667cb3096eb787629a4621ca07a083f",
-        "mediaType": "text/x-markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md",
-      "relativePath": "docs/tagwise-search/introduction.md",
-      "extension": "md",
-      "size": 1410,
-      "prettySize": "1.41 kB",
-      "modifiedTime": "2018-01-10T23:44:36.000Z",
-      "accessTime": "2018-01-10T23:44:37.000Z",
-      "changeTime": "2018-01-10T23:44:36.000Z",
-      "birthTime": "2018-01-10T23:44:36.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
-      "base": "introduction.md",
-      "ext": ".md",
-      "name": "introduction",
-      "relativeDirectory": "docs/tagwise-search",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 19352641,
-      "blocks": 8,
-      "atimeMs": 1515627877000,
-      "mtimeMs": 1515627876000,
-      "ctimeMs": 1515627876000,
-      "birthtimeMs": 1515627876000,
-      "atime": "2018-01-10T23:44:37.000Z",
-      "mtime": "2018-01-10T23:44:36.000Z",
-      "ctime": "2018-01-10T23:44:36.000Z",
-      "birthtime": "2018-01-10T23:44:36.000Z"
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file",
-      "children": [
-        "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file >>> MarkdownRemark"
-      ],
-      "parent": "___SOURCE___",
-      "internal": {
-        "contentDigest": "a3b1fef78ad0f030c19cde6dd91c02c9",
-        "mediaType": "text/x-markdown",
-        "type": "File",
-        "owner": "gatsby-source-filesystem"
-      },
-      "sourceInstanceName": "packages",
-      "absolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md",
-      "relativePath": "docs/tagwise-search/multiple-tag-match.md",
-      "extension": "md",
-      "size": 10185,
-      "prettySize": "10.2 kB",
-      "modifiedTime": "2018-01-10T23:44:36.000Z",
-      "accessTime": "2018-01-10T23:44:37.000Z",
-      "changeTime": "2018-01-10T23:44:36.000Z",
-      "birthTime": "2018-01-10T23:44:36.000Z",
-      "root": "/",
-      "dir": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search",
-      "base": "multiple-tag-match.md",
-      "ext": ".md",
-      "name": "multiple-tag-match",
-      "relativeDirectory": "docs/tagwise-search",
-      "dev": 16777220,
-      "mode": 33188,
-      "nlink": 1,
-      "uid": 501,
-      "gid": 20,
-      "rdev": 0,
-      "blksize": 4096,
-      "ino": 19352642,
-      "blocks": 24,
-      "atimeMs": 1515627877000,
-      "mtimeMs": 1515627876000,
-      "ctimeMs": 1515627876000,
-      "birthtimeMs": 1515627876000,
-      "atime": "2018-01-10T23:44:37.000Z",
-      "mtime": "2018-01-10T23:44:36.000Z",
-      "ctime": "2018-01-10T23:44:36.000Z",
       "birthtime": "2018-01-10T23:44:36.000Z"
     },
     "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/partial-tag-match-tbd.md absPath of file >>> MarkdownRemark": {
@@ -3304,39 +3292,6 @@
       "fields": {
         "slug": "/index.html",
         "path": "index.md",
-        "redirect": ""
-      }
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file",
-      "internal": {
-        "content": "---\r\nid: introduction\r\ntitle: \"Introduction\"\r\nlayout: tutorial\r\nsectionid: introduction\r\npermalink: searchbar/introduction.html\r\nnext: simple-match.html\r\nnextTitle: \"Simple Match\"\r\n---\r\n\r\n### How to build a search bar with Elasticsearch?\r\n\r\nThis chapter provides a simple introduction and guide to building a search bar for your e-commerce app, user data, or any structured data set that is meant for keyword based queries.\r\n\r\nWe will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as our search engine and the index (and dataset) is hosted on an [appbase.io](https://appbase.io) app.\r\n\r\n![](https://i.imgur.com/UNkzVkU.jpg)  \r\n**Image:** Search bars from popular websites\r\n\r\n### Table of Contents\r\n\r\n\r\n| Index     | Title    | Description |\r\n| ---------- | ---------- |---------|\r\n| 1          | [Simple Match](https://appbaseio.gitbooks.io/esc/content/searchbar/simple-match.html) | How to build a simple match based search. |\r\n| 2       | [Multi Match](https://appbaseio.gitbooks.io/esc/content/searchbar/multi-match.html) | How to search on multiple fields. |\r\n| 3       | [Auto Completion](https://appbaseio.gitbooks.io/esc/content/searchbar/auto-complete.html) | How to add a search-as-you-type autocompletion view. |\r\n| 4       | [Suggestions](https://appbaseio.gitbooks.io/esc/content/searchbar/suggestions.html) | How to add a search-as-you-type suggestions view. |\r\n| 5       | [Searchbar](https://appbaseio.gitbooks.io/esc/content/searchbar/searchbar.html) | Combining all the above steps to build the search bar functionality. |\r\n\r\n### Live Demo\r\n<script async src=\"//jsfiddle.net/1b8tcxs4/3/embed/\"></script>\r\n[code](https://jsfiddle.net/1b8tcxs4/3/)\r\n**TODO:** Embed JSFiddle demo\r\n",
-        "contentDigest": "b0fa67b023409f6f52a954cbb77abdb9",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin",
-          "path": "default-site-plugin",
-          "redirect": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Introduction",
-        "id": "introduction",
-        "layout": "tutorial",
-        "sectionid": "introduction",
-        "permalink": "searchbar/introduction.html",
-        "next": "simple-match.html",
-        "nextTitle": "Simple Match",
-        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file",
-        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md",
-      "fields": {
-        "slug": "searchbar/introduction.html",
-        "path": "docs/searchbar/introduction.md",
         "redirect": ""
       }
     },
@@ -3396,6 +3351,72 @@
         "redirect": ""
       }
     },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file",
+      "internal": {
+        "content": "---\r\nid: multiple-tag-match\r\ntitle: \"Multiple Tag Match\"\r\nlayout: tutorial\r\nsectionid: multiple-tag-match\r\npermalink: tagwise-search/multiple-tag-match.html\r\nprev: arrays.html\r\nprevTitle: \"Array Datatype\"\r\n---\r\n\r\nThis article is a part of the series on [**How to build tag wise search with Elasticsearch**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html).\r\n\r\n## How to find multiple exact values\r\n\r\nA major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the matching content by user specifying either just one or more than one tag labels in union or intersection output modes.\r\n\r\nIn this chapter, we will be using an Array data structure to store more than one label with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.\r\n\r\n### How to store data using Elasticsearch arrays\r\n\r\nFor one or more then one inputs elasticsearch by default considers that field as an array type. However, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.\r\n\r\nDefault array does not support querying each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.\r\n\r\n`Note:` You can read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).\r\n\r\n## Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nBy default Elasticsearch analyzes the data before storing it on disk. However, since we require an exact match of the data for repository tags, we will apply a `index: not_analyzed` setting to prevent the tag field from being analyzed.\r\n\r\nWe will only specify the mapping for the tags field. Elasticsearch will create mappings dynamically for the rest of the fields.\r\n\r\n### Disable analyzers on `tags` field\r\n\r\nTo store the data without analyzing it, we have to make `tags` field **not\\_analyzed**. By doing this Elasticsearch will store the data as usual without any modifications.\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/_mapping/search -d '{\r\n  \"properties\": {\r\n    \"tags\": {\r\n      \"type\": \"keyword\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nWe just put **mapping** on `search` type of `tagwise` index. Now, let's index some data.\r\n\r\n## Indexing Data\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/search/1 -d '{\r\n  \"repo\" : \"reddit\",\r\n  \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n  \"owner\" : \"reddit\",\r\n  \"url\" : \"https://github.com/reddit/reddit\",\r\n  \"stars\" : 13053,\r\n  \"language\" : \"Python\",\r\n  \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n}'\r\n```\r\n\r\nIf we look back at our data mappings, they should now look like as follows\r\n\r\n```json\r\ncurl $host/tagwise/_mapping?pretty\r\n```\r\n\r\n```json\r\n{\r\n  \"tagwise\": {\r\n    \"mappings\": {\r\n      \"search\": {\r\n        \"properties\": {\r\n          \"owner\" : {\r\n            \"type\" : \"text\",\r\n            \"fields\" : {\r\n              \"keyword\" : {\r\n                \"type\" : \"keyword\",\r\n                \"ignore_above\" : 256\r\n              }\r\n            }\r\n          },\r\n          \"repo\" : {\r\n            \"type\" : \"text\",\r\n            \"fields\" : {\r\n              \"keyword\" : {\r\n                \"type\" : \"keyword\",\r\n                \"ignore_above\" : 256\r\n              }\r\n            }\r\n          },\r\n          \"tags\": {\r\n            \"type\": \"keyword\"\r\n          },\r\n          \"url\" : {\r\n            \"type\" : \"text\",\r\n            \"fields\" : {\r\n              \"keyword\" : {\r\n                \"type\" : \"keyword\",\r\n                \"ignore_above\" : 256\r\n              }\r\n            }\r\n          },\r\n          \"stars\": {\r\n            \"type\": \"long\"\r\n          },\r\n          \"language\" : {\r\n            \"type\" : \"text\",\r\n            \"fields\" : {\r\n              \"keyword\" : {\r\n                \"type\" : \"keyword\",\r\n                \"ignore_above\" : 256\r\n              }\r\n            }\r\n          },\r\n          \"created-on\": {\r\n            \"type\": \"date\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n```\r\n\r\nWe already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.\r\n\r\n## Data Browser View\r\n\r\nFor accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)\r\n\r\n## Query\r\n\r\nElasticsearch provides a way through bool query to combine the multiple query types into a single query with `and`, `or`, and `not` logic.\r\n\r\n### Bool Query\r\n\r\nThe bool query is composed of four clauses\\(query\\).\r\n\r\n* `must`: All of these clauses must match. The equivalent of **AND**.\r\n* `must_not`: All of these clauses must not match. The equivalent of **NOT**.\r\n* `should`: At least one of these clauses must match. The equivalent of **OR**.\r\n* `filter`: The query must appear in matching documents. This query ignores the score and executes it in filter context.\r\n\r\nWe will execute bool queries in non-scoring mode since we have disabled analyzer on `tags` field. We will use `constant_score` query to wrap everything with its filter clause.\r\n\r\nSo our basic query json structure looks like this:\r\n\r\n```json\r\n{\r\n   \"query\" : {\r\n      \"constant_score\" : {\r\n         \"filter\" : {\r\n            \"bool\" : {\r\n              \"should\" : [...],\r\n              \"must_not\" : [...],\r\n              \"must\": [...],\r\n              \"filter\": [...]\r\n           }\r\n         }\r\n      }\r\n   }\r\n}\r\n```\r\n\r\nWe will use `must` and `should` clauses to filter the data. Through `must` clause we can get the results which contain all the mentioned tags and through `should` clause we can get the results which contain either of the mentioned tags.\r\n\r\n### Must Query\r\n\r\nWe will use `term` query inside `must` clause. The `term` query finds documents that contain the exact term specified at the index time and `must` query take **AND** of all the results.\r\n\r\n```json\r\ncurl $host/tagwise/search/_search?pretty -d '{\r\n   \"query\" : {\r\n      \"constant_score\" : {\r\n         \"filter\" : {\r\n            \"bool\" : {\r\n              \"must\": [\r\n                {\r\n                  \"term\": {\r\n                    \"tags\": \"reddit\"\r\n                  }\r\n                },\r\n                {\r\n                  \"term\": {\r\n                    \"tags\": \"python\"\r\n                  }\r\n                }\r\n              ]\r\n           }\r\n         }\r\n      }\r\n   }\r\n}'\r\n```\r\n\r\n#### Response\r\n\r\n```json\r\n{\r\n  \"took\": 20,\r\n  \"timed_out\": false,\r\n  \"_shards\": {\r\n    \"total\": 1,\r\n    \"successful\": 1,\r\n    \"failed\": 0\r\n  },\r\n  \"hits\": {\r\n    \"total\": 1,\r\n    \"max_score\": 1,\r\n    \"hits\": [\r\n      {\r\n        \"_index\": \"tagwise\",\r\n        \"_type\": \"search\",\r\n        \"_id\": \"AVvR1yM3gPzdwFFNDvs7\",\r\n        \"_score\": 1,\r\n        \"_source\": {\r\n          \"repo\": \"reddit\",\r\n          \"tags\": [\r\n            \"javascript\",\r\n            \"python\",\r\n            \"reddit\"\r\n          ],\r\n          \"owner\": \"reddit\",\r\n          \"url\": \"https://github.com/reddit/reddit\",\r\n          \"stars\": 13053,\r\n          \"language\": \"Python\",\r\n          \"created-on\": \"2008-06-18T23:30:53Z\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}\r\n```\r\n\r\n### Should Query\r\n\r\nThe `should` query in filter context fetches documents which match with at least one of the mentioned should queries.\r\n\r\n```json\r\ncurl $host/tagwise/search/_search?pretty -d '{\r\n   \"query\" : {\r\n      \"constant_score\" : {\r\n         \"filter\" : {\r\n            \"bool\" : {\r\n              \"should\": [\r\n                {\r\n                  \"term\": {\r\n                    \"tags\": \"reddit\"\r\n                  }\r\n                },\r\n                {\r\n                  \"term\": {\r\n                    \"tags\": \"python\"\r\n                  }\r\n                }\r\n              ]\r\n           }\r\n         }\r\n      }\r\n   }\r\n}'\r\n```\r\n\r\n#### Response:\r\n\r\nAs you can see in the response the first result contains only one of the mentioned tag - `python`.\r\n\r\n```json\r\n{\r\n  \"took\": 28,\r\n  \"timed_out\": false,\r\n  \"_shards\": {\r\n    \"total\": 1,\r\n    \"successful\": 1,\r\n    \"failed\": 0\r\n  },\r\n  \"hits\": {\r\n    \"total\": 51,\r\n    \"max_score\": 1,\r\n    \"hits\": [\r\n      {\r\n        \"_index\": \"tagwise\",\r\n        \"_type\": \"search\",\r\n        \"_id\": \"AVvR1yI5hvsk2FETc3bb\",\r\n        \"_score\": 1,\r\n        \"_source\": {\r\n          \"repo\": \"awesome-python\",\r\n          \"tags\": [\r\n            \"awesome\",\r\n            \"collections\",\r\n            \"python\"\r\n          ],\r\n          \"owner\": \"vinta\",\r\n          \"url\": \"https://github.com/vinta/awesome-python\",\r\n          \"stars\": 33500,\r\n          \"language\": \"Python\",\r\n          \"created-on\": \"2014-06-27T21:00:06Z\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}\r\n```\r\n\r\nYou can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)\r\n\r\n---\r\n\r\nYou should next read about [**partial tag match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbd.html).\r\n",
+        "contentDigest": "ce12cf0cf7706bd2fed6c602e17590c0",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin",
+          "path": "default-site-plugin",
+          "redirect": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Multiple Tag Match",
+        "id": "multiple-tag-match",
+        "layout": "tutorial",
+        "sectionid": "multiple-tag-match",
+        "permalink": "tagwise-search/multiple-tag-match.html",
+        "prev": "arrays.html",
+        "prevTitle": "Array Datatype",
+        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file",
+        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md",
+      "fields": {
+        "slug": "tagwise-search/multiple-tag-match.html",
+        "path": "docs/tagwise-search/multiple-tag-match.md",
+        "redirect": ""
+      }
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file",
+      "internal": {
+        "content": "---\r\nid: tagwise-search-introduction\r\ntitle: \"Tagwise search: Introduction\"\r\nlayout: tutorial\r\nsectionid: tagwise-search-introduction\r\npermalink: tagwise-search/introduction.html\r\nnext: exact-match.html\r\nnextTitle: \"Exact Tag Match\"\r\n---\r\n\r\n### How to build tag wise search with Elasticsearch?\r\n\r\nA tag is a label or metadata used on social networks and blogging services which makes it easier for users to find the data with a specific theme or content. Also, it can be useful to filter data according to single or multiple categories.\r\n\r\nIn this chapter, we’re going to build tag wise search very similar to Github's. We will also show you how to do multiple tag searching and partial tag match.\r\n\r\nWe will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as our search engine and the index (and dataset) is hosted on an [appbase.io](https://appbase.io) app.\r\n\r\n### Table of Contents\r\n\r\n| Index     | Title    | Description |\r\n| ---------- | ---------- |---------|\r\n| 1       | [Exact Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to build a tag wise search similar to Github's. |\r\n| 2       | [Multiple Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to find multiple exact values.\r\n| 3       | [Partial Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbh.html) | How to provide tag suggestions based on prefix. |\r\n\r\n### Live Demo\r\n<script async src=\"//jsfiddle.net/1b8tcxs4/3/embed/\"></script>\r\n[code](https://jsfiddle.net/1b8tcxs4/3/)\r\n**TODO:** Embed JSFiddle demo\r\n",
+        "contentDigest": "c2fba23ef833908338da8c003d1c10dd",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin",
+          "path": "default-site-plugin",
+          "redirect": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Tagwise search: Introduction",
+        "id": "tagwise-search-introduction",
+        "layout": "tutorial",
+        "sectionid": "tagwise-search-introduction",
+        "permalink": "tagwise-search/introduction.html",
+        "next": "exact-match.html",
+        "nextTitle": "Exact Tag Match",
+        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file",
+        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md",
+      "fields": {
+        "slug": "tagwise-search/introduction.html",
+        "path": "docs/tagwise-search/introduction.md",
+        "redirect": ""
+      }
+    },
     "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/auto-complete.md absPath of file >>> MarkdownRemark": {
       "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/auto-complete.md absPath of file >>> MarkdownRemark",
       "children": [],
@@ -3428,6 +3449,101 @@
       "fields": {
         "slug": "searchbar/auto-complete.html",
         "path": "docs/searchbar/auto-complete.md",
+        "redirect": ""
+      }
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file",
+      "internal": {
+        "content": "---\r\nid: introduction\r\ntitle: \"Introduction\"\r\nlayout: tutorial\r\nsectionid: introduction\r\npermalink: searchbar/introduction.html\r\nnext: simple-match.html\r\nnextTitle: \"Simple Match\"\r\n---\r\n\r\n### How to build a search bar with Elasticsearch?\r\n\r\nThis chapter provides a simple introduction and guide to building a search bar for your e-commerce app, user data, or any structured data set that is meant for keyword based queries.\r\n\r\nWe will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as our search engine and the index (and dataset) is hosted on an [appbase.io](https://appbase.io) app.\r\n\r\n![](https://i.imgur.com/UNkzVkU.jpg)  \r\n**Image:** Search bars from popular websites\r\n\r\n### Table of Contents\r\n\r\n\r\n| Index     | Title    | Description |\r\n| ---------- | ---------- |---------|\r\n| 1          | [Simple Match](https://appbaseio.gitbooks.io/esc/content/searchbar/simple-match.html) | How to build a simple match based search. |\r\n| 2       | [Multi Match](https://appbaseio.gitbooks.io/esc/content/searchbar/multi-match.html) | How to search on multiple fields. |\r\n| 3       | [Auto Completion](https://appbaseio.gitbooks.io/esc/content/searchbar/auto-complete.html) | How to add a search-as-you-type autocompletion view. |\r\n| 4       | [Suggestions](https://appbaseio.gitbooks.io/esc/content/searchbar/suggestions.html) | How to add a search-as-you-type suggestions view. |\r\n| 5       | [Searchbar](https://appbaseio.gitbooks.io/esc/content/searchbar/searchbar.html) | Combining all the above steps to build the search bar functionality. |\r\n\r\n### Live Demo\r\n<script async src=\"//jsfiddle.net/1b8tcxs4/3/embed/\"></script>\r\n[code](https://jsfiddle.net/1b8tcxs4/3/)\r\n**TODO:** Embed JSFiddle demo\r\n",
+        "contentDigest": "b0fa67b023409f6f52a954cbb77abdb9",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin",
+          "path": "default-site-plugin",
+          "redirect": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Introduction",
+        "id": "introduction",
+        "layout": "tutorial",
+        "sectionid": "introduction",
+        "permalink": "searchbar/introduction.html",
+        "next": "simple-match.html",
+        "nextTitle": "Simple Match",
+        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file",
+        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md",
+      "fields": {
+        "slug": "searchbar/introduction.html",
+        "path": "docs/searchbar/introduction.md",
+        "redirect": ""
+      }
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file",
+      "internal": {
+        "content": "---\r\nid: exact-tag-match\r\ntitle: \"Exact Tag Match\"\r\nlayout: tutorial\r\nsectionid: exact-tag-match\r\npermalink: tagwise-search/exact-match.html\r\nnext: arrays.html\r\nnextTitle: \"Arrays Datatype\"\r\nprev: introduction.html\r\nprevTitle: \"Tagwise search: Introduction\"\r\n---\r\n\r\nThis article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html)\r\n\r\n### How to do a tag wise search\r\n\r\nElasticsearch supports queries and filters. Queries are useful within full-text search, where results depend on a relevance score. In general, filters are used for binary yes/no searches or within queries for exact value match. Think of filters as an equivalent to the WHERE clause in SQL. Filters are faster than queries because they do not calculate the relevance score and can be easily cached.\r\n\r\nWe will be using a sample dataset containing the Github repository info, and we will be using a **term** query to perform a tag wise search.\r\n\r\n### Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nBy default Elasticsearch analyzes the data before storing it on disk. However, since we require an exact match of the data for repository tags, we will apply a `index: not_analyzed` setting to prevent the tag field from being analyzed.\r\n\r\nWe will only specify the mapping for the `tags` field. Elasticsearch will create mappings dynamically for the rest of the fields.\r\n\r\n### Disable analyzers on `tags` field\r\n\r\n// TODO: Use Keyword and also explain the difference wrt Text.\r\n\r\nTo store the data without analyzing it, we have to make `tags` field **not\\_analyzed**. By doing this, Elasticsearch will store the data as usual without any modifications.\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/_mapping/tagwise -d '{\r\n  \"properties\": {\r\n    \"tags\": {\r\n      \"type\": \"keyword\",\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nNow, let's index some data.\r\n\r\n## Data Indexing\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/tagwise/1 -d '{\r\n  \"repo\" : \"reddit\",\r\n  \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n  \"owner\" : \"reddit\",\r\n  \"url\" : \"https://github.com/reddit/reddit\",\r\n  \"stars\" : 13053,\r\n  \"language\" : \"Python\",\r\n  \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n}'\r\n```\r\n\r\nVoila! We indexed our first document with id `1`. We already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.\r\n\r\n## Data Browser View\r\n\r\nFor accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)\r\n\r\n## Query\r\n\r\nThe `term` query will look for the exact value that we specify. By itself, a `term` query is simple. It accepts a field name and the value that we wish to find. Usually, when looking for an exact value, we don’t want to score the query. We just want to include/exclude documents, so we will use a `constant_score` query to execute the term query in a non-scoring mode and apply a uniform score of one.\r\n\r\nThe final combination of a `constant_score` query which contains a `term` query will look like this:\r\n\r\n```json\r\ncurl $host/tagwise/tagwise/_search?pretty -d '{\r\n  \"query\": {\r\n    \"constant_score\" : {\r\n      \"filter\" : {\r\n        \"term\" : {\r\n          \"tags\" : \"reddit\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nWe used a `constant_score` to use the `term` query with a filter context. We could also have written the same query as below:\r\n\r\n```json\r\ncurl $host/tagwise/tagwise/_search?pretty -d '{\r\n  \"query\": {\r\n    \"term\": {\r\n      \"tags\": \"reddit\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nWhile the latter query looks much simpler, the above query is marked by Elasticsearch for caching because of the filter context. This helps speed up subsequent searches of the same request type.\r\n\r\n### Response\r\n\r\n```json\r\n{\r\n  \"took\" : 8,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 1,\r\n    \"max_score\" : 1.0,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"tagwise\",\r\n      \"_type\" : \"search\",\r\n      \"_id\" : \"AVvR1yM3gPzdwFFNDvs7\",\r\n      \"_score\" : 1.0,\r\n      \"_source\" : {\r\n        \"repo\" : \"reddit\",\r\n        \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n        \"owner\" : \"reddit\",\r\n        \"url\" : \"https://github.com/reddit/reddit\",\r\n        \"stars\" : 13053,\r\n        \"language\" : \"Python\",\r\n        \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n      }\r\n    } ]\r\n  }\r\n}\r\n```\r\n\r\nAs we can see in the above response object, we found a hit containing the \"reddit\" tag.\r\n\r\nHowever, we might often want to either index multiple tags with a document or search documents by more than one tags. We talk about this in the next article on [multiple tag match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/multiple-tag-match.html).\r\n",
+        "contentDigest": "cc730ce79af2ec4a4c92eefbb267d6cd",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin",
+          "path": "default-site-plugin",
+          "redirect": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Exact Tag Match",
+        "id": "exact-tag-match",
+        "layout": "tutorial",
+        "sectionid": "exact-tag-match",
+        "permalink": "tagwise-search/exact-match.html",
+        "next": "arrays.html",
+        "nextTitle": "Arrays Datatype",
+        "prev": "introduction.html",
+        "prevTitle": "Tagwise search: Introduction",
+        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file",
+        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md",
+      "fields": {
+        "slug": "tagwise-search/exact-match.html",
+        "path": "docs/tagwise-search/exact-match.md",
+        "redirect": ""
+      }
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file",
+      "internal": {
+        "content": "# Phrase Search\r\n\r\nThis article is a part of the series on [**How to build phrase search engine using Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/phrase-search/introduction.html)\r\n\r\nPhrase search is useful when the order of the keywords in our query matter. Using `match_phrase` query of Elasticsearch users can easily provide the list of keywords in some specific order to search for documents containing an exact sentence or phrase which contains those keywords in the same order rather than comparing a set of keywords in random order.\r\n\r\n### How to do phrase search\r\n\r\nLike the [match query](https://appbaseio.gitbooks.io/esc/content/searchbar/simple-match.html), the `match_phrase` query first analyzes the query string according to the defined analyzer to produce a list of terms. It then searches for all the terms, but keeps only documents that contain all of the search terms, in the same positions relative to each other. Our sample dataset contains comments, posts etc. Elasticsearch provides special analyzers to deal with language specific texts.\r\n\r\nIn the following sections, we will go through the process of building a very simple phrase search for the Hackernews dataset.\r\n\r\n## Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nBy default, Elasticsearch analyzes the data before storing it on disk. It has different tokenizer, analyzer and filters to modify the data. Mappings are useful to attach these analyzers with specific fields. At index time, by default Elasticsearch uses the standard analyzer. Standard analyzer tokenizes the strings and converts it to the lower case tokens.\r\n\r\nWe will use default English analyzer at the index time which can apply stemming, remove stop words, add synonyms to give us better results.\r\n\r\n### English Analyzer\r\nThe default analyzer of Elasticsearch contains following components:\r\n* **Tokenizer**: Splits the text into individual words by space or defined grammar.\r\n* **TokenFilters**: Filters the tokenized words. It lowercases all tokens, removes stop words, removes redundant tokens etc.\r\n\r\nEnglish analyzer analyzes the text in the following way. Example text - \"I'm not happy about the foxes\r\n\".\r\n* First it tokenizes the text into words - [I'm, not, happy, about, the, foxes]\r\n* Lowercases tokens: [i'm, not, happy, about, the, foxes]\r\n* Removes stopwords: [i'm, happy, about, foxes]\r\n* Stems tokens to their root form: [i'm, happi, about, fox]\r\n\r\nBy using the english analyzer, we can match text more loosely. By default Elasticsearch uses same analyzer at index time and search time to ensure that the terms in the query are in the same format as the terms in the index.\r\n\r\nNow, we will specify the mappings for our `text` field. Elasticsearch will create mappings dynamically for the rest of the fields.\r\n\r\n### Put Mappings\r\n\r\nDefine the English analyzer on the `text` field to analyze it at index time.\r\n\r\n```json\r\ncurl -XPUT $host/hackernews/_mapping/post -d '{\r\n  \"properties\": {\r\n    \"text\": {\r\n      \"type\": \"string\",\r\n      \"analyzer\": \"english\"\r\n    }\r\n  }\r\n}'\r\n```\r\nWe just put **mapping** on `post` type of `hackernews` index. Now, let's index some data.\r\n\r\n## Data Indexing\r\n\r\n```json\r\ncurl -XPUT $host/hackernews/_mapping/post -d '{\r\n  \"by\": \"dmihal\",\r\n  \"id\": 13102152,\r\n  \"parent\": 13101870,\r\n  \"text\": \"Cool library! I&#x27;m a huge fan of Meteor.js, which provides a similar isomorphic database. Cool to see this implemented in such a lightweight package!\",\r\n  \"time\": 1480890919,\r\n  \"p_type\": \"comment\",\r\n  \"score\": 0\r\n}'\r\n```\r\nWe just indexed our first document. We already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.\r\n\r\n## Data Browser View\r\n\r\nFor accessibility, we have indexed ~6000 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALxAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsyS2qaEZIwD-J9none24PyYH8yBXUWZ1fjjzdmdQqiDSYIwX4TuBH3IQtfCk1YLwT0kR9-r0YWMhn1GxDTldPTCD836HnpPYGINlfz27teRoEy1L78YMlLzUoLIYWjaUV04UwEet4YmZw_ADbiLDT1RhM_1XOaFqFsgEhHTBnHFMCY5VI4poDJz0BABqDSKR5qF76qvBs6Smde9lws1D6g_epJiEVMK0611dw8BoWkl1yP-N1SAA)\r\n\r\n## Query\r\n\r\nNext, we will move to the queries section. Here, we will be using `match_phrase` query to match the phrases. `match_phrase` query first analyze the provided text using the explicit defined analyzer, or using the default search analyzer and produces a list of terms.\r\n\r\n### Exact-phrase match\r\n\r\nIn order to match all the terms consecutively in the same order relative to each other use default `match_phrase` query.\r\n\r\n```json\r\ncurl $host/hackernews/post/_search?pretty -d '{\r\n  \"query\": {\r\n    \"match_phrase\" : {\r\n      \"text\": \"Cool library\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nHere, `text` is the Elasticsearch field against which we performed the phrase match query.\r\n\r\n### Mix Search\r\n\r\nEvery time we can't expect that users will provide the exact query terms with the proper order. Elasticsearch provides a way to match the documents even though the term's positions aren’t exactly equivalent.\r\n\r\nWe can pass the `slop` parameter in the following way to match the documents which contain all the query terms but in a different order or may be with the distance between them.\r\n\r\n```json\r\ncurl $host/hackernews/post/_search?pretty -d '{\r\n  \"query\": {\r\n    \"match_phrase\": {\r\n      \"text\": {\r\n        \"query\": \"Cool library Meteor.js\",\r\n        \"slop\": 7\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nYou can run above query and can get the matched document. If you check out the inserted document, the difference between the position of `\"Cool library\"` and `\"Meteor.js\"` will be the 7 words.\r\n\r\n#### Response\r\n\r\n```json\r\n{\r\n  \"took\" : 21,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 1,\r\n    \"max_score\" : 1.5155549,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"hackernews\",\r\n      \"_type\" : \"post\",\r\n      \"_id\" : \"AVtNnwdOtBk7_I4P_hnC\",\r\n      \"_score\" : 1.5155549,\r\n      \"_source\" : {\r\n        \"by\" : \"dmihal\",\r\n        \"id\" : 13102152,\r\n        \"parent\" : 13101870,\r\n        \"text\" : \"Cool library! I&#x27;m a huge fan of Meteor.js, which provides a similar isomorphic database. Cool to see this implemented in such a lightweight package!\",\r\n        \"time\" : 1480890919,\r\n        \"p_type\" : \"comment\",\r\n        \"score\" : 0\r\n      }\r\n    } ]\r\n  }\r\n}\r\n```\r\n",
+        "contentDigest": "c210ec55fcf2bf48cc13510a7d2c4c2b",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin",
+          "path": "default-site-plugin",
+          "redirect": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "",
+        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file",
+        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md",
+      "fields": {
+        "slug": "/docs/phrase-search/phrase_match.html",
+        "path": "docs/phrase-search/phrase_match.md",
         "redirect": ""
       }
     },
@@ -3466,39 +3582,6 @@
         "redirect": ""
       }
     },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file",
-      "internal": {
-        "content": "---\r\nid: searchbar\r\ntitle: \"Searchbar\"\r\nlayout: tutorial\r\nsectionid: searchbar\r\npermalink: searchbar/searchbar.html\r\nprev: suggestions.html\r\nprevTitle: \"Suggestions\"\r\n---\r\n\r\nThis article is a part of the series on [**how to build a search bar**](https://appbaseio.gitbooks.io/esc/content/searchbar/introduction.html).\r\n\r\n## How to make a normal search bar\r\n\r\nThis chapter compiles what we learnt so far in the series to implement a searchbar query and UI using Elasticsearch.\r\n\r\nThe main functionalities that we will need for doing this are:\r\n\r\n1. **Auto complete** - While user types, we need to provide auto-completion for the input queries. Auto-complete functionality should be as fast as a user types to provide instant feedback relevant to what a user has already typed in.  Elasticsearch provides a convenient way to get autocomplete up and running quickly with its completion suggester feature.\r\n2. **Suggestions**\\(or full text search\\) - Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user inputs.\r\n3. **UI** - For building the UI, we will use a React components library that provides us the scaffolding for the UI where we can inject the Elasticsearch query.\r\n\r\n`Note:` You can deep dive into the implementation details of the above two functionalities through these chapters - [Auto Completion](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md) and [Suggestions](https://github.com/appbaseio/esc/blob/master/searchbar/suggestions.md).\r\n\r\n## Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nIn this section, we will specify the mappings for our two fields: city and country, with the necessary settings to enable auto-complete and suggestion functionalities.\r\n\r\n`auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will use the `simple` analyzer that tokenizes the text as is \\(i.e. no white space splitting\\) and applies a lowercase filter.\r\n\r\n```json\r\ncurl -XPUT $host/normal_searchbar/_settings?pretty -d '{\r\n  \"analysis\": {\r\n    \"tokenizer\": {\r\n      \"ngramizer\": {\r\n        \"type\": \"ngram\",\r\n        \"min_gram\": 1,\r\n        \"max_gram\": 10,\r\n        \"token_chars\": [\r\n          \"letter\",\r\n          \"digit\",\r\n          \"punctuation\",\r\n          \"symbol\"\r\n        ]\r\n      }\r\n  },\r\n    \"analyzer\": {\r\n      \"auto-suggest\": {\r\n        \"type\": \"custom\",\r\n        \"tokenizer\": \"ngramizer\",\r\n        \"filter\": [\r\n          \"lowercase\",\r\n          \"asciifolding\"\r\n        ]\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nWe just added a custom analyzers. The `_settings` endpoint can be used for adding one or more custom analyzers.\r\n\r\n## Defining Mappings\r\n\r\nHere we will use two fields and two subfields each of these fields. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch.\r\n\r\n`city_autocomplete` subfield is useful for the auto-completion feature. It indexes and searches the data using `simple` analyzer and with type **completion**.\r\n\r\n`city_autocomplete` subfield is useful for the auto-suggestion feature. It indexes the data using `auto-suggest` analyzer, searches the data using `simple` analyzer and is of type **text**.\r\n\r\nSimilar sub-field structure will also hold true for the country field.\r\n\r\n```json\r\ncurl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{\r\n  \"searchbar\": {\r\n    \"properties\": {\r\n      \"city\": {\r\n        \"type\": \"text\",\r\n        \"fields\": {\r\n          \"city_autocomplete\": {\r\n            \"type\": \"completion\",\r\n            \"analyzer\": \"simple\",\r\n            \"search_analyzer\": \"simple\"\r\n          },\r\n          \"city_autosuggest\": {\r\n            \"type\": \"text\",\r\n            \"analyzer\": \"auto-suggest\",\r\n            \"search_analyzer\": \"simple\"\r\n          }\r\n        }\r\n      },\r\n      \"country\": {\r\n        \"type\": \"text\",\r\n        \"fields\": {\r\n          \"country_autocomplete\": {\r\n            \"type\": \"completion\",\r\n            \"analyzer\": \"simple\",\r\n            \"search_analyzer\": \"simple\"\r\n          },\r\n          \"country_autosuggest\": {\r\n            \"type\": \"text\",\r\n            \"analyzer\": \"auto-suggest\",\r\n            \"search_analyzer\": \"simple\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\n### Data Indexing\r\n\r\nAs you can see, while indexing the data, we only need to insert the city and country fields.\r\n\r\n```json\r\ncurl -XPUT $host/normal_searchbar/searchbar/1 -d '{\r\n  \"city\": \"New York\",\r\n  \"country\": \"United States\"\r\n}'\r\n```\r\n\r\n### Data Browser View\r\n\r\nFor accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALvAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFslF8ZMg7A6kGLFGPADbJVmb5ysVqinQQuiFLkb4deUgCDkj3Ca7c1o_y8XA0-MkniaJtriPLcO0sOs-he9RgZSsY1-Dj7M1oUHcSMXEdlL__k05smSCpzBnTIbIxXMyoFoHyy8Z_g-Ku8eQnTdtXdsrQgMg_wmz9OmY-26TdzjLWp-v2Wf1WiRDeMXYvBl1QvLH_j_iLGk7AkFU5rmsqyCR3BmLVt2baZT9KRDsA_8PvEAA&editable=false).\r\n\r\n### Query\r\n\r\nNext, we will move to the queries section. Here, we will be using the match query for getting the dropdown suggestions and will be using the **completion** suggester query for getting the autocomplete suggestions. Let's first query on the `city` field.\r\n\r\n```json\r\ncurl \"$host/normal_searchbar/searchbar/_search?pretty\" -d '{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"city.city_autosuggest\": \"New\"\r\n    }\r\n  },\r\n  \"suggest\": {\r\n    \"city-suggest\": {\r\n      \"text\": \"New\",\r\n      \"completion\": {\r\n        \"field\": \"city.city_autocomplete\"\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\n##### Response\r\n\r\n```json\r\n{\r\n  \"took\" : 18,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 2,\r\n    \"max_score\" : 2.6197505,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"normal_searchbar\",\r\n      \"_type\" : \"searchbar\",\r\n      \"_id\" : \"AVsMYRgYhvsk2FETcMug\",\r\n      \"_score\" : 2.6197505,\r\n      \"_source\" : {\r\n        \"city\" : \"New York\",\r\n        \"country\" : \"United States\"\r\n      }\r\n    }, {\r\n      \"_index\" : \"normal_searchbar\",\r\n      \"_type\" : \"searchbar\",\r\n      \"_id\" : \"AVsMYTTkhvsk2FETcNLo\",\r\n      \"_score\" : 2.6197505,\r\n      \"_source\" : {\r\n        \"city\" : \"New Farm\",\r\n        \"country\" : \"Australia\"\r\n      }\r\n    }]\r\n  },\r\n  \"suggest\" : {\r\n    \"city-suggest\" : [ {\r\n      \"text\" : \"New\",\r\n      \"offset\" : 0,\r\n      \"length\" : 3,\r\n      \"options\" : [ {\r\n        \"text\" : \"Newport\",\r\n        \"score\" : 5.0\r\n      }, {\r\n        \"text\" : \"Newmarket\",\r\n        \"score\" : 2.0\r\n      } ]\r\n    } ]\r\n  }\r\n}\r\n```\r\n\r\n###### Note: There is some overlap between the autocompletion and autosuggestion feature, here's why we make two separate queries.\r\n\r\n| Autocompletion | Autosuggestion |\r\n| :--- | :--- |\r\n| Uses the suggest query and completion mapping type. | Uses the match query with a n-gram based indexing analyzer. |\r\n| Only offers suggestions that match from the beginning of the search query, e.g. \"Yor\" will return \"York\" but now \"New York\". | Offers hits that contains the search query, it doesn't necessarily need to start with the query. e.g. \"Yor\" may also return \"New York\" in the matching result. |\r\n| Since autocompletion doesn't tokenize the word, the suggest query here works on words of most practical lengths. | Since we rely on n-grams here, the search's usability is limited to the max token length - 10 in our example. |\r\n| Autocompletion's storage is more efficient because it doesn't breakdown the words into overlapping tokens. | The longer the n-gram token length, the storage requirements increase quadratically. |\r\n\r\n#### Query on both City and Country\r\n\r\n```json\r\ncurl \"$host/normal_searchbar/searchbar/_search?pretty\" -d '{\r\n  \"query\": {\r\n     \"multi_match\": {\r\n        \"query\": \"New\",\r\n        \"fields\": [\"city.city_autosuggest\", \"country.country_autosuggest\"]\r\n    }\r\n  },\r\n  \"suggest\": {\r\n    \"city-suggest\": {\r\n      \"text\": \"New\",\r\n      \"completion\": {\r\n        \"field\": \"city.city_autocomplete\"\r\n      }\r\n    },\r\n    \"country-suggest\": {\r\n      \"text\": \"New\",\r\n      \"completion\": {\r\n        \"field\": \"country.country_autocomplete\"\r\n      }\r\n    }\r\n  }       \r\n}'\r\n```\r\n\r\n### Query Response\r\n\r\n```json\r\n{\r\n  \"took\" : 15,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 2,\r\n    \"max_score\" : 1.7185925,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"normal_searchbar\",\r\n      \"_type\" : \"searchbar\",\r\n      \"_id\" : \"AVsMYRgYhvsk2FETcMug\",\r\n      \"_score\" : 1.7185925,\r\n      \"_source\" : {\r\n        \"city\" : \"New York\",\r\n        \"country\" : \"United States\"\r\n      }\r\n    }, {\r\n      \"_index\" : \"normal_searchbar\",\r\n      \"_type\" : \"searchbar\",\r\n      \"_id\" : \"AVsMYTTkhvsk2FETcNLo\",\r\n      \"_score\" : 1.7185925,\r\n      \"_source\" : {\r\n        \"city\" : \"New Farm\",\r\n        \"country\" : \"Australia\"\r\n      }\r\n    } ]\r\n  },\r\n  \"suggest\" : {\r\n    \"country-suggest\" : [ {\r\n      \"text\" : \"New\",\r\n      \"offset\" : 0,\r\n      \"length\" : 3,\r\n      \"options\" : [ ]\r\n    } ],\r\n    \"city-suggest\" : [ {\r\n      \"text\" : \"New\",\r\n      \"offset\" : 0,\r\n      \"length\" : 3,\r\n      \"options\" : [ {\r\n        \"text\" : \"Newport\",\r\n        \"score\" : 5.0\r\n      }, {\r\n        \"text\" : \"Newmarket\",\r\n        \"score\" : 2.0\r\n      } ]\r\n    } ]\r\n  }\r\n}\r\n```\r\n\r\n### Implementing the searchbar with a UI\r\n\r\n// TODO\r\n",
-        "contentDigest": "8662744ad1a3738273b6babede46e7db",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin",
-          "path": "default-site-plugin",
-          "redirect": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "Searchbar",
-        "id": "searchbar",
-        "layout": "tutorial",
-        "sectionid": "searchbar",
-        "permalink": "searchbar/searchbar.html",
-        "prev": "suggestions.html",
-        "prevTitle": "Suggestions",
-        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file",
-        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md",
-      "fields": {
-        "slug": "searchbar/searchbar.html",
-        "path": "docs/searchbar/searchbar.md",
-        "redirect": ""
-      }
-    },
     "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/simple-match.md absPath of file >>> MarkdownRemark": {
       "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/simple-match.md absPath of file >>> MarkdownRemark",
       "children": [],
@@ -3534,13 +3617,13 @@
         "redirect": ""
       }
     },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file >>> MarkdownRemark",
+    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file >>> MarkdownRemark",
       "children": [],
-      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file",
+      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file",
       "internal": {
-        "content": "# Phrase Search\r\n\r\nThis article is a part of the series on [**How to build phrase search engine using Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/phrase-search/introduction.html)\r\n\r\nPhrase search is useful when the order of the keywords in our query matter. Using `match_phrase` query of Elasticsearch users can easily provide the list of keywords in some specific order to search for documents containing an exact sentence or phrase which contains those keywords in the same order rather than comparing a set of keywords in random order.\r\n\r\n### How to do phrase search\r\n\r\nLike the [match query](https://appbaseio.gitbooks.io/esc/content/searchbar/simple-match.html), the `match_phrase` query first analyzes the query string according to the defined analyzer to produce a list of terms. It then searches for all the terms, but keeps only documents that contain all of the search terms, in the same positions relative to each other. Our sample dataset contains comments, posts etc. Elasticsearch provides special analyzers to deal with language specific texts.\r\n\r\nIn the following sections, we will go through the process of building a very simple phrase search for the Hackernews dataset.\r\n\r\n## Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nBy default, Elasticsearch analyzes the data before storing it on disk. It has different tokenizer, analyzer and filters to modify the data. Mappings are useful to attach these analyzers with specific fields. At index time, by default Elasticsearch uses the standard analyzer. Standard analyzer tokenizes the strings and converts it to the lower case tokens.\r\n\r\nWe will use default English analyzer at the index time which can apply stemming, remove stop words, add synonyms to give us better results.\r\n\r\n### English Analyzer\r\nThe default analyzer of Elasticsearch contains following components:\r\n* **Tokenizer**: Splits the text into individual words by space or defined grammar.\r\n* **TokenFilters**: Filters the tokenized words. It lowercases all tokens, removes stop words, removes redundant tokens etc.\r\n\r\nEnglish analyzer analyzes the text in the following way. Example text - \"I'm not happy about the foxes\r\n\".\r\n* First it tokenizes the text into words - [I'm, not, happy, about, the, foxes]\r\n* Lowercases tokens: [i'm, not, happy, about, the, foxes]\r\n* Removes stopwords: [i'm, happy, about, foxes]\r\n* Stems tokens to their root form: [i'm, happi, about, fox]\r\n\r\nBy using the english analyzer, we can match text more loosely. By default Elasticsearch uses same analyzer at index time and search time to ensure that the terms in the query are in the same format as the terms in the index.\r\n\r\nNow, we will specify the mappings for our `text` field. Elasticsearch will create mappings dynamically for the rest of the fields.\r\n\r\n### Put Mappings\r\n\r\nDefine the English analyzer on the `text` field to analyze it at index time.\r\n\r\n```json\r\ncurl -XPUT $host/hackernews/_mapping/post -d '{\r\n  \"properties\": {\r\n    \"text\": {\r\n      \"type\": \"string\",\r\n      \"analyzer\": \"english\"\r\n    }\r\n  }\r\n}'\r\n```\r\nWe just put **mapping** on `post` type of `hackernews` index. Now, let's index some data.\r\n\r\n## Data Indexing\r\n\r\n```json\r\ncurl -XPUT $host/hackernews/_mapping/post -d '{\r\n  \"by\": \"dmihal\",\r\n  \"id\": 13102152,\r\n  \"parent\": 13101870,\r\n  \"text\": \"Cool library! I&#x27;m a huge fan of Meteor.js, which provides a similar isomorphic database. Cool to see this implemented in such a lightweight package!\",\r\n  \"time\": 1480890919,\r\n  \"p_type\": \"comment\",\r\n  \"score\": 0\r\n}'\r\n```\r\nWe just indexed our first document. We already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.\r\n\r\n## Data Browser View\r\n\r\nFor accessibility, we have indexed ~6000 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALxAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsyS2qaEZIwD-J9none24PyYH8yBXUWZ1fjjzdmdQqiDSYIwX4TuBH3IQtfCk1YLwT0kR9-r0YWMhn1GxDTldPTCD836HnpPYGINlfz27teRoEy1L78YMlLzUoLIYWjaUV04UwEet4YmZw_ADbiLDT1RhM_1XOaFqFsgEhHTBnHFMCY5VI4poDJz0BABqDSKR5qF76qvBs6Smde9lws1D6g_epJiEVMK0611dw8BoWkl1yP-N1SAA)\r\n\r\n## Query\r\n\r\nNext, we will move to the queries section. Here, we will be using `match_phrase` query to match the phrases. `match_phrase` query first analyze the provided text using the explicit defined analyzer, or using the default search analyzer and produces a list of terms.\r\n\r\n### Exact-phrase match\r\n\r\nIn order to match all the terms consecutively in the same order relative to each other use default `match_phrase` query.\r\n\r\n```json\r\ncurl $host/hackernews/post/_search?pretty -d '{\r\n  \"query\": {\r\n    \"match_phrase\" : {\r\n      \"text\": \"Cool library\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nHere, `text` is the Elasticsearch field against which we performed the phrase match query.\r\n\r\n### Mix Search\r\n\r\nEvery time we can't expect that users will provide the exact query terms with the proper order. Elasticsearch provides a way to match the documents even though the term's positions aren’t exactly equivalent.\r\n\r\nWe can pass the `slop` parameter in the following way to match the documents which contain all the query terms but in a different order or may be with the distance between them.\r\n\r\n```json\r\ncurl $host/hackernews/post/_search?pretty -d '{\r\n  \"query\": {\r\n    \"match_phrase\": {\r\n      \"text\": {\r\n        \"query\": \"Cool library Meteor.js\",\r\n        \"slop\": 7\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nYou can run above query and can get the matched document. If you check out the inserted document, the difference between the position of `\"Cool library\"` and `\"Meteor.js\"` will be the 7 words.\r\n\r\n#### Response\r\n\r\n```json\r\n{\r\n  \"took\" : 21,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 1,\r\n    \"max_score\" : 1.5155549,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"hackernews\",\r\n      \"_type\" : \"post\",\r\n      \"_id\" : \"AVtNnwdOtBk7_I4P_hnC\",\r\n      \"_score\" : 1.5155549,\r\n      \"_source\" : {\r\n        \"by\" : \"dmihal\",\r\n        \"id\" : 13102152,\r\n        \"parent\" : 13101870,\r\n        \"text\" : \"Cool library! I&#x27;m a huge fan of Meteor.js, which provides a similar isomorphic database. Cool to see this implemented in such a lightweight package!\",\r\n        \"time\" : 1480890919,\r\n        \"p_type\" : \"comment\",\r\n        \"score\" : 0\r\n      }\r\n    } ]\r\n  }\r\n}\r\n```\r\n",
-        "contentDigest": "c210ec55fcf2bf48cc13510a7d2c4c2b",
+        "content": "---\r\nid: arrays\r\ntitle: \"Arrays Datatype\"\r\nlayout: tutorial\r\nsectionid: arrays\r\npermalink: tagwise-search/arrays.html\r\nnext: multiple-tag-match.html\r\nnextTitle: \"Multiple Tag Match\"\r\nprev: exact-match.html\r\nprevTitle: \"Exact Tag Match\"\r\n---\r\n\r\nThis article is a part of the series on [**How to build tag wise search with Elasticsearch**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html).\r\n\r\n## How to store data using Elasticsearch arrays\r\n\r\nA major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the marching content by user specifying either just one or more than one tag labels. A tag wise search is also fundamentally different from a full-text search as here, we are finding an exact match of a tag with a content item.\r\n\r\nIn this post, we will be using an Array datastructure to store labels with a content document. For making the exact lookups, we will be applying  a term query on the dataset.\r\n\r\nIn Elasticsearch, there is no dedicated array type. Any field can contain zero or more values by default, however, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.\r\n\r\nElasticsearch can also supports empty array or null array values.\r\n\r\nDefault array does not support quering each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.\r\n\r\n`Note:` Read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).\r\n\r\n## Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nThere is no special mapping required for arrays. You can store multiple values with single field without predefining schema.\r\n\r\n## Indexing Data\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/search/1 -d '{\r\n  \"repo\" : \"reddit\",\r\n  \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n  \"owner\" : \"reddit\",\r\n  \"url\" : \"https://github.com/reddit/reddit\",\r\n  \"stars\" : 13053,\r\n  \"language\" : \"Python\",\r\n  \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n}'\r\n```\r\n\r\nHere document is indexed under the `tagwise` index and `search` type.\r\n\r\nIf we look back at our data mappings, they should now look like as follows\r\n\r\n```json\r\ncurl $host/tagwise/_mapping?pretty\r\n```\r\n\r\n```json\r\n{\r\n  \"tagwise\": {\r\n    \"mappings\": {\r\n      \"search\": {\r\n        \"properties\": {\r\n          \"owner\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"repo\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"tags\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"url\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"stars\": {\r\n            \"type\": \"integer\"\r\n          },\r\n          \"language\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"created-on\": {\r\n            \"type\": \"date\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n```\r\n\r\nElasticsearch created these mappings dynamically based on our indexed data.\r\n\r\n## Data Browser View\r\n\r\nFor accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)\r\n\r\n## Query\r\n\r\nElasticsearch array supports **match** as well as **term** query. Let's write our first search query for the arrays.\r\n\r\nSyntax for **term** query -\r\n\r\n```json\r\ncurl $host/tagwise/search/_search?pretty -d '{\r\n  \"query\": {\r\n    \"term\": {\r\n      \"tags\": \"reddit\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nSyntax for **match** query -\r\n\r\n```json\r\ncurl $host/tagwise/search/_search?pretty -d '{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"tags\": \"reddit\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\n### Response:\r\n\r\n```json\r\n{\r\n  \"took\" : 14,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 1,\r\n    \"max_score\" : 6.1179934,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"tagwise\",\r\n      \"_type\" : \"search\",\r\n      \"_id\" : \"AVvR1yM3gPzdwFFNDvs7\",\r\n      \"_score\" : 6.1179934,\r\n      \"_source\" : {\r\n        \"repo\" : \"reddit\",\r\n        \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n        \"owner\" : \"reddit\",\r\n        \"url\" : \"https://github.com/reddit/reddit\",\r\n        \"stars\" : 13053,\r\n        \"language\" : \"Python\",\r\n        \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n      }\r\n    } ]\r\n  }\r\n}\r\n```\r\n\r\nYou can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)\r\n\r\nYou should next read about [**exact match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html).\r\n",
+        "contentDigest": "9ff00e8d02edc8d003f68d9e06304236",
         "type": "MarkdownRemark",
         "owner": "gatsby-transformer-remark",
         "fieldOwners": {
@@ -3550,14 +3633,55 @@
         }
       },
       "frontmatter": {
-        "title": "",
-        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file",
-        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file"
+        "title": "Arrays Datatype",
+        "id": "arrays",
+        "layout": "tutorial",
+        "sectionid": "arrays",
+        "permalink": "tagwise-search/arrays.html",
+        "next": "multiple-tag-match.html",
+        "nextTitle": "Multiple Tag Match",
+        "prev": "exact-match.html",
+        "prevTitle": "Exact Tag Match",
+        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file",
+        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file"
       },
-      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md",
+      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md",
       "fields": {
-        "slug": "/docs/phrase-search/phrase_match.html",
-        "path": "docs/phrase-search/phrase_match.md",
+        "slug": "tagwise-search/arrays.html",
+        "path": "docs/tagwise-search/arrays.md",
+        "redirect": ""
+      }
+    },
+    "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file >>> MarkdownRemark": {
+      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file >>> MarkdownRemark",
+      "children": [],
+      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file",
+      "internal": {
+        "content": "---\r\nid: searchbar\r\ntitle: \"Searchbar\"\r\nlayout: tutorial\r\nsectionid: searchbar\r\npermalink: searchbar/searchbar.html\r\nprev: suggestions.html\r\nprevTitle: \"Suggestions\"\r\n---\r\n\r\nThis article is a part of the series on [**how to build a search bar**](https://appbaseio.gitbooks.io/esc/content/searchbar/introduction.html).\r\n\r\n## How to make a normal search bar\r\n\r\nThis chapter compiles what we learnt so far in the series to implement a searchbar query and UI using Elasticsearch.\r\n\r\nThe main functionalities that we will need for doing this are:\r\n\r\n1. **Auto complete** - While user types, we need to provide auto-completion for the input queries. Auto-complete functionality should be as fast as a user types to provide instant feedback relevant to what a user has already typed in.  Elasticsearch provides a convenient way to get autocomplete up and running quickly with its completion suggester feature.\r\n2. **Suggestions**\\(or full text search\\) - Use quick suggestions to help users save time, iterate on their searches, and get the results they want. It helps to show the relevant data to user inputs.\r\n3. **UI** - For building the UI, we will use a React components library that provides us the scaffolding for the UI where we can inject the Elasticsearch query.\r\n\r\n`Note:` You can deep dive into the implementation details of the above two functionalities through these chapters - [Auto Completion](https://github.com/appbaseio/esc/blob/master/searchbar/auto-complete.md) and [Suggestions](https://github.com/appbaseio/esc/blob/master/searchbar/suggestions.md).\r\n\r\n## Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nIn this section, we will specify the mappings for our two fields: city and country, with the necessary settings to enable auto-complete and suggestion functionalities.\r\n\r\n`auto-suggest` analyzer will be useful to get the suggestions. For the auto completion we will use the `simple` analyzer that tokenizes the text as is \\(i.e. no white space splitting\\) and applies a lowercase filter.\r\n\r\n```json\r\ncurl -XPUT $host/normal_searchbar/_settings?pretty -d '{\r\n  \"analysis\": {\r\n    \"tokenizer\": {\r\n      \"ngramizer\": {\r\n        \"type\": \"ngram\",\r\n        \"min_gram\": 1,\r\n        \"max_gram\": 10,\r\n        \"token_chars\": [\r\n          \"letter\",\r\n          \"digit\",\r\n          \"punctuation\",\r\n          \"symbol\"\r\n        ]\r\n      }\r\n  },\r\n    \"analyzer\": {\r\n      \"auto-suggest\": {\r\n        \"type\": \"custom\",\r\n        \"tokenizer\": \"ngramizer\",\r\n        \"filter\": [\r\n          \"lowercase\",\r\n          \"asciifolding\"\r\n        ]\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nWe just added a custom analyzers. The `_settings` endpoint can be used for adding one or more custom analyzers.\r\n\r\n## Defining Mappings\r\n\r\nHere we will use two fields and two subfields each of these fields. These subfields are useful to store the same data in a different manner. `city` field is useful to index the cities with the default analyzer of Elasticsearch.\r\n\r\n`city_autocomplete` subfield is useful for the auto-completion feature. It indexes and searches the data using `simple` analyzer and with type **completion**.\r\n\r\n`city_autocomplete` subfield is useful for the auto-suggestion feature. It indexes the data using `auto-suggest` analyzer, searches the data using `simple` analyzer and is of type **text**.\r\n\r\nSimilar sub-field structure will also hold true for the country field.\r\n\r\n```json\r\ncurl -XPUT $host/normal_searchbar/_mapping/searchbar -d '{\r\n  \"searchbar\": {\r\n    \"properties\": {\r\n      \"city\": {\r\n        \"type\": \"text\",\r\n        \"fields\": {\r\n          \"city_autocomplete\": {\r\n            \"type\": \"completion\",\r\n            \"analyzer\": \"simple\",\r\n            \"search_analyzer\": \"simple\"\r\n          },\r\n          \"city_autosuggest\": {\r\n            \"type\": \"text\",\r\n            \"analyzer\": \"auto-suggest\",\r\n            \"search_analyzer\": \"simple\"\r\n          }\r\n        }\r\n      },\r\n      \"country\": {\r\n        \"type\": \"text\",\r\n        \"fields\": {\r\n          \"country_autocomplete\": {\r\n            \"type\": \"completion\",\r\n            \"analyzer\": \"simple\",\r\n            \"search_analyzer\": \"simple\"\r\n          },\r\n          \"country_autosuggest\": {\r\n            \"type\": \"text\",\r\n            \"analyzer\": \"auto-suggest\",\r\n            \"search_analyzer\": \"simple\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\n### Data Indexing\r\n\r\nAs you can see, while indexing the data, we only need to insert the city and country fields.\r\n\r\n```json\r\ncurl -XPUT $host/normal_searchbar/searchbar/1 -d '{\r\n  \"city\": \"New York\",\r\n  \"country\": \"United States\"\r\n}'\r\n```\r\n\r\n### Data Browser View\r\n\r\nFor accessibility, we have indexed ~15,000 data points that can be viewed in the data browser [here. ![](https://i.imgur.com/rHOEixS.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALvAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFslF8ZMg7A6kGLFGPADbJVmb5ysVqinQQuiFLkb4deUgCDkj3Ca7c1o_y8XA0-MkniaJtriPLcO0sOs-he9RgZSsY1-Dj7M1oUHcSMXEdlL__k05smSCpzBnTIbIxXMyoFoHyy8Z_g-Ku8eQnTdtXdsrQgMg_wmz9OmY-26TdzjLWp-v2Wf1WiRDeMXYvBl1QvLH_j_iLGk7AkFU5rmsqyCR3BmLVt2baZT9KRDsA_8PvEAA&editable=false).\r\n\r\n### Query\r\n\r\nNext, we will move to the queries section. Here, we will be using the match query for getting the dropdown suggestions and will be using the **completion** suggester query for getting the autocomplete suggestions. Let's first query on the `city` field.\r\n\r\n```json\r\ncurl \"$host/normal_searchbar/searchbar/_search?pretty\" -d '{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"city.city_autosuggest\": \"New\"\r\n    }\r\n  },\r\n  \"suggest\": {\r\n    \"city-suggest\": {\r\n      \"text\": \"New\",\r\n      \"completion\": {\r\n        \"field\": \"city.city_autocomplete\"\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\n##### Response\r\n\r\n```json\r\n{\r\n  \"took\" : 18,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 2,\r\n    \"max_score\" : 2.6197505,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"normal_searchbar\",\r\n      \"_type\" : \"searchbar\",\r\n      \"_id\" : \"AVsMYRgYhvsk2FETcMug\",\r\n      \"_score\" : 2.6197505,\r\n      \"_source\" : {\r\n        \"city\" : \"New York\",\r\n        \"country\" : \"United States\"\r\n      }\r\n    }, {\r\n      \"_index\" : \"normal_searchbar\",\r\n      \"_type\" : \"searchbar\",\r\n      \"_id\" : \"AVsMYTTkhvsk2FETcNLo\",\r\n      \"_score\" : 2.6197505,\r\n      \"_source\" : {\r\n        \"city\" : \"New Farm\",\r\n        \"country\" : \"Australia\"\r\n      }\r\n    }]\r\n  },\r\n  \"suggest\" : {\r\n    \"city-suggest\" : [ {\r\n      \"text\" : \"New\",\r\n      \"offset\" : 0,\r\n      \"length\" : 3,\r\n      \"options\" : [ {\r\n        \"text\" : \"Newport\",\r\n        \"score\" : 5.0\r\n      }, {\r\n        \"text\" : \"Newmarket\",\r\n        \"score\" : 2.0\r\n      } ]\r\n    } ]\r\n  }\r\n}\r\n```\r\n\r\n###### Note: There is some overlap between the autocompletion and autosuggestion feature, here's why we make two separate queries.\r\n\r\n| Autocompletion | Autosuggestion |\r\n| :--- | :--- |\r\n| Uses the suggest query and completion mapping type. | Uses the match query with a n-gram based indexing analyzer. |\r\n| Only offers suggestions that match from the beginning of the search query, e.g. \"Yor\" will return \"York\" but now \"New York\". | Offers hits that contains the search query, it doesn't necessarily need to start with the query. e.g. \"Yor\" may also return \"New York\" in the matching result. |\r\n| Since autocompletion doesn't tokenize the word, the suggest query here works on words of most practical lengths. | Since we rely on n-grams here, the search's usability is limited to the max token length - 10 in our example. |\r\n| Autocompletion's storage is more efficient because it doesn't breakdown the words into overlapping tokens. | The longer the n-gram token length, the storage requirements increase quadratically. |\r\n\r\n#### Query on both City and Country\r\n\r\n```json\r\ncurl \"$host/normal_searchbar/searchbar/_search?pretty\" -d '{\r\n  \"query\": {\r\n     \"multi_match\": {\r\n        \"query\": \"New\",\r\n        \"fields\": [\"city.city_autosuggest\", \"country.country_autosuggest\"]\r\n    }\r\n  },\r\n  \"suggest\": {\r\n    \"city-suggest\": {\r\n      \"text\": \"New\",\r\n      \"completion\": {\r\n        \"field\": \"city.city_autocomplete\"\r\n      }\r\n    },\r\n    \"country-suggest\": {\r\n      \"text\": \"New\",\r\n      \"completion\": {\r\n        \"field\": \"country.country_autocomplete\"\r\n      }\r\n    }\r\n  }       \r\n}'\r\n```\r\n\r\n### Query Response\r\n\r\n```json\r\n{\r\n  \"took\" : 15,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 2,\r\n    \"max_score\" : 1.7185925,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"normal_searchbar\",\r\n      \"_type\" : \"searchbar\",\r\n      \"_id\" : \"AVsMYRgYhvsk2FETcMug\",\r\n      \"_score\" : 1.7185925,\r\n      \"_source\" : {\r\n        \"city\" : \"New York\",\r\n        \"country\" : \"United States\"\r\n      }\r\n    }, {\r\n      \"_index\" : \"normal_searchbar\",\r\n      \"_type\" : \"searchbar\",\r\n      \"_id\" : \"AVsMYTTkhvsk2FETcNLo\",\r\n      \"_score\" : 1.7185925,\r\n      \"_source\" : {\r\n        \"city\" : \"New Farm\",\r\n        \"country\" : \"Australia\"\r\n      }\r\n    } ]\r\n  },\r\n  \"suggest\" : {\r\n    \"country-suggest\" : [ {\r\n      \"text\" : \"New\",\r\n      \"offset\" : 0,\r\n      \"length\" : 3,\r\n      \"options\" : [ ]\r\n    } ],\r\n    \"city-suggest\" : [ {\r\n      \"text\" : \"New\",\r\n      \"offset\" : 0,\r\n      \"length\" : 3,\r\n      \"options\" : [ {\r\n        \"text\" : \"Newport\",\r\n        \"score\" : 5.0\r\n      }, {\r\n        \"text\" : \"Newmarket\",\r\n        \"score\" : 2.0\r\n      } ]\r\n    } ]\r\n  }\r\n}\r\n```\r\n\r\n### Implementing the searchbar with a UI\r\n\r\n// TODO\r\n",
+        "contentDigest": "8662744ad1a3738273b6babede46e7db",
+        "type": "MarkdownRemark",
+        "owner": "gatsby-transformer-remark",
+        "fieldOwners": {
+          "slug": "default-site-plugin",
+          "path": "default-site-plugin",
+          "redirect": "default-site-plugin"
+        }
+      },
+      "frontmatter": {
+        "title": "Searchbar",
+        "id": "searchbar",
+        "layout": "tutorial",
+        "sectionid": "searchbar",
+        "permalink": "searchbar/searchbar.html",
+        "prev": "suggestions.html",
+        "prevTitle": "Suggestions",
+        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file",
+        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file"
+      },
+      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md",
+      "fields": {
+        "slug": "searchbar/searchbar.html",
+        "path": "docs/searchbar/searchbar.md",
         "redirect": ""
       }
     },
@@ -3596,114 +3720,6 @@
         "redirect": ""
       }
     },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file",
-      "internal": {
-        "content": "# Array Datatype\r\n\r\nThis article is a part of the series on [**How to build tag wise search with Elasticsearch**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html).\r\n\r\n## How to store data using Elasticsearch arrays\r\n\r\nA major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the marching content by user specifying either just one or more than one tag labels. A tag wise search is also fundamentally different from a full-text search as here, we are finding an exact match of a tag with a content item.\r\n\r\nIn this post, we will be using an Array datastructure to store labels with a content document. For making the exact lookups, we will be applying  a term query on the dataset.\r\n\r\nIn Elasticsearch, there is no dedicated array type. Any field can contain zero or more values by default, however, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.\r\n\r\nElasticsearch can also supports empty array or null array values.\r\n\r\nDefault array does not support quering each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.\r\n\r\n`Note:` Read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).\r\n\r\n## Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nThere is no special mapping required for arrays. You can store multiple values with single field without predefining schema.\r\n\r\n## Indexing Data\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/search/1 -d '{\r\n  \"repo\" : \"reddit\",\r\n  \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n  \"owner\" : \"reddit\",\r\n  \"url\" : \"https://github.com/reddit/reddit\",\r\n  \"stars\" : 13053,\r\n  \"language\" : \"Python\",\r\n  \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n}'\r\n```\r\n\r\nHere document is indexed under the `tagwise` index and `search` type.\r\n\r\nIf we look back at our data mappings, they should now look like as follows\r\n\r\n```json\r\ncurl $host/tagwise/_mapping?pretty\r\n```\r\n\r\n```json\r\n{\r\n  \"tagwise\": {\r\n    \"mappings\": {\r\n      \"search\": {\r\n        \"properties\": {\r\n          \"owner\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"repo\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"tags\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"url\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"stars\": {\r\n            \"type\": \"integer\"\r\n          },\r\n          \"language\": {\r\n            \"type\": \"string\"\r\n          },\r\n          \"created-on\": {\r\n            \"type\": \"date\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n```\r\n\r\nElasticsearch created these mappings dynamically based on our indexed data.\r\n\r\n## Data Browser View\r\n\r\nFor accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)\r\n\r\n## Query\r\n\r\nElasticsearch array supports **match** as well as **term** query. Let's write our first search query for the arrays.\r\n\r\nSyntax for **term** query -\r\n\r\n```json\r\ncurl $host/tagwise/search/_search?pretty -d '{\r\n  \"query\": {\r\n    \"term\": {\r\n      \"tags\": \"reddit\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nSyntax for **match** query -\r\n\r\n```json\r\ncurl $host/tagwise/search/_search?pretty -d '{\r\n  \"query\": {\r\n    \"match\": {\r\n      \"tags\": \"reddit\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\n### Response:\r\n\r\n```json\r\n{\r\n  \"took\" : 14,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 1,\r\n    \"max_score\" : 6.1179934,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"tagwise\",\r\n      \"_type\" : \"search\",\r\n      \"_id\" : \"AVvR1yM3gPzdwFFNDvs7\",\r\n      \"_score\" : 6.1179934,\r\n      \"_source\" : {\r\n        \"repo\" : \"reddit\",\r\n        \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n        \"owner\" : \"reddit\",\r\n        \"url\" : \"https://github.com/reddit/reddit\",\r\n        \"stars\" : 13053,\r\n        \"language\" : \"Python\",\r\n        \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n      }\r\n    } ]\r\n  }\r\n}\r\n```\r\n\r\nYou can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)\r\n\r\nYou should next read about [**exact match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html).\r\n\r\n",
-        "contentDigest": "7fe12bee03f27b0b144608767f5db038",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin",
-          "path": "default-site-plugin",
-          "redirect": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "",
-        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file",
-        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md",
-      "fields": {
-        "slug": "/docs/tagwise-search/arrays.html",
-        "path": "docs/tagwise-search/arrays.md",
-        "redirect": ""
-      }
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file",
-      "internal": {
-        "content": "# Exact Match\r\n\r\nThis article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html)\r\n\r\n### How to do a tag wise search\r\n\r\nElasticsearch supports queries and filters. Queries are useful within full-text search, where results depend on a relevance score. In general, filters are used for binary yes/no searches or within queries for exact value match. Think of filters as an equivalent to the WHERE clause in SQL. Filters are faster than queries because they do not calculate the relevance score and can be easily cached.\r\n\r\nWe will be using a sample dataset containing the Github repository info, and we will be using a **term** query to perform a tag wise search.\r\n\r\n### Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nBy default Elasticsearch analyzes the data before storing it on disk. However, since we require an exact match of the data for repository tags, we will apply a `index: not_analyzed` setting to prevent the tag field from being analyzed.\r\n\r\nWe will only specify the mapping for the `tags` field. Elasticsearch will create mappings dynamically for the rest of the fields.\r\n\r\n### Disable analyzers on `tags` field\r\n\r\n// TODO: Use Keyword and also explain the difference wrt Text.\r\n\r\nTo store the data without analyzing it, we have to make `tags` field **not\\_analyzed**. By doing this, Elasticsearch will store the data as usual without any modifications.\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/_mapping/tagwise -d '{\r\n  \"properties\": {\r\n    \"tags\": {\r\n      \"type\": \"keyword\",\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nNow, let's index some data.\r\n\r\n## Data Indexing\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/tagwise/1 -d '{\r\n  \"repo\" : \"reddit\",\r\n  \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n  \"owner\" : \"reddit\",\r\n  \"url\" : \"https://github.com/reddit/reddit\",\r\n  \"stars\" : 13053,\r\n  \"language\" : \"Python\",\r\n  \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n}'\r\n```\r\n\r\nVoila! We indexed our first document with id `1`. We already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.\r\n\r\n## Data Browser View\r\n\r\nFor accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)\r\n\r\n## Query\r\n\r\nThe `term` query will look for the exact value that we specify. By itself, a `term` query is simple. It accepts a field name and the value that we wish to find. Usually, when looking for an exact value, we don’t want to score the query. We just want to include/exclude documents, so we will use a `constant_score` query to execute the term query in a non-scoring mode and apply a uniform score of one.\r\n\r\nThe final combination of a `constant_score` query which contains a `term` query will look like this:\r\n\r\n```json\r\ncurl $host/tagwise/tagwise/_search?pretty -d '{\r\n  \"query\": {\r\n    \"constant_score\" : {\r\n      \"filter\" : {\r\n        \"term\" : {\r\n          \"tags\" : \"reddit\"\r\n        }\r\n      }\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nWe used a `constant_score` to use the `term` query with a filter context. We could also have written the same query as below:\r\n\r\n```json\r\ncurl $host/tagwise/tagwise/_search?pretty -d '{\r\n  \"query\": {\r\n    \"term\": {\r\n      \"tags\": \"reddit\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nWhile the latter query looks much simpler, the above query is marked by Elasticsearch for caching because of the filter context. This helps speed up subsequent searches of the same request type.\r\n\r\n### Response\r\n\r\n```json\r\n{\r\n  \"took\" : 8,\r\n  \"timed_out\" : false,\r\n  \"_shards\" : {\r\n    \"total\" : 1,\r\n    \"successful\" : 1,\r\n    \"failed\" : 0\r\n  },\r\n  \"hits\" : {\r\n    \"total\" : 1,\r\n    \"max_score\" : 1.0,\r\n    \"hits\" : [ {\r\n      \"_index\" : \"tagwise\",\r\n      \"_type\" : \"search\",\r\n      \"_id\" : \"AVvR1yM3gPzdwFFNDvs7\",\r\n      \"_score\" : 1.0,\r\n      \"_source\" : {\r\n        \"repo\" : \"reddit\",\r\n        \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n        \"owner\" : \"reddit\",\r\n        \"url\" : \"https://github.com/reddit/reddit\",\r\n        \"stars\" : 13053,\r\n        \"language\" : \"Python\",\r\n        \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n      }\r\n    } ]\r\n  }\r\n}\r\n```\r\n\r\nAs we can see in the above response object, we found a hit containing the \"reddit\" tag.\r\n\r\nHowever, we might often want to either index multiple tags with a document or search documents by more than one tags. We talk about this in the next article on [multiple tag match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/multiple-tag-match.html).\r\n",
-        "contentDigest": "755ea95094ea390e34b908d70502ab83",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin",
-          "path": "default-site-plugin",
-          "redirect": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "",
-        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file",
-        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md",
-      "fields": {
-        "slug": "/docs/tagwise-search/exact-match.html",
-        "path": "docs/tagwise-search/exact-match.md",
-        "redirect": ""
-      }
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file",
-      "internal": {
-        "content": "# Tag wise search: Introduction\r\n\r\n### How to build tag wise search with Elasticsearch?\r\n\r\nA tag is a label or metadata used on social networks and blogging services which makes it easier for users to find the data with a specific theme or content. Also, it can be useful to filter data according to single or multiple categories.\r\n\r\nIn this chapter, we’re going to build tag wise search very similar to Github's. We will also show you how to do multiple tag searching and partial tag match.\r\n\r\nWe will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as our search engine and the index (and dataset) is hosted on an [appbase.io](https://appbase.io) app.\r\n\r\n### Table of Contents\r\n\r\n| Index     | Title    | Description |\r\n| ---------- | ---------- |---------|\r\n| 1       | [Exact Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to build a tag wise search similar to Github's. |\r\n| 2       | [Multiple Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to find multiple exact values.\r\n| 3       | [Partial Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbh.html) | How to provide tag suggestions based on prefix. |\r\n\r\n### Live Demo\r\n<script async src=\"//jsfiddle.net/1b8tcxs4/3/embed/\"></script>\r\n[code](https://jsfiddle.net/1b8tcxs4/3/)\r\n**TODO:** Embed JSFiddle demo\r\n",
-        "contentDigest": "c8794ce77d35519fa229c2ba84f770c4",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin",
-          "path": "default-site-plugin",
-          "redirect": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "",
-        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file",
-        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md",
-      "fields": {
-        "slug": "/docs/tagwise-search/introduction.html",
-        "path": "docs/tagwise-search/introduction.md",
-        "redirect": ""
-      }
-    },
-    "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file >>> MarkdownRemark": {
-      "id": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file >>> MarkdownRemark",
-      "children": [],
-      "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file",
-      "internal": {
-        "content": "# Multiple Tag match\r\n\r\nThis article is a part of the series on [**How to build tag wise search with Elasticsearch**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html).\r\n\r\n## How to find multiple exact values\r\n\r\nA major use-case of tags in apps is to associate a content with one or more labels, it is then but natural that a tagwise search feature should be able to retrieve the matching content by user specifying either just one or more than one tag labels in union or intersection output modes.\r\n\r\nIn this chapter, we will be using an Array data structure to store more than one label with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.\r\n\r\n### How to store data using Elasticsearch arrays\r\n\r\nFor one or more then one inputs elasticsearch by default considers that field as an array type. However, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.\r\n\r\nDefault array does not support querying each object independently of the other objects in the array. To distinguish objects stored in array from each other we need to use **Nested datatype**.\r\n\r\n`Note:` You can read more about nested datatype over [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/nested.html).\r\n\r\n## Defining Mappings\r\n\r\nIf you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.\r\n\r\nBy default Elasticsearch analyzes the data before storing it on disk. However, since we require an exact match of the data for repository tags, we will apply a `index: not_analyzed` setting to prevent the tag field from being analyzed.\r\n\r\nWe will only specify the mapping for the tags field. Elasticsearch will create mappings dynamically for the rest of the fields.\r\n\r\n### Disable analyzers on `tags` field\r\n\r\nTo store the data without analyzing it, we have to make `tags` field **not\\_analyzed**. By doing this Elasticsearch will store the data as usual without any modifications.\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/_mapping/search -d '{\r\n  \"properties\": {\r\n    \"tags\": {\r\n      \"type\": \"keyword\"\r\n    }\r\n  }\r\n}'\r\n```\r\n\r\nWe just put **mapping** on `search` type of `tagwise` index. Now, let's index some data.\r\n\r\n## Indexing Data\r\n\r\n```json\r\ncurl -XPUT $host/tagwise/search/1 -d '{\r\n  \"repo\" : \"reddit\",\r\n  \"tags\" : [ \"javascript\", \"python\", \"reddit\" ],\r\n  \"owner\" : \"reddit\",\r\n  \"url\" : \"https://github.com/reddit/reddit\",\r\n  \"stars\" : 13053,\r\n  \"language\" : \"Python\",\r\n  \"created-on\" : \"2008-06-18T23:30:53Z\"\r\n}'\r\n```\r\n\r\nIf we look back at our data mappings, they should now look like as follows\r\n\r\n```json\r\ncurl $host/tagwise/_mapping?pretty\r\n```\r\n\r\n```json\r\n{\r\n  \"tagwise\": {\r\n    \"mappings\": {\r\n      \"search\": {\r\n        \"properties\": {\r\n          \"owner\" : {\r\n            \"type\" : \"text\",\r\n            \"fields\" : {\r\n              \"keyword\" : {\r\n                \"type\" : \"keyword\",\r\n                \"ignore_above\" : 256\r\n              }\r\n            }\r\n          },\r\n          \"repo\" : {\r\n            \"type\" : \"text\",\r\n            \"fields\" : {\r\n              \"keyword\" : {\r\n                \"type\" : \"keyword\",\r\n                \"ignore_above\" : 256\r\n              }\r\n            }\r\n          },\r\n          \"tags\": {\r\n            \"type\": \"keyword\"\r\n          },\r\n          \"url\" : {\r\n            \"type\" : \"text\",\r\n            \"fields\" : {\r\n              \"keyword\" : {\r\n                \"type\" : \"keyword\",\r\n                \"ignore_above\" : 256\r\n              }\r\n            }\r\n          },\r\n          \"stars\": {\r\n            \"type\": \"long\"\r\n          },\r\n          \"language\" : {\r\n            \"type\" : \"text\",\r\n            \"fields\" : {\r\n              \"keyword\" : {\r\n                \"type\" : \"keyword\",\r\n                \"ignore_above\" : 256\r\n              }\r\n            }\r\n          },\r\n          \"created-on\": {\r\n            \"type\": \"date\"\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n```\r\n\r\nWe already created sample database. You can tryout your own queries against it. Checkout our next section to play with it.\r\n\r\n## Data Browser View\r\n\r\nFor accessibility, we have indexed ~300 data points of Github repos that can be viewed in the data browser [here. ![](http://i.imgur.com/x7nLB9s.png)](https://opensource.appbase.io/dejavu/live/#?input_state=XQAAAALsAAAAAAAAAAA9iIqnY-B2BnTZGEQz6wkFsfg8zEltX1Bae4VtdAEIGYBD3zva4XDAUUA9VTrYdZNLQd5JP0mLm4u5-Ie7D8qYvlBkqiI3yZnvcuRZPoM5wmYJTyyh-A3d-80gPrA7-YAOP1CjsElJ1Awvm7iOoQzYFWoNbFMzMRnLSrmyJf08HGhNiv-TDi-0N2SLrJ-iOAm2-0MLNsYdDFMc7va07VB2QiT6uDBzg3MVoV7a7L6bsXj06jwjF8DI8BFy4lYZ1Rkf_9VL4AA)\r\n\r\n## Query\r\n\r\nElasticsearch provides a way through bool query to combine the multiple query types into a single query with `and`, `or`, and `not` logic.\r\n\r\n### Bool Query\r\n\r\nThe bool query is composed of four clauses\\(query\\).\r\n\r\n* `must`: All of these clauses must match. The equivalent of **AND**.\r\n* `must_not`: All of these clauses must not match. The equivalent of **NOT**.\r\n* `should`: At least one of these clauses must match. The equivalent of **OR**.\r\n* `filter`: The query must appear in matching documents. This query ignores the score and executes it in filter context.\r\n\r\nWe will execute bool queries in non-scoring mode since we have disabled analyzer on `tags` field. We will use `constant_score` query to wrap everything with its filter clause.\r\n\r\nSo our basic query json structure looks like this:\r\n\r\n```json\r\n{\r\n   \"query\" : {\r\n      \"constant_score\" : {\r\n         \"filter\" : {\r\n            \"bool\" : {\r\n              \"should\" : [...],\r\n              \"must_not\" : [...],\r\n              \"must\": [...],\r\n              \"filter\": [...]\r\n           }\r\n         }\r\n      }\r\n   }\r\n}\r\n```\r\n\r\nWe will use `must` and `should` clauses to filter the data. Through `must` clause we can get the results which contain all the mentioned tags and through `should` clause we can get the results which contain either of the mentioned tags.\r\n\r\n### Must Query\r\n\r\nWe will use `term` query inside `must` clause. The `term` query finds documents that contain the exact term specified at the index time and `must` query take **AND** of all the results.\r\n\r\n```json\r\ncurl $host/tagwise/search/_search?pretty -d '{\r\n   \"query\" : {\r\n      \"constant_score\" : {\r\n         \"filter\" : {\r\n            \"bool\" : {\r\n              \"must\": [\r\n                {\r\n                  \"term\": {\r\n                    \"tags\": \"reddit\"\r\n                  }\r\n                },\r\n                {\r\n                  \"term\": {\r\n                    \"tags\": \"python\"\r\n                  }\r\n                }\r\n              ]\r\n           }\r\n         }\r\n      }\r\n   }\r\n}'\r\n```\r\n\r\n#### Response\r\n\r\n```json\r\n{\r\n  \"took\": 20,\r\n  \"timed_out\": false,\r\n  \"_shards\": {\r\n    \"total\": 1,\r\n    \"successful\": 1,\r\n    \"failed\": 0\r\n  },\r\n  \"hits\": {\r\n    \"total\": 1,\r\n    \"max_score\": 1,\r\n    \"hits\": [\r\n      {\r\n        \"_index\": \"tagwise\",\r\n        \"_type\": \"search\",\r\n        \"_id\": \"AVvR1yM3gPzdwFFNDvs7\",\r\n        \"_score\": 1,\r\n        \"_source\": {\r\n          \"repo\": \"reddit\",\r\n          \"tags\": [\r\n            \"javascript\",\r\n            \"python\",\r\n            \"reddit\"\r\n          ],\r\n          \"owner\": \"reddit\",\r\n          \"url\": \"https://github.com/reddit/reddit\",\r\n          \"stars\": 13053,\r\n          \"language\": \"Python\",\r\n          \"created-on\": \"2008-06-18T23:30:53Z\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}\r\n```\r\n\r\n### Should Query\r\n\r\nThe `should` query in filter context fetches documents which match with at least one of the mentioned should queries.\r\n\r\n```json\r\ncurl $host/tagwise/search/_search?pretty -d '{\r\n   \"query\" : {\r\n      \"constant_score\" : {\r\n         \"filter\" : {\r\n            \"bool\" : {\r\n              \"should\": [\r\n                {\r\n                  \"term\": {\r\n                    \"tags\": \"reddit\"\r\n                  }\r\n                },\r\n                {\r\n                  \"term\": {\r\n                    \"tags\": \"python\"\r\n                  }\r\n                }\r\n              ]\r\n           }\r\n         }\r\n      }\r\n   }\r\n}'\r\n```\r\n\r\n#### Response:\r\n\r\nAs you can see in the response the first result contains only one of the mentioned tag - `python`.\r\n\r\n```json\r\n{\r\n  \"took\": 28,\r\n  \"timed_out\": false,\r\n  \"_shards\": {\r\n    \"total\": 1,\r\n    \"successful\": 1,\r\n    \"failed\": 0\r\n  },\r\n  \"hits\": {\r\n    \"total\": 51,\r\n    \"max_score\": 1,\r\n    \"hits\": [\r\n      {\r\n        \"_index\": \"tagwise\",\r\n        \"_type\": \"search\",\r\n        \"_id\": \"AVvR1yI5hvsk2FETc3bb\",\r\n        \"_score\": 1,\r\n        \"_source\": {\r\n          \"repo\": \"awesome-python\",\r\n          \"tags\": [\r\n            \"awesome\",\r\n            \"collections\",\r\n            \"python\"\r\n          ],\r\n          \"owner\": \"vinta\",\r\n          \"url\": \"https://github.com/vinta/awesome-python\",\r\n          \"stars\": 33500,\r\n          \"language\": \"Python\",\r\n          \"created-on\": \"2014-06-27T21:00:06Z\"\r\n        }\r\n      }\r\n    ]\r\n  }\r\n}\r\n```\r\n\r\nYou can also try out this query interactively  [here. ![](http://i.imgur.com/9bg2TMJ.png)](https://opensource.appbase.io/mirage/#?input_state=XQAAAAIqBQAAAAAAAAA9iIhnNAWbsswtYjeQNZkpzQK4_mOzUeDpWmHCrDFs7iDKutPu_ClxcjCYOqUqELVPJ0G6sKj4u2r8c-T_5P6GlG49XYgfc2GYuMMRuSumifCxuSSCXtOAxs6Hde1p2VgSpnD3tfQtwbKtmlUV9FWFj1xXnSypOS15FxHENksJUxXCtYmd4iVjGL1bowAxrWfOuw1nuIcWHek4srAs1sTP0SOd6XPS6-blE0WjAQt4ce9B23dy_19xYCecMoWthMwrwWTFypBAO8Vcd9w4VuVo1KU8LBRzuRLhDL0KvF_VG62ehVISj4Ty-MiHt6Wpb2oKqBeU0_RAvNWfU1QZMs-TXvpXEXsEaIoh-foBQR6mza5cKEG3-8vZnMLBXW2J5sjEUeM7tqfjdgcDJCjC3ICatsg2wVEme8RVF3cFkkDDX0MTi9_t1eIrq8yU3AHAMZqvAUb5mkmRVWPKetqsE-i4GQyerYVnSY-EJXAPnnip8IXLbYRM8d4ocCXD3R20C7ZwGFGG0MuPIwmzwrf6hStk8ddjvTn81vDwIPDnr91ov42AvY0-7Kb5CpGG6dF2kFR7xcKxyVCxYfbE8Wl2f0RTH6jk-GS7HuqFdz4MEIWS63yeqQ-jajHPetrQP81BisYnXF281pV7ajxzqx8kkTagiyRT9mQsOR_oMVCT63LKNBeCSnffodl6mf_7Qo1M)\r\n\r\n---\r\n\r\nYou should next read about [**partial tag match**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbd.html).\r\n",
-        "contentDigest": "c2f70f9dee48eb96e110a4a2d5d284be",
-        "type": "MarkdownRemark",
-        "owner": "gatsby-transformer-remark",
-        "fieldOwners": {
-          "slug": "default-site-plugin",
-          "path": "default-site-plugin",
-          "redirect": "default-site-plugin"
-        }
-      },
-      "frontmatter": {
-        "title": "",
-        "_PARENT": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file",
-        "parent": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file"
-      },
-      "fileAbsolutePath": "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md",
-      "fields": {
-        "slug": "/docs/tagwise-search/multiple-tag-match.html",
-        "path": "docs/tagwise-search/multiple-tag-match.md",
-        "redirect": ""
-      }
-    },
     "SitePage /docs/tagwise-search/partial-tag-match-tbd.html": {
       "layout": "index",
       "jsonName": "docs-tagwise-search-partial-tag-match-tbd-html.json",
@@ -3714,7 +3730,7 @@
       "context": {
         "slug": "/docs/tagwise-search/partial-tag-match-tbd.html"
       },
-      "updatedAt": 1515631017789,
+      "updatedAt": 1515913094745,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
@@ -3723,7 +3739,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "9e31184b05f76c746bfef398ebf95e95",
+        "contentDigest": "8591adcccdb6e4ebafe60593d80f466a",
         "owner": "internal-data-bridge"
       }
     },
@@ -3737,7 +3753,7 @@
       "context": {
         "slug": "/index.html"
       },
-      "updatedAt": 1515631017790,
+      "updatedAt": 1515913094746,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/home.js",
@@ -3746,30 +3762,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0671971f261a2d3dcbd3c5fdb2787e7e",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /searchbar/introduction.html": {
-      "layout": "index",
-      "jsonName": "searchbar-introduction-html.json",
-      "internalComponentName": "ComponentSearchbarIntroductionHtml",
-      "path": "/searchbar/introduction.html",
-      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "componentChunkName": "component---src-templates-docs-js",
-      "context": {
-        "slug": "searchbar/introduction.html"
-      },
-      "updatedAt": 1515631017791,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "id": "SitePage /searchbar/introduction.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "df507f4df95f3b63d9c1ecfef02f1b59",
+        "contentDigest": "3636b9f2e0c97ae1ef1e90633af3b720",
         "owner": "internal-data-bridge"
       }
     },
@@ -3778,21 +3771,19 @@
       "jsonName": "404-html.json",
       "internalComponentName": "Component404Html",
       "path": "/404.html",
-      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "componentChunkName": "component---src-templates-docs-js",
-      "context": {
-        "slug": "404.html"
-      },
-      "updatedAt": 1515631017793,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "component": "/Users/siddharthlatest/dev/github/esc/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "updatedAt": 1515913094812,
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/pages/404.js",
       "id": "SitePage /404.html",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7e2173859023bf700860c0698bc45a69",
+        "contentDigest": "da41fed4a5d19e4d667a4797683c7160",
         "owner": "internal-data-bridge"
       }
     },
@@ -3806,7 +3797,7 @@
       "context": {
         "slug": "/docs/phrase-search/introduction.html"
       },
-      "updatedAt": 1515631017795,
+      "updatedAt": 1515913094748,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
@@ -3815,7 +3806,53 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7a36e0ec6a1b9ca6a8dbfa7173121d44",
+        "contentDigest": "8ea9ed99134e759256970e3dda0907e6",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /tagwise-search/multiple-tag-match.html": {
+      "layout": "index",
+      "jsonName": "tagwise-search-multiple-tag-match-html.json",
+      "internalComponentName": "ComponentTagwiseSearchMultipleTagMatchHtml",
+      "path": "/tagwise-search/multiple-tag-match.html",
+      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "componentChunkName": "component---src-templates-docs-js",
+      "context": {
+        "slug": "tagwise-search/multiple-tag-match.html"
+      },
+      "updatedAt": 1515913094748,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "id": "SitePage /tagwise-search/multiple-tag-match.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "84e4e24b980515454fc63cbab3b755ff",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /tagwise-search/introduction.html": {
+      "layout": "index",
+      "jsonName": "tagwise-search-introduction-html.json",
+      "internalComponentName": "ComponentTagwiseSearchIntroductionHtml",
+      "path": "/tagwise-search/introduction.html",
+      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "componentChunkName": "component---src-templates-docs-js",
+      "context": {
+        "slug": "tagwise-search/introduction.html"
+      },
+      "updatedAt": 1515913094749,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "id": "SitePage /tagwise-search/introduction.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "e2efd38415d8d24fcf93c21181b0cc65",
         "owner": "internal-data-bridge"
       }
     },
@@ -3829,7 +3866,7 @@
       "context": {
         "slug": "searchbar/auto-complete.html"
       },
-      "updatedAt": 1515631017796,
+      "updatedAt": 1515913094750,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
@@ -3838,76 +3875,53 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6bdb5657e4b4c4c1f2d9b0ee225a7b2e",
+        "contentDigest": "ee1f6bc881daeb4b4437e2400cd04bdd",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /searchbar/multi-match.html": {
+    "SitePage /searchbar/introduction.html": {
       "layout": "index",
-      "jsonName": "searchbar-multi-match-html.json",
-      "internalComponentName": "ComponentSearchbarMultiMatchHtml",
-      "path": "/searchbar/multi-match.html",
+      "jsonName": "searchbar-introduction-html.json",
+      "internalComponentName": "ComponentSearchbarIntroductionHtml",
+      "path": "/searchbar/introduction.html",
       "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
       "componentChunkName": "component---src-templates-docs-js",
       "context": {
-        "slug": "searchbar/multi-match.html"
+        "slug": "searchbar/introduction.html"
       },
-      "updatedAt": 1515631017798,
+      "updatedAt": 1515913094750,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "id": "SitePage /searchbar/multi-match.html",
+      "id": "SitePage /searchbar/introduction.html",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "0d5c2596fa84ad55806e70de12047474",
+        "contentDigest": "ed481caa5d4ac6df8a31efbadcecab94",
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /searchbar/searchbar.html": {
+    "SitePage /tagwise-search/exact-match.html": {
       "layout": "index",
-      "jsonName": "searchbar-searchbar-html.json",
-      "internalComponentName": "ComponentSearchbarSearchbarHtml",
-      "path": "/searchbar/searchbar.html",
+      "jsonName": "tagwise-search-exact-match-html.json",
+      "internalComponentName": "ComponentTagwiseSearchExactMatchHtml",
+      "path": "/tagwise-search/exact-match.html",
       "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
       "componentChunkName": "component---src-templates-docs-js",
       "context": {
-        "slug": "searchbar/searchbar.html"
+        "slug": "tagwise-search/exact-match.html"
       },
-      "updatedAt": 1515631017800,
+      "updatedAt": 1515913094751,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "id": "SitePage /searchbar/searchbar.html",
+      "id": "SitePage /tagwise-search/exact-match.html",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "facf73f0fe225850ca3ade60b62aec15",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /searchbar/simple-match.html": {
-      "layout": "index",
-      "jsonName": "searchbar-simple-match-html.json",
-      "internalComponentName": "ComponentSearchbarSimpleMatchHtml",
-      "path": "/searchbar/simple-match.html",
-      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "componentChunkName": "component---src-templates-docs-js",
-      "context": {
-        "slug": "searchbar/simple-match.html"
-      },
-      "updatedAt": 1515631017801,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "id": "SitePage /searchbar/simple-match.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "f27e4865684a71c547e3bce178e774e9",
+        "contentDigest": "8f626b97768eeda5e7bc9c1d2b33db66",
         "owner": "internal-data-bridge"
       }
     },
@@ -3921,7 +3935,7 @@
       "context": {
         "slug": "/docs/phrase-search/phrase_match.html"
       },
-      "updatedAt": 1515631017804,
+      "updatedAt": 1515913094751,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
@@ -3930,7 +3944,99 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "58b7796591f1ad2e5dbe52d063688de9",
+        "contentDigest": "665ddb963a8e5c4d345ad9dfc3a36073",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /searchbar/multi-match.html": {
+      "layout": "index",
+      "jsonName": "searchbar-multi-match-html.json",
+      "internalComponentName": "ComponentSearchbarMultiMatchHtml",
+      "path": "/searchbar/multi-match.html",
+      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "componentChunkName": "component---src-templates-docs-js",
+      "context": {
+        "slug": "searchbar/multi-match.html"
+      },
+      "updatedAt": 1515913094751,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "id": "SitePage /searchbar/multi-match.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "205b2437655ad9e43a5153cf5ab2b8c0",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /searchbar/simple-match.html": {
+      "layout": "index",
+      "jsonName": "searchbar-simple-match-html.json",
+      "internalComponentName": "ComponentSearchbarSimpleMatchHtml",
+      "path": "/searchbar/simple-match.html",
+      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "componentChunkName": "component---src-templates-docs-js",
+      "context": {
+        "slug": "searchbar/simple-match.html"
+      },
+      "updatedAt": 1515913094752,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "id": "SitePage /searchbar/simple-match.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "afedc7696b469c53569879b90b997da4",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /tagwise-search/arrays.html": {
+      "layout": "index",
+      "jsonName": "tagwise-search-arrays-html.json",
+      "internalComponentName": "ComponentTagwiseSearchArraysHtml",
+      "path": "/tagwise-search/arrays.html",
+      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "componentChunkName": "component---src-templates-docs-js",
+      "context": {
+        "slug": "tagwise-search/arrays.html"
+      },
+      "updatedAt": 1515913094752,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "id": "SitePage /tagwise-search/arrays.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "96aadcbfcc758189566a100b1969440c",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /searchbar/searchbar.html": {
+      "layout": "index",
+      "jsonName": "searchbar-searchbar-html.json",
+      "internalComponentName": "ComponentSearchbarSearchbarHtml",
+      "path": "/searchbar/searchbar.html",
+      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "componentChunkName": "component---src-templates-docs-js",
+      "context": {
+        "slug": "searchbar/searchbar.html"
+      },
+      "updatedAt": 1515913094753,
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
+      "id": "SitePage /searchbar/searchbar.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "de22bcee63546a320207195b2d96096a",
         "owner": "internal-data-bridge"
       }
     },
@@ -3944,7 +4050,7 @@
       "context": {
         "slug": "searchbar/suggestions.html"
       },
-      "updatedAt": 1515631017805,
+      "updatedAt": 1515913094753,
       "pluginCreator___NODE": "Plugin default-site-plugin",
       "pluginCreatorId": "Plugin default-site-plugin",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
@@ -3953,99 +4059,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "54a65a9e07bf4eb4053d7998676ea79a",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /docs/tagwise-search/arrays.html": {
-      "layout": "index",
-      "jsonName": "docs-tagwise-search-arrays-html.json",
-      "internalComponentName": "ComponentDocsTagwiseSearchArraysHtml",
-      "path": "/docs/tagwise-search/arrays.html",
-      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "componentChunkName": "component---src-templates-docs-js",
-      "context": {
-        "slug": "/docs/tagwise-search/arrays.html"
-      },
-      "updatedAt": 1515631017814,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "id": "SitePage /docs/tagwise-search/arrays.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "8971dc923d7b6cdeb815fc3eaeddedb5",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /docs/tagwise-search/exact-match.html": {
-      "layout": "index",
-      "jsonName": "docs-tagwise-search-exact-match-html.json",
-      "internalComponentName": "ComponentDocsTagwiseSearchExactMatchHtml",
-      "path": "/docs/tagwise-search/exact-match.html",
-      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "componentChunkName": "component---src-templates-docs-js",
-      "context": {
-        "slug": "/docs/tagwise-search/exact-match.html"
-      },
-      "updatedAt": 1515631017815,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "id": "SitePage /docs/tagwise-search/exact-match.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "623d44883a21843f7aacf8ba99f6deb5",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /docs/tagwise-search/introduction.html": {
-      "layout": "index",
-      "jsonName": "docs-tagwise-search-introduction-html.json",
-      "internalComponentName": "ComponentDocsTagwiseSearchIntroductionHtml",
-      "path": "/docs/tagwise-search/introduction.html",
-      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "componentChunkName": "component---src-templates-docs-js",
-      "context": {
-        "slug": "/docs/tagwise-search/introduction.html"
-      },
-      "updatedAt": 1515631017817,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "id": "SitePage /docs/tagwise-search/introduction.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "3a958045b18d3f38a549a3a8f1fc88bf",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "SitePage /docs/tagwise-search/multiple-tag-match.html": {
-      "layout": "index",
-      "jsonName": "docs-tagwise-search-multiple-tag-match-html.json",
-      "internalComponentName": "ComponentDocsTagwiseSearchMultipleTagMatchHtml",
-      "path": "/docs/tagwise-search/multiple-tag-match.html",
-      "component": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "componentChunkName": "component---src-templates-docs-js",
-      "context": {
-        "slug": "/docs/tagwise-search/multiple-tag-match.html"
-      },
-      "updatedAt": 1515631017818,
-      "pluginCreator___NODE": "Plugin default-site-plugin",
-      "pluginCreatorId": "Plugin default-site-plugin",
-      "componentPath": "/Users/siddharthlatest/dev/github/esc/src/templates/docs.js",
-      "id": "SitePage /docs/tagwise-search/multiple-tag-match.html",
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "type": "SitePage",
-        "contentDigest": "60b97cb42c3f9e25ebe4bdf63c9d2613",
+        "contentDigest": "709ffb4471bbf04fae06ca946e9edc91",
         "owner": "internal-data-bridge"
       }
     },
@@ -4057,7 +4071,7 @@
       "component": "/Users/siddharthlatest/dev/github/esc/src/pages/404.js",
       "componentChunkName": "component---src-pages-404-js",
       "context": {},
-      "updatedAt": 1515630510279,
+      "updatedAt": 1515913094807,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/pages/404.js",
@@ -4066,7 +4080,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "4288dca8a0e84d14436d6365f25a6efa",
+        "contentDigest": "17e9dc80d3222935cffb6b15dff80a3d",
         "owner": "internal-data-bridge"
       }
     },
@@ -4078,7 +4092,7 @@
       "component": "/Users/siddharthlatest/dev/github/esc/src/pages/jsx-compiler.html.js",
       "componentChunkName": "component---src-pages-jsx-compiler-html-js",
       "context": {},
-      "updatedAt": 1515630510280,
+      "updatedAt": 1515913094808,
       "pluginCreator___NODE": "Plugin component-page-creator",
       "pluginCreatorId": "Plugin component-page-creator",
       "componentPath": "/Users/siddharthlatest/dev/github/esc/src/pages/jsx-compiler.html.js",
@@ -4087,14 +4101,14 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f9adc99d52bb7790c463a42040bbb8ed",
+        "contentDigest": "d030d3343ab3762fc9d4b845a45b74e7",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "30ed8b0a90151f03ad90f66ef06c205d"
+    "PLUGINS_HASH": "10ec4c1f5373c934a633d374610f30a7"
   },
   "componentDataDependencies": {
     "nodes": {
@@ -4104,50 +4118,43 @@
       "/Users/siddharthlatest/dev/github/esc/content/index.md absPath of file >>> MarkdownRemark": [
         "/"
       ],
-      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file >>> MarkdownRemark": [
-        "/searchbar/introduction.html"
-      ],
       "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/introduction.md absPath of file >>> MarkdownRemark": [
         "/docs/phrase-search/introduction.html"
+      ],
+      "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file >>> MarkdownRemark": [
+        "/tagwise-search/multiple-tag-match.html"
+      ],
+      "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file >>> MarkdownRemark": [
+        "/tagwise-search/introduction.html"
       ],
       "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/auto-complete.md absPath of file >>> MarkdownRemark": [
         "/searchbar/auto-complete.html"
       ],
-      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md absPath of file >>> MarkdownRemark": [
-        "/searchbar/multi-match.html"
+      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/introduction.md absPath of file >>> MarkdownRemark": [
+        "/searchbar/introduction.html"
       ],
-      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file >>> MarkdownRemark": [
-        "/searchbar/searchbar.html"
-      ],
-      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/simple-match.md absPath of file >>> MarkdownRemark": [
-        "/searchbar/simple-match.html"
+      "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file >>> MarkdownRemark": [
+        "/tagwise-search/exact-match.html"
       ],
       "/Users/siddharthlatest/dev/github/esc/content/docs/phrase-search/phrase_match.md absPath of file >>> MarkdownRemark": [
         "/docs/phrase-search/phrase_match.html"
       ],
-      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/suggestions.md absPath of file >>> MarkdownRemark": [
-        "/searchbar/suggestions.html"
+      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/multi-match.md absPath of file >>> MarkdownRemark": [
+        "/searchbar/multi-match.html"
+      ],
+      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/simple-match.md absPath of file >>> MarkdownRemark": [
+        "/searchbar/simple-match.html"
       ],
       "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/arrays.md absPath of file >>> MarkdownRemark": [
-        "/docs/tagwise-search/arrays.html"
+        "/tagwise-search/arrays.html"
       ],
-      "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/exact-match.md absPath of file >>> MarkdownRemark": [
-        "/docs/tagwise-search/exact-match.html"
+      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/searchbar.md absPath of file >>> MarkdownRemark": [
+        "/searchbar/searchbar.html"
       ],
-      "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/introduction.md absPath of file >>> MarkdownRemark": [
-        "/docs/tagwise-search/introduction.html"
-      ],
-      "/Users/siddharthlatest/dev/github/esc/content/docs/tagwise-search/multiple-tag-match.md absPath of file >>> MarkdownRemark": [
-        "/docs/tagwise-search/multiple-tag-match.html"
-      ],
-      "/Users/siddharthlatest/dev/github/esc/content/404.md absPath of file >>> MarkdownRemark": [
-        "/404.html"
+      "/Users/siddharthlatest/dev/github/esc/content/docs/searchbar/suggestions.md absPath of file >>> MarkdownRemark": [
+        "/searchbar/suggestions.html"
       ]
     },
-    "connections": {
-      "SitePage": [
-        "/dev-404-page/"
-      ]
-    }
+    "connections": {}
   }
 }

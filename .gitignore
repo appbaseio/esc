@@ -9,5 +9,11 @@ logs
 node_modules
 bower_components
 
+# Cache stuff
+*.cache*
+
+# SWP files
+*.swp
+
 # OSX metadata
 *.DS_Store
