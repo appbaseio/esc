@@ -1,2 +1,0 @@
-webpackJsonp([0xa2868bfb69fc],{"./node_modules/json-loader/index.js!./.cache/json/404-html.json":function(t,e){t.exports={data:{markdownRemark:{html:"<p>We couldn’t find what you were looking for.</p>",frontmatter:{title:"Page Not Found",next:null,prev:null,nextTitle:null,prevTitle:null},fields:{path:"404.md",slug:"404.html"}}},pathContext:{slug:"404.html"}}}});
-//# sourceMappingURL=path---404-html-283d4fdd8067c47bd223.js.map
