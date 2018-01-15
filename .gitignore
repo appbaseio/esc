@@ -13,7 +13,7 @@ bower_components
 public/*
 
 # Cache stuff
-*.cache*
+.cache/*
 
 # SWP files
 *.swp
