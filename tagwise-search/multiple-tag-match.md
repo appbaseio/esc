@@ -8,7 +8,7 @@ A major use-case of tags in apps is to associate a content with one or more labe
 
 In this chapter, we will be using an Array data structure to store more than one label with a content document. For making the exact lookups for multiple tagwise, we will be applying a term query along with boolean clause on the dataset.
 
-### How to store data using Elasticsearch arrays
+## How to store data using Elasticsearch arrays
 
 For one or more then one inputs elasticsearch by default considers that field as an array type. However, all values in the array must be of the same datatype. If you create a new field by indexing an array, Elasticsearch will use the datatype of the first value in the array to determine the type of the new field. We can create array of strings, integers, objects or array of arrays to store the data.
 

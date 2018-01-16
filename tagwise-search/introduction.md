@@ -14,7 +14,7 @@ We will use [Elasticsearch](https://www.elastic.co/products/elasticsearch) as ou
 | ---------- | ---------- |---------|
 | 1       | [Exact Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to build a tag wise search similar to Github's. |
 | 2       | [Multiple Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/exact-match.html) | How to find multiple exact values.
-| 3       | [Partial Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbh.html) | How to provide tag suggestions based on prefix. |
+| 3       | [Partial Tag Match](https://appbaseio.gitbooks.io/esc/content/tagwise-search/partial-tag-match-tbh.html) | How to provide tag suggestions based on incomplete tokens. |
 
 ### Live Demo
 <script async src="//jsfiddle.net/1b8tcxs4/3/embed/"></script>

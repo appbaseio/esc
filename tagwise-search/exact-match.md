@@ -2,13 +2,13 @@
 
 This article is a part of the series on [**How to build tag wise search engine with Elasticsearch?**](https://appbaseio.gitbooks.io/esc/content/tagwise-search/introduction.html)
 
-### How to do a tag wise search
+## How to do a tag wise search
 
 Elasticsearch supports queries and filters. Queries are useful within full-text search, where results depend on a relevance score. In general, filters are used for binary yes/no searches or within queries for exact value match. Think of filters as an equivalent to the WHERE clause in SQL. Filters are faster than queries because they do not calculate the relevance score and can be easily cached.
 
 We will be using a sample dataset containing the Github repository info, and we will be using a **term** query to perform a tag wise search.
 
-### Defining Mappings
+## Defining Mappings
 
 If you have worked with a SQL database system before, you are probably familiar with the idea of a schema. Elasticsearch's equivalent of a schema definition is a mapping.
 
