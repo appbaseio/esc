@@ -6,6 +6,8 @@ sectionid: introduction
 permalink: searchbar/introduction.html
 next: simple-match.html
 nextTitle: "Simple Match"
+redirectFrom:
+  - 'esc/searchbar/introduction.html'
 ---
 
 ### How to build a search bar with Elasticsearch?

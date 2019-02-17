@@ -18,5 +18,8 @@ public/*
 # SWP files
 *.swp
 
+# search index file
+src/data/search.index.json
+
 # OSX metadata
 *.DS_Store
